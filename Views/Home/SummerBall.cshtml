@@ -1,0 +1,796 @@
+@{
+    @* Always put target="_top" in <a> links! *@
+    string promoBSUrl = "/img/calendar/summerball";
+    int dayStart = 17;
+    int dayEnd = 31;
+    var day = 19; //Convert.ToInt32(DateTime.Now.AddHours(2).ToString("dd"));
+    string link = "/casino";
+    string text = "";
+    string cb = "2";
+    bool isTextOnly = false;
+    bool isSVG = false;
+@*
+17 – 5 Free Spins open to all
+Λεκτικό : 5 Free Spins στο (LOGO) 4 Fantastic Fish in Egypt [yggdrasil]
+LINK για Δημοσθένη →  https://www.betshop.gr/casino/display/7751/4-fantastic-fish-in-egypt
+
+18 – SB Offer
+Λεκτικό : 50% επιστροφή σε Free Bet με το free bet wallet element.
+LINK για Δημοσθένη → https://www.betshop.gr/promotions/display/906/
+
+19 – 5 Golden Chips open to all
+Λεκτικό: 5 Golden Chips στα τραπέζια της logo Playtech [Playtech ]
+LINK για Δημοσθένη → https://www.betshop.gr/live-casino/display/6224
+
+20 - 10% Cashback στα Betshop Prive
+Λεκτικό: 10% Cashback στα logo Betshop Prive [Evolution]
+LINK για Δημοσθένη → https://www.betshop.gr/live-casino/display/3862/betshop-prive
+
+21 - 5 Golden Chips open to all
+Λεκτικό: 5 Golden Chips στα τραπέζια της logo Playtech [Playtech ]
+LINK για Δημοσθένη → https://www.betshop.gr/live-casino/display/6224
+
+22 – 5 Free Spins open to all
+Λεκτικό : 5 Free Spins στο (LOGO) Boat Bonanza [Play n GO]
+LINK για Δημοσθένη → https://www.betshop.gr/live-casino/display/7092/boat-bonanza
+
+23 – Wager to get Spins
+Λεκτικό : Έως 100 Free Spins στο (LOGO) Megadon [Play n GO]
+LINK για Δημοσθένη → https://www.betshop.gr/promotions/display/927/
+
+24 - 10% Cashback στα Game Shows
+Λεκτικό: 10% Cashback στα Games Shows - το γράφουμε λίγο πιο BOLD!
+LINK για Δημοσθένη → https://www.betshop.gr/live-casino/category/39/game-shows#menu
+
+25 – SB Offer
+Λεκτικό : 50% επιστροφή σε Free Bet με το free bet wallet element.
+LINK για Δημοσθένη → https://www.betshop.gr/promotions/display/907/
+
+26 – Lucky Number
+Λεκτικό : Τυχερός αριθμός με 15€ μπόνους/ logo Evolution.
+LINK για Δημοσθένη → https://www.betshop.gr/promotions/display/928/
+
+27 – SB Offer
+Λεκτικό : 50% επιστροφή σε Free Bet με το free bet wallet element.
+LINK για Δημοσθένη → https://www.betshop.gr/promotions/display/925/
+
+28 - Wager to get Spins
+Λεκτικό : Έως 100 Free Spins στο (LOGO) Wild Water [Netent]
+LINK για Δημοσθένη → https://www.betshop.gr/promotions/display/929/
+
+29 – 500€ SHORT Mini Battles
+Λεκτικό : 500€ στο τουρνουά “Aqua Mini Battles” το γράφουμε λίγο πιο BOLD
+LINK για Δημοσθένη → https://www.betshop.gr/promotions/display/930/
+
+30 - Δωροκάρτες στα Betshop Prive
+Λεκτικό: Δωροκάρτες στα logo Betshop Prive [Evolution]
+LINK για Δημοσθένη → https://www.betshop.gr/live-casino/display/3862/betshop-prive
+
+31 – 10% Cashback στα παιχνίδια της Amusnet
+Λεκτικό: 10% Cashback στα παιχνίδια της Amusnet logo [Amusnet ]
+LINK για Δημοσθένη → https://www.betshop.gr/casino/vendors/amusnet/65#menu
+*@
+
+    switch (day)
+    {
+        case 17:
+            // 17 - 5 Free Spins open to all
+            text = "5 FREE SPINS ΣΤΟ";
+            link = "/casino/display/7751/4-fantastic-fish-in-egypt";
+            break;
+        case 18:
+            // 18 - SB Offer
+            text = "50% ΕΠΙΣΤΡΟΦΗ<br>ΣΕ FREE BET";
+            link = "/promotions/display/906/";
+            break;
+        case 19:
+            // 19 - 5 Golden Chips open to all
+            text = "5 GOLDEN CHIPS<br>ΣΤΑ ΤΡΑΠΕΖΙΑ ΤΗΣ";
+            link = "/live-casino/display/6224";
+            break;
+        case 20:
+            // 20 - 10% Cashback στα Betshop Prive
+            text = "10% CASHBACK<br>ΣΤΑ";
+            link = "/live-casino/display/3862/betshop-prive";
+            isSVG = true;
+            break;
+        case 21:
+            // 21 - 5 Golden Chips open to all
+            text = "5 GOLDEN CHIPS<br>ΣΤΑ ΤΡΑΠΕΖΙΑ ΤΗΣ";
+            link = "/live-casino/display/6224";
+            break;
+        case 22:
+            // 22 - 5 Free Spins open to all
+            text = "5 FREE SPINS ΣΤΟ";
+            link = "/live-casino/display/7092/boat-bonanza";
+            break;
+        case 23:
+            // 23 - Wager to get Spins
+            text = "ΕΩΣ 100 FREE SPINS<br>ΣΤΟ";
+            link = "/promotions/display/927/";
+            break;
+        case 24:
+            // 24 - 10% Cashback στα Game Shows
+            text = "10% CACHBACK<br>ΣΤΑ<div class=\"big\">GAMES SHOWS</div>";
+            link = "/live-casino/category/39/game-shows#menu";
+            isTextOnly = true;
+            break;
+        case 25:
+            // 25 - SB Offer
+            text = "50% ΕΠΙΣΤΡΟΦΗ<br>ΣΕ FREE BET";
+            link = "/promotions/display/907/";
+            break;
+        case 26:
+            // 26 - Lucky Number
+            text = "ΤΥΧΕΡΟΣ ΑΡΙΘΜΟΣ<br>ΜΕ 15&euro; ΜΠΟΝΟΥΣ";
+            link = "/promotions/display/928/";
+            break;
+        case 27:
+            // 27 - SB Offer
+            text = "50% ΕΠΙΣΤΡΟΦΗ<br>ΣΕ FREE BET";
+            link = "/promotions/display/925/";
+            break;
+        case 28:
+            // 28 - Wager to get Spins
+            text = "ΕΩΣ 100 FREE SPINS<br>ΣΤΟ";
+            link = "/promotions/display/929/";
+            break;
+        case 29:
+            // 29 - 500€ SHORT Mini Battles
+            text = "500&euro;<br>ΣΤΟ ΤΟΥΡΝΟΥΑ<div class=\"big\">“AQUA MINI<br>BATTLES”</div>";
+            link = "/promotions/display/930/";
+            isTextOnly = true;
+            break;
+        case 30:
+            // 30 - Δωροκάρτες στα Betshop Prive
+            text = "ΔΩΡΟΚΑΡΤΕΣ<br>ΣΤΑ";
+            link = "/live-casino/display/3862/betshop-prive";
+            isSVG = true;
+            break;
+        case 31:
+            // 31 - 10% Cashback στα παιχνίδια της Amusnet
+            text = "10% CASHBACK<br>ΣΤΑ ΠΑΙΧΝΙΔΙΑ ΤΗΣ";
+            link = "/casino/vendors/amusnet/65#menu";
+            break;
+        default:
+            link = "/casino";
+            break;
+    }
+
+    string colorBG = "#18469d";
+}
+@* if (day >= dayStart && day <= dayEnd) { *@
+<div>
+
+    @*<script type="text/javascript">document.getElementsByTagName('html')[0].classList.add(('ontouchstart' in document.documentElement ? 'touch' : 'no-touch'),(window.CSS.supports('mix-blend-mode','lighten') ? 'mix-blend-mode' : 'mix-blend-mode-no'));</script>*@
+    <style>
+
+/* Win: 18469d 85% */
+
+img {
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: optimize-contrast;
+    -ms-interpolation-mode: bicubic;
+}
+
+.promo-container,
+.promo-container:before,
+.promo-container:after,
+.promo-container *,
+.promo-container *:before,
+.promo-container *:after {
+    box-sizing: border-box;
+}
+
+.promo-container {
+    background: @colorBG url("@(promoBSUrl)/bg_lg.jpg?cb=@(cb)") center center no-repeat;
+    background-size: cover;
+    height: 700px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    z-index: 2;
+}
+
+.promo-container .load-text {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 1px;
+    opacity: 0;
+}
+.logo {
+    left:50%;
+    position:absolute;
+    top:20px;
+    transform:translateX(-50%);
+    transition: top .5s;
+    width:288px;
+    z-index:99;
+}
+.loadme .logo {top:120px}
+@@media screen and (max-width:800px) {
+    .logo {
+        top:50px;
+        width:240px;
+    }
+}
+.load {
+    background-color:@(colorBG);
+    bottom:0;
+    height:100%;
+    left:0;
+    opacity:0;
+    position:absolute;
+    right:0;
+    top:0;
+    transition:all .5s;
+    visibility: hidden;
+    width:100%;
+    z-index:8;
+}
+.loadme .load {
+    opacity:1;
+    visibility: visible;    
+}
+.note {
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+    left:0;
+    position:absolute;
+    top:186px;
+    width:100%;
+}
+.bubbles-lg {
+    animation: gravitySmall 6s ease infinite;
+    display:inline;
+    margin-top:-110px;
+    position:relative;
+    z-index:1;
+}
+@@keyframes gravitySmall {
+    0% {
+        transform:translateY(0);
+    }
+    40% {
+        transform:translateY(7px);
+    }
+    95% {
+        transform:translateY(0);
+    }
+    100% {
+        transform:translateY(0);
+    }
+}
+@@keyframes gravityLarge {
+    5% {
+        transform:translateY(0);
+    }
+    50% {
+        transform:translateY(4px);
+    }
+    100% {
+        transform:translateY(0);
+    }
+}
+.placement {
+    animation:gravityLarge 6s ease infinite;
+    height:540px;
+    left:50%;
+    margin-left:-500px;
+    position:absolute;
+    top:155px;
+    width:1000px;
+    z-index:2;
+}
+.day {
+    display:inline-block;
+    height:169px;
+    margin:0 20px;
+    position:relative;
+    transition:opacity 2s;
+    width:122px;
+}
+/*.day-17, .day-18, .day-19, .day-20 {
+    margin:0 30px;
+}
+.day-18, .day-19, .day-20, .day-21 {
+    margin:0 20px;
+}*/
+.link {
+    bottom:0;
+    cursor:pointer;
+    height:100%;
+    left:0;
+    position:absolute;
+    right:0;
+    top:0;
+    width:100%;
+    z-index:9;
+}
+
+.date {
+    display:block;
+    margin:16px 0 0 25px;
+    filter:brightness(2) grayscale(100%);
+    opacity:1;
+    transition:opacity 2.5s;
+    width:70px;
+}
+#win ~ .date { filter:none }
+
+.bub {
+    bottom:0;
+    left:0;
+    position:absolute;
+    z-index:1;
+}
+.game {
+    bottom:15px;
+    left:18px;
+    opacity:1;
+    position:absolute;
+    transition:opacity 4s;
+    z-index:3;
+    width:80px;
+}
+/*.active .date {opacity:0}
+.active .game {opacity:0 !important}*/
+
+.day-17 .game {bottom:25px;left:21px;width:77px}
+.day-18 .game {bottom:-4px;left:22px;width:100px}
+.day-19 .game {bottom:28px;left:17px;width:100px}
+.day-20 .game {bottom:15px;left:35px;width:60px}
+.day-21 .game {bottom:20px;left:22px;width:92px}
+.day-22 .game {bottom:23px;left:20px;width:76px}
+.day-23 .game {bottom:25px;left:22px;width:80px}
+.day-24 .game {bottom:3px;left:-3px;width:100px}
+.day-25 .game {bottom:16px;left:17px;width:90px}
+.day-26 .game {bottom:-7px;left:-5px;width:120px}
+.day-27 .game {bottom:15px;left:18px;width:90px}
+.day-28 .game {bottom:-8px;left:15px;width:84px}
+.day-29 .game {bottom:20px;left:12px;width:106px}
+.day-30 .game {bottom:21px;left:22px;width:110px}
+.day-31 .game {bottom:23px;left:14px;width:92px}
+
+.day.past .date {display:none}
+.day.past .game {opacity:.4}
+
+.day .stroke {
+    animation:rota .3s linear infinite;
+    bottom:-2px;
+    left:0;
+    opacity:1;
+    position:absolute;
+    transition:all .5s;
+    z-index:2;
+}
+
+.day:hover #win ~ .game {animation:twist .7s ease-in-out}
+@@keyframes twist {
+    0% {
+        transform:scale(1, 1);
+    }
+    25% {
+        transform:scale(0, 1);
+    }
+    50% {
+        transform:scale(-1, 1);
+    }
+    75% {
+        transform:scale(0, 1);
+    }
+    100% {
+        transform:scale(1, 1);
+    }
+}
+.loadme .day .stroke {
+    opacity:0;
+}
+.day:hover .stroke {
+    animation:none;
+}
+@@keyframes rota {
+    0% {
+        transform:rotate(0deg);
+    }
+    100% {
+        transform:rotate(360deg);
+    }
+}
+
+.winning {
+    background-color: rgba(24, 70, 157, .85);
+    bottom:0;
+    height:100%;
+    left:0;
+    opacity:.01;
+    position:absolute;
+    right:0;
+    text-align:center;
+    top:99.9%;
+    transition:opacity 1s;
+    width:100%;
+    z-index:9;
+}
+.active .winning {
+    opacity:1;
+    top:0;
+}
+.win-placement {
+    bottom:0;
+    height:620px;
+    left:0;
+    position:absolute;
+    right:0;
+    top:80px;
+    width:100%;
+    z-index:2;
+}
+.win-bubbles-sm { display:none }
+.win-bubbles {
+    display:inline;
+    margin-top:80px;
+    opacity:0;
+    position:relative;
+    transform:translateY(200px);
+    transition:all .7s ease-out .8s;
+    z-index:1;
+}
+.active .win-bubbles {
+    opacity:1;
+    transform:translateY(0) scale(1);
+}
+.win-text {
+    color:#fff;
+    font-size:30px;
+    font-style: italic;
+    font-weight:900;
+    left:0;
+    line-height: 1;
+    opacity:0;
+    padding-left:10px;
+    position: absolute;
+    right:0;
+    top:200px;
+    transform:translateY(-50px);
+    transition:all .7s ease-out 1.3s;
+    width:100%;
+    z-index:2;
+}
+.win-text .big {
+    color:#ffdd00;
+    /*font-family: 'fp0-font0-b';*/
+    font-size:37px;
+    font-weight:900;
+    padding-top:15px;
+}
+.win-17 .win-text {top:200px}
+.win-18 .win-text {top:180px}
+.win-19 .win-text {top:210px}
+.win-20 .win-text {top:200px}
+.win-21 .win-text {top:210px}
+.win-22 .win-text {top:210px}
+.win-23 .win-text {top:210px}
+.win-24 .win-text {top:220px}
+.win-25 .win-text {top:180px}
+.win-26 .win-text {top:220px}
+.win-27 .win-text {top:180px}
+.win-28 .win-text {top:220px}
+.win-29 .win-text {top:200px}
+.win-30 .win-text {top:200px}
+.win-31 .win-text {top:210px}
+
+.active .win-text {
+    opacity:1;
+    transform:translateY(0);
+}
+
+.win-game {
+    left:50%;
+    margin:230px 0 0 -153px;
+    max-width:none;
+    opacity:0.01;
+    position:absolute;
+    top:0;
+    transition:opacity 1s ease 1.5s;
+    z-index:3;
+}
+.active .win-game {
+    opacity:1;
+}
+
+.win-17 .win-game {margin:230px 0 0 -153px;}
+.win-18 .win-game {margin:242px 0 0 -85px;}
+.win-19 .win-game {margin:270px 0 0 -155px;transform:scale(.95);}
+.win-20 .win-game {margin:283px 0 0 -94px;width:220px}
+.win-21 .win-game {margin:270px 0 0 -155px;transform:scale(.95);}
+.win-22 .win-game {margin:240px 0 0 -140px;}
+.win-23 .win-game {margin:254px 0 0 -120px;}
+.win-24 .win-game {margin:260px 0 0 -153px;}
+.win-25 .win-game {margin:242px 0 0 -85px;}
+.win-26 .win-game {margin:300px 0 0 -125px;}
+.win-27 .win-game {margin:242px 0 0 -85px;}
+.win-28 .win-game {margin:300px 0 0 -237px;}
+.win-29 .win-game {margin:260px 0 0 -153px;}
+.win-30 .win-game {margin:283px 0 0 -94px;width:220px}
+.win-31 .win-game {margin:290px 0 0 -140px;}
+
+.win-link {
+    bottom:0;
+    height:100%;
+    left:0;
+    position:absolute;
+    right:0;
+    top:0;
+    width:100%;
+    z-index:9;
+}
+
+/* Loader 2 */
+.loader-2 {
+    position:absolute;
+    left:0;
+    bottom:-2px;
+    opacity:1;
+    transition:opacity 2.5s;
+    display: block;
+	height: 126px;
+	width: 126px;
+	-webkit-animation: loader-2-1 3s linear infinite;
+	        animation: loader-2-1 3s linear infinite;
+}
+@@-webkit-keyframes loader-2-1 {
+	0%   { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); }
+}
+@@keyframes loader-2-1 {
+	0%   { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+.loader-2 span {
+	display: block;
+	position: absolute;
+	top: 0; left: 0;
+	bottom: 0; right: 0;
+	margin: auto;
+	height: 126px;
+	width: 126px;
+	clip: rect(63px, 126px, 126px, 0);
+	-webkit-animation: loader-2-2 1.5s cubic-bezier(0.770, 0.000, 0.175, 1.000) infinite;
+	        animation: loader-2-2 1.5s cubic-bezier(0.770, 0.000, 0.175, 1.000) infinite;
+}
+@@-webkit-keyframes loader-2-2 {
+	0%   { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); }
+}
+@@keyframes loader-2-2 {
+	0%   { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+.loader-2 span::before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0; left: 0;
+	bottom: 0; right: 0;
+	margin: auto;
+	height: 126px;
+	width: 126px;
+	border: 6px solid transparent;
+	border-top: 6px solid #ffdd00;
+	border-radius: 50%;
+	-webkit-animation: loader-2-3 1.5s cubic-bezier(0.770, 0.000, 0.175, 1.000) infinite;
+	        animation: loader-2-3 1.5s cubic-bezier(0.770, 0.000, 0.175, 1.000) infinite;
+}
+@@-webkit-keyframes loader-2-3 {
+	0%   { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); }
+}
+@@keyframes loader-2-3 {
+	0%   { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+.loader-2 span::after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0; left: 0;
+	bottom: 0; right: 0;
+	margin: auto;
+	height: 126px;
+	width: 126px;
+	border: 5px solid rgba(255, 221, 100, .5);
+	border-radius: 50%;
+}
+.day:hover .loader-2,
+.day:hover .loader-2 span,
+.day:hover .loader-2 span::before {
+	/*-webkit-animation: loader-2-3 2s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+	        animation: loader-2-3 2s cubic-bezier(0.770, 0.000, 0.175, 1.000);*/
+    animation-iteration-count:1
+}
+.active .day .loader-2 {opacity:0 !important}
+
+.circle-clipper.left {float:left !important}
+.circle-clipper.right {float:right !important}
+.preloader-wrapper{display:block;position:absolute;width:126px;height:126px;left:0;bottom:-2px;transition:opacity 1s;}
+.active .day .preloader-wrapper {opacity:0 !important}
+.preloader-wrapper.active{-webkit-animation:container-rotate 1568ms linear infinite;animation:container-rotate 1568ms linear infinite}
+.day:hover .active .circle-clipper.right .circle,
+.day:hover .active .circle-clipper.left .circle {-webkit-animation:none;animation:none}
+@@-webkit-keyframes container-rotate{to{-webkit-transform:rotate(360deg)}}
+@@keyframes container-rotate{to{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}
+.spinner-layer{position:absolute;width:100%;height:100%;opacity:0;border-color:#26a69a}
+.spinner-blue,.spinner-blue-only{border-color:#4285f4}
+.spinner-red,.spinner-red-only{border-color:#db4437}
+.spinner-yellow,.spinner-yellow-only{border-color:#ffdd00}
+.spinner-green,.spinner-green-only{border-color:#0f9d58}
+/*.active .spinner-layer.spinner-blue{-webkit-animation:fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both, blue-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;animation:fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both, blue-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both}
+.active .spinner-layer.spinner-red{-webkit-animation:fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both, red-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;animation:fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both, red-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both}
+.active .spinner-layer.spinner-yellow{-webkit-animation:fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both, yellow-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;animation:fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both, yellow-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both}
+.active .spinner-layer.spinner-green{-webkit-animation:fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both, green-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;animation:fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both, green-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both}*/
+.active .spinner-layer, .active .spinner-layer.spinner-blue-only, .active .spinner-layer.spinner-red-only, .active .spinner-layer.spinner-yellow-only, .active .spinner-layer.spinner-green-only {opacity:1;-webkit-animation:fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;animation:fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both}
+@@-webkit-keyframes fill-unfill-rotate{12.5%{-webkit-transform:rotate(135deg)}25%{-webkit-transform:rotate(270deg)}37.5%{-webkit-transform:rotate(405deg)}50%{-webkit-transform:rotate(540deg)}62.5%{-webkit-transform:rotate(675deg)}75%{-webkit-transform:rotate(810deg)}87.5%{-webkit-transform:rotate(945deg)}to{-webkit-transform:rotate(1080deg)}}
+@@keyframes fill-unfill-rotate{12.5%{-webkit-transform:rotate(135deg);transform:rotate(135deg)}25%{-webkit-transform:rotate(270deg);transform:rotate(270deg)}37.5%{-webkit-transform:rotate(405deg);transform:rotate(405deg)}50%{-webkit-transform:rotate(540deg);transform:rotate(540deg)}62.5%{-webkit-transform:rotate(675deg);transform:rotate(675deg)}75%{-webkit-transform:rotate(810deg);transform:rotate(810deg)}87.5%{-webkit-transform:rotate(945deg);transform:rotate(945deg)}to{-webkit-transform:rotate(1080deg);transform:rotate(1080deg)}}
+@@-webkit-keyframes blue-fade-in-out{from{opacity:1}25%{opacity:1}26%{opacity:0}89%{opacity:0}90%{opacity:1}100%{opacity:1}}
+@@keyframes blue-fade-in-out{from{opacity:1}25%{opacity:1}26%{opacity:0}89%{opacity:0}90%{opacity:1}100%{opacity:1}}
+@@-webkit-keyframes red-fade-in-out{from{opacity:0}15%{opacity:0}25%{opacity:1}50%{opacity:1}51%{opacity:0}}
+@@keyframes red-fade-in-out{from{opacity:0}15%{opacity:0}25%{opacity:1}50%{opacity:1}51%{opacity:0}}
+@@-webkit-keyframes yellow-fade-in-out{from{opacity:0}40%{opacity:0}50%{opacity:1}75%{opacity:1}76%{opacity:0}}
+@@keyframes yellow-fade-in-out{from{opacity:0}40%{opacity:0}50%{opacity:1}75%{opacity:1}76%{opacity:0}}
+@@-webkit-keyframes green-fade-in-out{from{opacity:0}65%{opacity:0}75%{opacity:1}90%{opacity:1}100%{opacity:0}}
+@@keyframes green-fade-in-out{from{opacity:0}65%{opacity:0}75%{opacity:1}90%{opacity:1}100%{opacity:0}}
+.gap-patch{position:absolute;top:0;left:45%;width:10%;height:100%;overflow:hidden;border-color:inherit}
+.gap-patch .circle{width:1000%;left:-450%}
+.circle-clipper{display:inline-block;position:relative;width:50%;height:100%;overflow:hidden;border-color:inherit}
+.circle-clipper .circle{width:200%;height:100%;border-width:4px;border-style:solid;border-color:inherit;border-bottom-color:transparent !important;border-radius:50%;-webkit-animation:none;animation:none;position:absolute;top:0;right:0;bottom:0}
+.circle-clipper.left .circle{left:0;border-right-color:transparent !important;-webkit-transform:rotate(129deg);transform:rotate(129deg)}
+.circle-clipper.right .circle{left:-100%;border-left-color:transparent !important;-webkit-transform:rotate(-129deg);transform:rotate(-129deg)}
+.active .circle-clipper.left .circle{-webkit-animation:left-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;animation:left-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both}
+.active .circle-clipper.right .circle{-webkit-animation:right-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;animation:right-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both}
+@@-webkit-keyframes left-spin{from{-webkit-transform:rotate(130deg)}50%{-webkit-transform:rotate(-5deg)}to{-webkit-transform:rotate(130deg)}}
+@@keyframes left-spin{from{-webkit-transform:rotate(130deg);transform:rotate(130deg)}50%{-webkit-transform:rotate(-5deg);transform:rotate(-5deg)}to{-webkit-transform:rotate(130deg);transform:rotate(130deg)}}
+@@-webkit-keyframes right-spin{from{-webkit-transform:rotate(-130deg)}50%{-webkit-transform:rotate(5deg)}to{-webkit-transform:rotate(-130deg)}}
+@@keyframes right-spin{from{-webkit-transform:rotate(-130deg);transform:rotate(-130deg)}50%{-webkit-transform:rotate(5deg);transform:rotate(5deg)}to{-webkit-transform:rotate(-130deg);transform:rotate(-130deg)}}#spinnerContainer.cooldown{-webkit-animation:container-rotate 1568ms linear infinite,fade-out 400ms cubic-bezier(0.4, 0, 0.2, 1);animation:container-rotate 1568ms linear infinite,fade-out 400ms cubic-bezier(0.4, 0, 0.2, 1)}
+@@-webkit-keyframes fade-out{from{opacity:1}to{opacity:0}}
+@@keyframes fade-out{from{opacity:1}to{opacity:0}}
+
+@@media screen and (max-width:767px) {
+    .promo-container {
+        background:#18469d url("https://assets.b2bgamingservices.com/casino/promo/summerball2023/bg_sm.jpg?cb=@(cb)") center bottom no-repeat;
+        background-size:cover;
+        height:490px;
+    }
+    .placement {
+        height:330px;
+        left:0;
+        margin:0;
+        top:140px;
+        width:100%;
+    }
+    .logo {
+        top:10px;
+        width:200px;
+        z-index:99;
+    }
+    .de-mob { display:none }
+    .date { display:none }
+    .current .date { display:block }
+    .day {
+        margin:0;
+        position:absolute;
+        top:0;
+    }
+    .day.prev {
+        left:-63px;
+        top:14px;
+    }
+    .day.current {
+        left:50%;
+        transform:translateX(-50%) scale(1.36);
+    }
+    .day.next {
+        right:-63px;
+        top:14px;
+    }
+    .active .day { opacity:0 }
+    .win-bubbles { display:none }
+    .win-bubbles-sm {
+        bottom:3px;
+        display:block;
+        height:428px;
+        left:50%;
+        margin-left:-223px;
+        max-width:none;
+        opacity:0;
+        position:absolute;
+        transform:translateY(100px);
+        transition:all .7s ease-out .8s;
+        width:440px;
+        z-index:1;
+    }
+    .active .win-bubbles-sm {
+        opacity:1;
+        transform:translateY(0);
+    }
+
+    .win-placement {
+        height:100%;
+        top:-5px;
+        transform:scale(.7);
+    }
+}
+    </style>
+    <div class="promo-container loadme" id="promoBS">
+        <img class="bubbles-lg" src="@(promoBSUrl)/bg_bubbles_lg.png?cb=@(cb)" />
+        <div class="load"></div>
+        <img class="logo" src="@(promoBSUrl)/logo.png?cb=@(cb)" />
+        <div class="placement">
+        @for (var i = dayStart; i <= dayEnd; i++)
+        {
+            string past = i < day ? "past" : "";
+            string pos = "de-mob";
+            if (i == day - 1) { pos = "prev"; }
+            if (i == day) { pos = "current"; }
+            if (i == day + 1) { pos = "next"; }
+            <div class="day day-@(i) @(pos) @(past)">
+                @if (i == day) {
+                    <a class="link" id="win"></a>
+                    @*<div class="loader-2"><span></span></div>*@
+                    <div class="preloader-wrapper active">
+                        <div class="spinner-layer spinner-yellow">
+                            <div class="circle-clipper left">
+                                <div class="circle"></div>
+                            </div>
+                            <div class="gap-patch">
+                                <div class="circle"></div>
+                            </div>
+                            <div class="circle-clipper right">
+                                <div class="circle"></div>
+                            </div>
+                        </div>
+                    </div>
+                }
+                <img class="date" src="@(promoBSUrl)/dates/@(i).svg?cb=@(cb)" />
+                <img class="game" src="@(promoBSUrl)/objects/@(i).png?cb=@(cb)" />
+                <img class="bub" src="@(promoBSUrl)/bubble.png?cb=@(cb)" />
+            </div>
+            if (i == 20 || i == 25) {
+                <text><br></text>
+            }
+        }
+        </div>
+        <div class="load-text">a</div>
+        @if (day >= dayStart && day <= dayEnd) {
+            string imgExtension = isSVG ? "svg" : "png";
+            <div class="winning win-@(day)">
+                <img class="win-bubbles" src="@(promoBSUrl)/bubbles-win.png?cb=@(cb)" />
+                <img class="win-bubbles-sm" src="@(promoBSUrl)/bubbles-win-sm.png?cb=@(cb)" />
+                <div class="win-placement">
+                    <div class="win-text">@Html.Raw(text)</div>
+                    @if (!isTextOnly) {
+                        <img class="win-game" src="@(promoBSUrl)/win/@(day).@(imgExtension)?cb=@(cb)" />
+                    }
+                </div>
+                <a class="win-link" href="@(link)" target="_top"></a>
+            </div>
+        }
+    </div>
+    <script>
+        window.onload = function () {
+            setTimeout(function(){ document.getElementById('promoBS').classList.remove('loadme'); }, 1000);
+        };
+        var present = document.getElementById('win');
+        if (present !== null) {
+            present.onclick = function () {
+                document.getElementById('promoBS').classList.add('active');
+            };
+        }
+    </script>
+</div>
+@* } *@

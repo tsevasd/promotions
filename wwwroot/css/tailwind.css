@@ -1,0 +1,322 @@
+/* Default (fallback) style */
+:root {
+    --color-brand-100: #126ab9;
+    --color-brand-200: #0055a5;
+    --color-brand-300: #044883;
+    --color-brand-400: #002c52;
+    --color-secondary: #ffde00;
+    --color-indicator: #ff1053;
+    --color-oddbutton: #dfe8f3;
+    --color-light-blue: #189dd8;
+    --color-white: #ffffff;
+    --color-body: #f1f6fb;
+
+    --color-light-100: #e6edf5;
+    --color-light-200: #dfe8f3;
+    --color-light-300: #d4e0ed;
+    --color-light-400: #c3d0dd;
+    --color-light-500: #b3c2d0;
+    --color-light-600: #748698;
+
+    --color-dark-brand-100: #005fb8;
+    --color-dark-brand-200: #0055a5;
+    --color-dark-brand-300: #0055a5;
+    --color-dark-brand-400: #00509a;
+    --color-dark-light-100: #004a8f;
+    --color-dark-body: #002a52;
+    --color-dark-500: #003566;
+    --color-dark-600: #002a52;
+    --color-dark-oddbutton: #00203d;
+
+    --color-light-100-rgb: 241, 246, 251;
+}
+
+/* Betshop */
+.theme-1,
+.theme-44,
+.theme-54,
+.theme-75 {
+    --color-brand-100: #126ab9;
+    --color-brand-200: #0055a5;
+    --color-brand-300: #044883;
+    --color-brand-400: #002c52;
+    --color-secondary: #ffde00;
+    --color-indicator: #ff1053;
+    --color-oddbutton: #dfe8f3;
+    --color-light-blue: #189dd8;
+    --color-body: #f1f6fb;
+
+    --color-light-100: #e6edf5;
+    --color-light-200: #dfe8f3;
+    --color-light-300: #d4e0ed;
+    --color-light-400: #c3d0dd;
+    --color-light-500: #b3c2d0;
+    --color-light-600: #748698;
+    /*
+    --color-dark-brand-100: #005fb8;
+    --color-dark-brand-200: #0055a5;
+    --color-dark-brand-300: #0055a5;
+    --color-dark-brand-400: #00509a;
+    --color-dark-light-100: #004a8f;
+    --color-dark-body: #002a52;
+    --color-dark-500: #003566;
+    --color-dark-600: #002a52;
+    --color-dark-oddbutton: #00203d;*/
+
+    @apply text-brand-400;
+}
+
+/* Betshop.gr */
+
+/* BetBetty */
+.theme-84,
+.theme-107 {
+    --color-secondary: #fab001;
+    --color-body: #f1f6fb;
+}
+
+/* Casinomode */
+.theme-77,
+.theme-78 {
+    --color-brand-100: #293e6a;
+    --color-brand-200: #182045;
+    --color-brand-300: #0e1329;
+    --color-brand-400: #0a0d1c;
+    --color-secondary: #ddc358;
+    --color-body: #f1f6fb;
+
+    --color-dark-brand-100: #005fb8;
+    --color-dark-brand-200: #182045;
+    --color-dark-brand-300: #0055a5;
+    --color-dark-brand-400: #00509a;
+    --color-dark-light-100: #004a8f;
+    --color-dark-body: #182045;
+    --color-dark-500: #293e6a;
+    --color-dark-600: #182045;
+    --color-dark-oddbutton: #0e1329;
+}
+
+/* Camwin */
+.theme-137,
+.theme-138 {
+    --color-brand-100: #444;
+    --color-brand-200: #292929;
+    --color-brand-300: #222;
+    --color-brand-400: #0d0d0d;
+    --color-oddbutton: #e6eaef;
+    --color-body: #f0f3f5;
+
+    --color-light-100: #f0f3f5;
+    --color-light-200: #dae0e7;
+    --color-light-300: #ced6df;
+    --color-light-400: #c1cbd7;
+    --color-light-500: #b4c0cf;
+    --color-light-600: #9cacbf;
+}
+
+/* playwin */
+.theme-135,
+.theme-136 {
+    --color-brand-100: #293e6a;
+    --color-brand-200: #182045;
+    --color-brand-300: #0e1329;
+    --color-brand-400: #0a0d1c;
+    --color-secondary: #ddc358;
+    --color-oddbutton: #e6eaef;
+    --color-body: #f1f6fb;
+}
+
+/* PowerBetting */
+.theme-127,
+.theme-128 {
+    --color-brand-100: #444;
+    --color-brand-200: #292929;
+    --color-brand-300: #222;
+    --color-brand-400: #0d0d0d;
+    --color-oddbutton: #e6eaef;
+    --color-body: #f0f3f5;
+
+    --color-light-100: #f0f3f5;
+    --color-light-200: #dae0e7;
+    --color-light-300: #ced6df;
+    --color-light-400: #c1cbd7;
+    --color-light-500: #b4c0cf;
+    --color-light-600: #9cacbf;
+}
+
+/* Racetan */
+.theme-123,
+.theme-124 {
+    --color-brand-100: #444;
+    --color-brand-200: #292929;
+    --color-brand-300: #222;
+    --color-brand-400: #0d0d0d;
+    --color-oddbutton: #e6eaef;
+    --color-body: #f0f3f5;
+
+    --color-light-100: #f0f3f5;
+    --color-light-200: #dae0e7;
+    --color-light-300: #ced6df;
+    --color-light-400: #c1cbd7;
+    --color-light-500: #b4c0cf;
+    --color-light-600: #9cacbf;
+}
+
+/* Vazabet */
+.theme-109,
+.theme-110 {
+    --color-brand-100: #444;
+    --color-brand-200: #292929;
+    --color-brand-300: #222;
+    --color-brand-400: #0d0d0d;
+    --color-oddbutton: #e6eaef;
+    --color-body: #f0f3f5;
+
+    --color-light-100: #f0f3f5;
+    --color-light-200: #dae0e7;
+    --color-light-300: #ced6df;
+    --color-light-400: #c1cbd7;
+    --color-light-500: #b4c0cf;
+    --color-light-600: #9cacbf;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a, button, input, select, textarea {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+button, select {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;    
+}
+
+.loading {
+    @apply animate-spin border-t-4 border-blue-500 border-solid rounded-full w-6 h-6;
+}
+
+/* detect touch screen */
+@media (hover: none) {
+  
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .overflow-x-auto::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .overflow-x-auto {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+}
+
+
+/*
+.site-text-body {
+    @apply text-brand-400;
+  }
+  
+  .site-text-body h1 {
+    @apply mb-4 text-8xl font-bold;
+  }
+  
+  .site-text-body h2 {
+    @apply mb-4 text-7xl font-bold;
+  }
+  
+  .site-text-body h3 {
+    @apply mb-4 text-5xl font-bold;
+  }
+  
+  .site-text-body h4 {
+    @apply mb-4 text-3xl font-bold;
+  }
+  
+  .site-text-body h5 {
+    @apply mb-4 text-xl font-bold;
+  }
+  
+  .site-text-body h6 {
+    @apply mb-4 text-base font-bold;
+  }
+  
+  .site-text-body p {
+    @apply mb-4;
+  }
+  
+  .site-text-body a {
+    @apply text-brand-100;
+  }
+  
+  .site-text-body a:hover {
+    @apply underline;
+  }
+  
+  .license .site-text-body {
+    @apply text-gray-500;
+  }
+  .license .site-text-body a {
+    @apply text-gray-300;
+  }
+  
+  / * site text button * /
+  .site-text-body a[button] {
+    @apply mx-4 inline-block bg-secondary py-2 px-8 text-center align-middle font-bold;
+    border-radius: 2px;
+  }
+  .site-text-body a[button]:hover {
+    @apply no-underline;
+  }
+  
+  .site-text-body hr {
+    @apply mb-4;
+  }
+  
+  .site-text-body ul {
+    @apply mb-4 list-disc pl-5;
+  }
+  
+  .site-text-body ol {
+    @apply mb-4 pl-5;
+    list-style-type: decimal;
+  }
+  
+  .site-text-body table {
+    @apply text-lg;
+  }
+  
+  .site-text-body table th,
+  .site-text-body table td {
+    @apply border-2 border-solid border-white px-3 py-2 align-top text-base;
+  }
+  
+  .site-text-body table td {
+    @apply bg-gray-100;
+  }
+  */
+
+  /* Collapse */
+  .collapse {
+    @apply overflow-hidden max-h-0 visible;
+  }
+  .collapse-toggle {
+    @apply absolute opacity-0 h-0;
+  }
+  .collapse-toggle:checked + label .arrow {
+    @apply rotate-180;
+  }
+  .collapse-toggle:checked + label + .collapse {
+    @apply max-h-min p-4;
+  }
+
+  .loaded-content {
+    transition:opacity .2s;
+  }
+  .loaded-content.htmx-request {
+    opacity:0;
+  }

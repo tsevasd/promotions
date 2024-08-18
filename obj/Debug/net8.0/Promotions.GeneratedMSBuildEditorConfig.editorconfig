@@ -1,0 +1,83 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Promotions
+build_property.RootNamespace = Promotions
+build_property.ProjectDir = C:\_Live Coding Session\Portfolio projects\promotions\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\_Live Coding Session\Portfolio projects\promotions
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/_Live Coding Session/Portfolio projects/promotions/Views/Home/EuroRush.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFdXJvUnVzaC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/_Live Coding Session/Portfolio projects/promotions/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/_Live Coding Session/Portfolio projects/promotions/Views/Home/MeasteryIsland.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNZWFzdGVyeUlzbGFuZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/_Live Coding Session/Portfolio projects/promotions/Views/Home/SantaTreats.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTYW50YVRyZWF0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/_Live Coding Session/Portfolio projects/promotions/Views/Home/SpinCity.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTcGluQ2l0eS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/_Live Coding Session/Portfolio projects/promotions/Views/Home/SpinShots.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTcGluU2hvdHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/_Live Coding Session/Portfolio projects/promotions/Views/Home/SpinShotsHalloween.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTcGluU2hvdHNIYWxsb3dlZW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/_Live Coding Session/Portfolio projects/promotions/Views/Home/StarQuest.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTdGFyUXVlc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/_Live Coding Session/Portfolio projects/promotions/Views/Home/SummerBall.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTdW1tZXJCYWxsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/_Live Coding Session/Portfolio projects/promotions/Views/Home/Wizards.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxXaXphcmRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/_Live Coding Session/Portfolio projects/promotions/Views/Home/XmasCalendar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxYbWFzQ2FsZW5kYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/_Live Coding Session/Portfolio projects/promotions/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/_Live Coding Session/Portfolio projects/promotions/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/_Live Coding Session/Portfolio projects/promotions/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/_Live Coding Session/Portfolio projects/promotions/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/_Live Coding Session/Portfolio projects/promotions/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-u4ggls5ouw

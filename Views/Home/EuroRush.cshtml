@@ -1,0 +1,771 @@
+@{
+    const string imgUrl = "/img/prizes/eurorush";
+    const string cb = "?cb=1";
+    //string drawUrl = Url.RouteUrl("EuroRushApp_Play_Draw");
+    //DateTime? cbDate = DateTime.Now;
+    //string cb10mins = $"?cb={cbDate.Value.ToString("MM")}{cbDate.Value.ToString("dd")}{cbDate.Value.ToString("HH")}{cbDate.Value.ToString("mm").Substring(0, 1)}";
+    DateTime? nowDate = DateTime.Now;
+    int nowDay = Int32.Parse(nowDate.Value.ToString("dd"));
+    int nowMonth = Int32.Parse(nowDate.Value.ToString("MM"));
+    const string bgColor = "#020a12";
+    const string bgColorRGB = "2, 10, 18";
+
+    int day = 1; //((int)DateTime.Now.DayOfWeek == 0) ? 7 : (int)DateTime.Now.DayOfWeek;
+    string robot = "1";
+    switch (day) {
+        case 1:
+        case 4:
+        case 6:
+            robot = "1";
+            break;
+        case 2:
+        case 5:
+            robot = "2";
+            break;
+        case 3:
+        case 7:
+            robot = "3";
+            break;
+        default:
+            robot = "1";
+            break;
+    }
+}
+
+<style>
+    .play {
+        background-color: @bgColor;
+        height: 800px;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+    }
+    .preloader-img {
+        height: 2px;
+        left:99%;
+        opacity: .05;
+        position:absolute;
+        top:99%;
+        width: 2px;
+        z-index:1;
+    }
+    .preloader-img img {
+        left:0;
+        position:absolute;
+        top:0;
+    }
+    .loadr {
+        background-color: @bgColor;
+        bottom:0px;
+        height:100%;
+        left:0px;
+        opacity: 1;
+        position:absolute;
+        right:0px;
+        top:0px;
+        transition: all .5s;
+        visibility: visible;
+        width:100%;
+        z-index:7;
+    }
+    .loaded .loadr {
+        opacity:0;
+        visibility: hidden;
+    }
+    @@media (min-width:1921px) {
+        .bg-xl {
+            background: url(@(imgUrl)/bg_xl.webp@(cb)) center center no-repeat;
+            height:800px;
+            left:0px;
+            position:absolute;
+            top:0px;
+            width:100%;
+            z-index: 1;
+        }
+    }
+    .bg-lg {
+        background: url(@(imgUrl)/bg_lg.webp@(cb)) center center no-repeat;
+        height:800px;
+        left:0px;
+        position:absolute;
+        top:0;
+        width:100%;
+        z-index:2;
+    }
+    .logo-bg {
+        left:50%;
+        margin-left: -398px;
+        max-width: none;
+        position: absolute;
+        top:0;
+        transform:scale(2);
+        transition:transform .8s;
+        z-index: 8;
+    }
+    .loaded .logo-bg { transform:scale(1) }
+    .betshop {
+        left:50%;
+        margin-left:-105px;
+        position:absolute;
+        top:264px;
+        transition:all .5s;
+        z-index: 9;
+    }
+    .loaded .betshop { top:16px }
+    .logo-placeholder {
+        height: 128px;
+        left:50%;
+        margin-left: -228px;
+        overflow: hidden;
+        position: absolute;
+        top:336px;
+        transition: all .5s ease .2s;
+        width:456px;
+        z-index: 10;
+    }
+    .loaded .logo-placeholder { top:88px }
+    .logo-bw {
+        background: url(@(imgUrl)/logo_bw.webp@(cb)) center center no-repeat;
+        height: 128px;
+        left:0px;
+        opacity: 1;
+        position: absolute;
+        top:0px;
+        transition: all 2s;
+        width: 456px;
+        z-index: 2;
+    }
+    .loaded .logo-bw { opacity:0 }
+    @@keyframes logoAnim {
+        0% { left:-32px; background-position: 32px 0px;}
+        100% { left:336px; background-position: -336px 0px;}
+    }
+    .logo-anim {
+        animation: logoAnim .5s linear alternate infinite;
+        background: url(@(imgUrl)/logo.webp@(cb)) no-repeat;
+        border-radius: 8px;
+        height: 128px;
+        opacity: 1;
+        position: absolute;
+        top:0px;
+        transition: all .3s;
+        width: 152px;
+        z-index: 3;
+    }
+    .loaded .logo-anim { opacity: 0 }
+    .logo {
+        background: url(@(imgUrl)/logo.webp@(cb)) center center no-repeat;
+        height: 128px;
+        left:0px;
+        opacity: 0;
+        position: absolute;
+        top:0px;
+        transition: all 2s;
+        width: 456px;
+        z-index: 1;
+    }
+    .loaded .logo { opacity: 1 }
+
+
+    .chars {
+        height:800px;
+        left:50%;
+        margin-left:-624px;
+        position:absolute;
+        top:0;
+        width:1248px;
+        z-index:11;
+    }
+    .char {
+        background-color: rgba(255,255,255,0);
+        height: 532px;
+        left: 416px;
+        opacity:0;
+        pointer-events: none;
+        position: absolute;
+        top:230px;
+        transition:background .3s, margin .8s ease .2s;
+        width: 416px;
+    }
+    .ready .char {
+        cursor: pointer;
+        pointer-events: all;
+    }
+    .char-l { z-index: 14 }
+    .char-c { z-index: 13 }
+    .char-r { z-index: 12 }
+    .no-touch .char:hover { background-color: rgba(255,255,255,.1) }
+    .touch .char:active { background-color: rgba(255,255,255,.2) }
+    .touch.fetched .char:active { background-color: rgba(255,255,255,0) }
+    .char-abs-inset {
+        bottom:0px;
+        height:100%;
+        left:0px;
+        opacity: 0;
+        position:absolute;
+        right:0px;
+        top:0px;
+        width: 100%;
+    }
+
+@{
+    System.IFormatProvider cultureUS = new System.Globalization.CultureInfo("en-US");
+
+    var bounceHalfTime = 0.3;
+    var bounceDelayL = 0.8;
+    var bounceDelayAfter = 0.9;
+
+    var bounceWholeTime = bounceHalfTime*2;
+    var bounceDelayC = bounceDelayL+bounceDelayAfter;
+    var bounceDelayR = bounceDelayL+(bounceDelayAfter*2);
+    var bounceDelayLAfter = bounceDelayL+bounceHalfTime;
+    var bounceDelayCAfter = bounceDelayL+bounceHalfTime+bounceDelayAfter;
+    var bounceDelayRAfter = bounceDelayL+bounceHalfTime+(bounceDelayAfter*2);
+
+    var ballFrame1Duration = 0.3;
+    var ballFrame2Duration = 0.3;
+    var ballFrame3Duration = 0.25;
+    var ballFrame4Duration = 0.2;
+    var ballFrame5Duration = 0.3;
+    var ballFrame6Duration = 0.3;
+    var ballLFrame1Delay = bounceDelayL+bounceHalfTime;
+    var ballLFrame2Delay = bounceDelayL+bounceHalfTime+(bounceWholeTime/6)*1;
+    var ballLFrame3Delay = bounceDelayL+bounceHalfTime+(bounceWholeTime/6)*2-0.05;
+    var ballLFrame4Delay = bounceDelayL+bounceHalfTime+(bounceWholeTime/6)*3-0.075;
+    var ballLFrame5Delay = bounceDelayL+bounceHalfTime+(bounceWholeTime/6)*4-0.1;
+    var ballLFrame6Delay = bounceDelayL+bounceHalfTime+(bounceWholeTime/6)*5-0.2;
+    var ballCFrame1Delay = bounceDelayL+bounceHalfTime+bounceDelayAfter;
+    var ballCFrame2Delay = bounceDelayL+bounceHalfTime+bounceDelayAfter+(bounceWholeTime/6)*1;
+    var ballCFrame3Delay = bounceDelayL+bounceHalfTime+bounceDelayAfter+(bounceWholeTime/6)*2-0.05;
+    var ballCFrame4Delay = bounceDelayL+bounceHalfTime+bounceDelayAfter+(bounceWholeTime/6)*3-0.075;
+    var ballCFrame5Delay = bounceDelayL+bounceHalfTime+bounceDelayAfter+(bounceWholeTime/6)*4-0.1;
+    var ballCFrame6Delay = bounceDelayL+bounceHalfTime+bounceDelayAfter+(bounceWholeTime/6)*5-0.2;
+    var ballRFrame1Delay = bounceDelayL+bounceHalfTime+(bounceDelayAfter*2);
+    var ballRFrame2Delay = bounceDelayL+bounceHalfTime+(bounceDelayAfter*2)+(bounceWholeTime/6)*1;
+    var ballRFrame3Delay = bounceDelayL+bounceHalfTime+(bounceDelayAfter*2)+(bounceWholeTime/6)*2-0.05;
+    var ballRFrame4Delay = bounceDelayL+bounceHalfTime+(bounceDelayAfter*2)+(bounceWholeTime/6)*3-0.075;
+    var ballRFrame5Delay = bounceDelayL+bounceHalfTime+(bounceDelayAfter*2)+(bounceWholeTime/6)*4-0.1;
+    var ballRFrame6Delay = bounceDelayL+bounceHalfTime+(bounceDelayAfter*2)+(bounceWholeTime/6)*5-0.2;
+
+
+}
+    .char-abs-inset.max {
+        left:-72px;
+        width:560px;
+    }
+    .char-object-c.char-abs-inset {
+        opacity:1;
+        transition:all .5s;
+        z-index: 6;
+    }
+    @@keyframes charBall {
+        0% { filter:blur(10px);opacity:0 }
+        20% { filter:blur(5px);opacity:1 }
+        33% { filter:blur(0px);opacity:1 }
+        66% { filter:blur(0px);opacity:1 }
+        80% { filter:blur(0px);opacity:1 }
+        100% { filter:blur(5px);opacity:0 }
+    }
+
+    @@keyframes charBallLast {
+        0% { filter:blur(5px);opacity:0; }
+        100% { filter:blur(0px);opacity:1; }
+    }
+    .char-ball {
+        background: url(@(imgUrl)/char_ball.png) center center no-repeat;
+        opacity:1;
+        z-index:1;
+    }
+    .loaded .char-l .char-ball {
+        animation: charBall @(ballFrame1Duration.ToString().Replace(",", "."))s linear @(ballLFrame1Delay.ToString().Replace(",", "."))s forwards;
+    }
+    .loaded .char-c .char-ball {
+        animation: charBall @(ballFrame1Duration.ToString().Replace(",", "."))s linear @(ballCFrame1Delay.ToString().Replace(",", "."))s forwards;
+    }
+    .loaded .char-r .char-ball {
+        animation: charBall @(ballFrame1Duration.ToString().Replace(",", "."))s linear @(ballRFrame1Delay.ToString().Replace(",", "."))s forwards;
+    }
+    .char-ball-open {
+        background: url(@(imgUrl)/char_ball_opens.png@(cb)) center center no-repeat;
+        z-index:2;
+    }
+    .loaded .char-l .char-ball-open {
+        animation: charBall @(ballFrame2Duration.ToString().Replace(",", "."))s linear @(ballLFrame2Delay.ToString().Replace(",", "."))s forwards;
+    }
+    .loaded .char-c .char-ball-open {
+        animation: charBall @(ballFrame2Duration.ToString().Replace(",", "."))s linear @(ballCFrame2Delay.ToString().Replace(",", "."))s forwards;
+    }
+    .loaded .char-r .char-ball-open {
+        animation: charBall @(ballFrame2Duration.ToString().Replace(",", "."))s linear @(ballRFrame2Delay.ToString().Replace(",", "."))s forwards;
+    }
+    .char-ball-explode {
+        background: url(@(imgUrl)/char_ball_explodes.png@(cb)) center center no-repeat;
+        z-index:3;
+    }
+    .loaded .char-l .char-ball-explode {
+        animation: charBall @(ballFrame3Duration.ToString().Replace(",", "."))s linear @(ballLFrame3Delay.ToString().Replace(",", "."))s forwards;
+    }
+    .loaded .char-c .char-ball-explode {
+        animation: charBall @(ballFrame3Duration.ToString().Replace(",", "."))s linear @(ballCFrame3Delay.ToString().Replace(",", "."))s forwards;
+    }
+    .loaded .char-r .char-ball-explode {
+        animation: charBall @(ballFrame3Duration.ToString().Replace(",", "."))s linear @(ballRFrame3Delay.ToString().Replace(",", "."))s forwards;
+    }
+    .char-ball-close {
+        background: url(@(imgUrl)/char_ball_closes.png@(cb)) center center no-repeat;
+        z-index:4;
+    }
+    .loaded .char-l .char-ball-close {
+        animation: charBall @(ballFrame4Duration.ToString().Replace(",", "."))s linear @(ballLFrame4Delay.ToString().Replace(",", "."))s forwards;
+    }
+    .loaded .char-c .char-ball-close {
+        animation: charBall @(ballFrame4Duration.ToString().Replace(",", "."))s linear @(ballCFrame4Delay.ToString().Replace(",", "."))s forwards;
+    }
+    .loaded .char-r .char-ball-close {
+        animation: charBall @(ballFrame4Duration.ToString().Replace(",", "."))s linear @(ballRFrame4Delay.ToString().Replace(",", "."))s forwards;
+    }
+    .char-l .char-balled {
+        background: url(@(imgUrl)/char_l@(robot)_ball.png@(cb)) center center no-repeat;
+        z-index:5;
+    }
+    .char-c .char-balled {
+        background: url(@(imgUrl)/char_c@(robot)_ball.png@(cb)) center center no-repeat;
+        z-index:5;
+    }
+    .char-r .char-balled {
+        background: url(@(imgUrl)/char_r@(robot)_ball.png@(cb)) center center no-repeat;
+        z-index:5;
+    }
+    .loaded .char-l .char-balled {
+        animation: charBall @(ballFrame5Duration.ToString().Replace(",", "."))s linear @(ballLFrame5Delay.ToString().Replace(",", "."))s forwards;
+    }
+    .loaded .char-c .char-balled {
+        animation: charBall @(ballFrame5Duration.ToString().Replace(",", "."))s linear @(ballCFrame5Delay.ToString().Replace(",", "."))s forwards;
+    }
+    .loaded .char-r .char-balled {
+        animation: charBall @(ballFrame5Duration.ToString().Replace(",", "."))s linear @(ballRFrame5Delay.ToString().Replace(",", "."))s forwards;
+    }
+    .char-l .char-object {
+        background: url(@(imgUrl)/char_l@(robot).png@(cb)) center center no-repeat;
+        z-index:6;
+    }
+    .char-c .char-object {
+        background: url(@(imgUrl)/char_c@(robot).png@(cb)) center center no-repeat;
+        z-index:6;
+    }
+    .char-r .char-object {
+        background: url(@(imgUrl)/char_r@(robot).png@(cb)) center center no-repeat;
+        z-index:6;
+    }
+    .loaded .char-l .char-object {
+        animation: charBallLast @(ballFrame6Duration.ToString().Replace(",", "."))s linear @(ballLFrame6Delay.ToString().Replace(",", "."))s forwards;
+    }
+    .loaded .char-c .char-object {
+        animation: charBallLast @(ballFrame6Duration.ToString().Replace(",", "."))s linear @(ballCFrame6Delay.ToString().Replace(",", "."))s forwards;
+    }
+    .loaded .char-r .char-object {
+        animation: charBallLast @(ballFrame6Duration.ToString().Replace(",", "."))s linear @(ballRFrame6Delay.ToString().Replace(",", "."))s forwards;
+    }
+    .loaded .char-l {
+        --pos-X-start:416px;
+        --pos-X-end:0px;
+        animation:bounceYdown @(bounceHalfTime.ToString().Replace(",", "."))s ease-in forwards @(bounceDelayL.ToString().Replace(",", "."))s, bounceYup @(bounceHalfTime.ToString().Replace(",", "."))s ease-out forwards @(bounceDelayLAfter.ToString().Replace(",", "."))s, bounceX @(bounceWholeTime.ToString().Replace(",", "."))s linear forwards @(bounceDelayL.ToString().Replace(",", "."))s;
+    }
+    .loaded .char-c {
+        --pos-X-start:446px;
+        --pos-X-end:416px;
+        animation:bounceYdown @(bounceHalfTime.ToString().Replace(",", "."))s ease-in forwards @(bounceDelayC.ToString().Replace(",", "."))s, bounceYup @(bounceHalfTime.ToString().Replace(",", "."))s ease-out forwards @(bounceDelayCAfter.ToString().Replace(",", "."))s, bounceX @(bounceWholeTime.ToString().Replace(",", "."))s linear forwards @(bounceDelayC.ToString().Replace(",", "."))s;
+    }
+    .loaded .char-r {
+        --pos-X-start:516px;
+        --pos-X-end:832px;
+        animation:bounceYdown @(bounceHalfTime.ToString().Replace(",", "."))s ease-in forwards @(bounceDelayR.ToString().Replace(",", "."))s, bounceYup @(bounceHalfTime.ToString().Replace(",", "."))s ease-out forwards @(bounceDelayRAfter.ToString().Replace(",", "."))s, bounceX @(bounceWholeTime.ToString().Replace(",", "."))s linear forwards @(bounceDelayR.ToString().Replace(",", "."))s;
+        /*animation:bounceYdown .25s ease-in forwards .5s, bounceYup .25s ease-out forwards .75s, bounceX .5s linear forwards .5s;*/
+    }
+
+    @@keyframes bounceYdown {
+        0% {transform:translateY(-100px) scale(.5, .5);opacity:0;}
+        10% {transform:translateY(-100px) scale(.5, .5);opacity:1;}
+        100% {transform:translateY(100px) scale(.9, .75);opacity:1;}
+    }
+    @@keyframes bounceYup {
+        0% {transform:translateY(100px) scale(.9, .75);opacity:1;}
+        50% {transform:translateY(25px) scale(1, 1);opacity:1;}
+        100% {transform:translateY(0px) scale(1, 1);opacity:1;}
+    }
+    @@keyframes bounceX {
+        0% {left:var(--pos-X-start)}
+        100% {left:var(--pos-X-end)}
+    }
+    
+    .char-shadows {
+        bottom:-167px;
+        height:167px;
+        left:50%;
+        margin-left: -624px;
+        position:absolute;
+        transition:bottom 1.5s ease 2.5s;
+        width:1248px;
+        z-index: 10;
+    }
+    .loaded .char-shadows {
+        bottom:-24px;
+    }
+    .char-shadow {
+        position:absolute;
+        top:0;
+    }
+    .char-shadow-l { left:0px }
+    .char-shadow-c { left:416px }
+    .char-shadow-r { right:0px }
+
+    .loaded .char-l .char-object-c { animation: jump 6s infinite 3s }
+    .loaded .char-c .char-object-c { animation: jump 6s infinite 5s }
+    .loaded .char-r .char-object-c { animation: jump 6s infinite 7s }
+
+    .loaded .char-shadow-l { animation: jumpchar-shadow 6s infinite 3s }
+    .loaded .char-shadow-c { animation: jumpchar-shadow 6s infinite 5s }
+    .loaded .char-shadow-r { animation: jumpchar-shadow 6s infinite 7s }
+
+    @@keyframes jump {
+        0%, 10%, 100% { transform: translateY(0px) scale(1, 1) }
+        3% { transform: translateY(0px) scale(1.04, .96) }
+        4% { transform: translateY(-12px) scale(1, .96) }
+        6% { transform: translateY(-12px) scale(1, 1) }
+    }
+    @@keyframes jumpchar-shadow {
+        0%, 10%, 100% { transform: translateY(0px) }
+        4% { transform: translateY(16px) }
+    }
+
+    .active .option {
+        pointer-events: none;
+    }
+    .active .option:not(.selected) .char-object-c.char-abs-inset { opacity:0 }
+    .active.no-touch .char:hover { background-color:transparent }
+    .active.loaded .char .char-object-c { animation:none !important }
+    .active .char-shadows { display:none }
+    .active .loadr { opacity:.7;visibility:visible; }
+    .active .char-l.selected { margin-left: 180px }
+    .active .char-c.selected { margin-left:-240px }
+    .active .char-r.selected { margin-left:-637px }
+
+    .win-scr-c {
+        left:50%;
+        margin-left:-624px;
+        margin-top:30px;
+        opacity:0;
+        position:absolute;
+        height:800px;
+        transition: all 1s;
+        visibility: hidden;
+        width:1248px;
+        z-index: 8;
+    }
+    .fetched .win-scr-c {
+        margin-top:0px;
+        opacity: 1;
+        visibility: visible;
+    }
+    .win-scr {
+        height:560px;
+        left:490px;
+        padding:20px;
+        position:absolute;
+        text-align:center;
+        top:240px;
+        width:600px;
+    }
+
+    @@keyframes flash-title {
+        0% { color:#0088ff }
+        100% { color:#40a6ff }
+    }
+    .win-title {
+        animation: flash-title .25s linear alternate-reverse infinite;
+        color:#0088ff;
+        font-size:50px;
+        font-weight:bold;
+        text-shadow: 2px 2px 3px #000;
+    }
+    .lost .win-title {
+        animation:none;
+        color:#888;
+    }
+    .win-text {
+        align-items: center;
+        color:#fff;
+        display: flex;
+        font-size:28px;
+        font-weight:bold;
+        justify-content: center;
+        padding-bottom:20px;
+        padding-top:10px;
+        min-height:110px;
+        line-height: 1.2;
+        width: 100%;
+    }
+    .win-img { margin-bottom:30px }
+    .win-img img {
+        display:inline;
+        max-height:200px;
+    }
+    .win-button {
+        background-color: #ffdd00;
+        border-bottom: 4px solid #ebcc00;
+        border-radius: 99px;
+        color: #002248;
+        display: inline-block;
+        font-size: 30px;
+        font-weight: bold;
+        margin: 0 auto ;
+        padding: 10px 40px;
+    }
+    .win-scr.login .win-title,
+    .win-scr.expired .win-title,
+    .win-scr.login .win-img,
+    .win-scr.expired .win-img,
+    .win-scr.lost .win-img { display:none }
+    .win-scr.login .win-text,
+    .win-scr.expired .win-text { padding: 80px 40px 20px }
+
+    .win-link {
+        bottom:0;
+        cursor:pointer;
+        display:none;
+        height:100%;
+        left:0;       
+        position:absolute;
+        right:0;
+        top:0;
+        width:100%;
+        z-index:99;
+    }
+    .active .win-link { display:block }
+
+    @@media screen and (min-width:801px) and (max-width:1366px) {
+        .play {
+            height: 600px;
+        }
+
+        .play .screen-sm {
+            position: absolute;
+            height: 133.333%;
+            width: 133.333%;
+            transform: scale(.75) translate(-16.666%, -16.666%);
+        }
+    }
+    @@media screen and (max-width:800px) {
+        .play {
+            height: 400px;
+        }
+
+        .play .screen-sm {
+            position: absolute;
+            height: 200%;
+            width: 200%;
+            transform: scale(.5) translate(-50%, -50%);
+        }
+    }
+    @@media screen and (max-width:799px) {
+        .logo-placeholder {
+            transform: translateY(-10px) scale(.8);
+        }
+        .chars {
+            transform: scale(.62) translateY(30px);
+        }
+
+        .char-shadows {
+            transform: scale(.62) translateY(-150px);
+        }
+
+        .win-scr-c {
+            margin-left:-360px;
+            width:720px;
+        }
+        .win-scr {
+            left:auto;
+            right:0px;
+            width: 500px;
+        }
+
+        .active .char-l.selected {
+            margin-left: 70px;
+        }
+        .active .char-c.selected {
+            margin-left: -330px;
+        }
+        .active .char-r.selected {
+            margin-left: -740px;
+        }
+    }
+    @@media screen and (max-width:329px) {
+        .win-scr-c { transform:scale(0.86) }
+        .active .char-l.selected { margin-left: 120px }
+        .active .char-c.selected { margin-left: -270px }
+        .active .char-r.selected { margin-left: -690px }
+    }
+</style>
+
+<div class="play" id="play">
+    <div class="screen-sm">
+        <div class="preloader-img">
+            <img src="@(imgUrl)/char_ball.png@(cb)" />
+            <img src="@(imgUrl)/char_ball_opens.png@(cb)" />
+            <img src="@(imgUrl)/char_ball_explodes.png@(cb)" />
+            <img src="@(imgUrl)/char_ball_closes.png@(cb)" />
+            <img src="@(imgUrl)/char_l@(robot)_ball.png@(cb)" />
+            <img src="@(imgUrl)/char_l@(robot).png@(cb)" />
+            <img src="@(imgUrl)/char_c@(robot)_ball.png@(cb)" />
+            <img src="@(imgUrl)/char_c@(robot).png@(cb)" />
+            <img src="@(imgUrl)/char_r@(robot)_ball.png@(cb)" />
+            <img src="@(imgUrl)/char_r@(robot).png@(cb)" />
+        </div>
+        <div class="bg-xl">
+            <div class="bg-lg"></div>
+        </div>
+        <div class="loadr"></div>
+        <img class="logo-bg" src="@(imgUrl)/logo_bg.webp@(cb)" />
+        <img class="betshop" src="@(imgUrl)/betshop.webp@(cb)" />
+        <div class="logo-placeholder">
+            <div class="logo-bw"></div>
+            <div class="logo"></div>
+            <div class="logo-anim"></div>
+        </div>
+        <div class="chars">
+            <a class="char char-l option">
+                <div class="char-ball char-abs-inset"></div>
+                <div class="char-ball-open char-abs-inset max"></div>
+                <div class="char-ball-explode char-abs-inset max"></div>
+                <div class="char-ball-close char-abs-inset max"></div>
+                <div class="char-balled char-abs-inset"></div>
+                <div class="char-object-c char-abs-inset">
+                    <div class="char-object char-abs-inset"></div>
+                </div>
+            </a>
+            <a class="char char-c option">
+                <div class="char-ball char-abs-inset"></div>
+                <div class="char-ball-open char-abs-inset max"></div>
+                <div class="char-ball-explode char-abs-inset max"></div>
+                <div class="char-ball-close char-abs-inset max"></div>
+                <div class="char-balled char-abs-inset"></div>
+                <div class="char-object-c char-abs-inset">
+                    <div class="char-object char-abs-inset"></div>
+                </div>
+            </a>
+            <a class="char char-r option">
+                <div class="char-ball char-abs-inset"></div>
+                <div class="char-ball-open char-abs-inset max"></div>
+                <div class="char-ball-explode char-abs-inset max"></div>
+                <div class="char-ball-close char-abs-inset max"></div>
+                <div class="char-balled char-abs-inset"></div>
+                <div class="char-object-c char-abs-inset">
+                    <div class="char-object char-abs-inset"></div>
+                </div>
+            </a>
+        </div>
+        <div class="char-shadows">
+            <img class="char-shadow char-shadow-l" src="@(imgUrl)/shadowl.webp@(cb)" />
+            <img class="char-shadow char-shadow-c" src="@(imgUrl)/shadowc.webp@(cb)" />
+            <img class="char-shadow char-shadow-r" src="@(imgUrl)/shadowr.webp@(cb)" />
+        </div>
+        <div class="win-scr-c">
+            <div class="win-scr" id="winContent">
+                <div class="win-title" id="gameResultTitle"></div>
+                <div class="win-text" id="gameResultMessage"></div>
+                <div class="win-img">
+                    <img id="gameImg" src="" />
+                </div>
+                <div class="win-button" id="buttonFace"></div>
+            </div>
+        </div>
+    </div>
+    <a class="win-link" href="" target="_top" id="winLink"></a>
+</div>
+
+<script>
+    @* unfortunately hide Bonus banner only in this Promo *@
+    if (parent.document.getElementById('headlessui-portal-root')) parent.document.getElementById('headlessui-portal-root').style.display = 'none';
+
+    // Query the elements only once and use throughout
+    const play = document.getElementById('play');
+    const gameResultTitle = document.getElementById('gameResultTitle');
+    const gameResultMessage = document.getElementById('gameResultMessage');
+    const buttonFace = document.getElementById('buttonFace');
+    const winContent = document.getElementById('winContent');
+    const winLink = document.getElementById('winLink');
+    const gameImg = document.getElementById('gameImg');
+
+    
+
+    window.addEventListener('load', () => {
+        setTimeout(function () {
+            play.classList.add('loaded');
+        }, 1200);
+        setTimeout(function(){
+            play.classList.add('ontouchstart' in document.documentElement ? 'touch' : 'no-touch');
+            play.classList.add('ready');
+        }, 3000);
+
+    });
+
+    /* Actual function deactivated */
+    /* const optionClickHandler = async (option) => {
+        play.classList.add('active');
+        option.classList.add('selected');
+        
+        try {
+            const response = await fetch('@@drawUrl', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+
+            const answer = await response.json();
+
+            gameResultTitle.innerHTML = answer.title;
+            gameResultMessage.innerHTML = answer.text;
+            buttonFace.innerText = answer.button;
+            winContent.classList.add(answer.state);
+            winLink.href = answer.link;
+            gameImg.src = answer.game + '?cb=' + Math.floor(Math.random() * 101);
+            setTimeout(function () {
+                play.classList.add('fetched');
+            }, 50);
+        } catch (e) {
+            console.log(`There was a problem with the fetch operation: ${e.message}`);
+            option.classList.remove('active');
+            play.classList.remove('fetch');
+        }
+
+    }*/
+
+    /* Demo function */
+    
+    const optionClickHandler = async (option) => {
+        play.classList.add('active');
+        option.classList.add('selected');
+        setTimeout(function(){
+            gameResultTitle.innerHTML = 'Congratulations!';
+            gameResultMessage.innerHTML = 'You just won 10 free spins at';
+            buttonFace.innerText = 'RISE OF OLYMPUS';
+            winContent.classList.add('win');
+            winLink.href = 'https://www.google.com';
+            gameImg.src = '/img/prizes/eurorush/win/win_riseofolympus.png' + '?cb=' + Math.floor(Math.random() * 101);
+
+            play.classList.add('fetched');
+        }, 1500);
+    }
+
+    // add event listeners
+    document.querySelectorAll('.option').forEach((option) => {
+        option.addEventListener('click', function () {
+            optionClickHandler(option);
+        });
+    });
+</script>

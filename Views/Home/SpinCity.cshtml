@@ -1,0 +1,906 @@
+@{
+    const string imgUrl = "/img/prizes/spincity";
+    const string cb = "?cb=1";
+    //string drawUrl = Url.RouteUrl("SpinCityApp_Play_Draw");
+}
+<style id="compiled-css" type="text/css">
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .play {
+        background-color: #151921;
+        height: 800px;
+        text-align: center;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .logo-loader {
+        animation: flash 1s linear infinite;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -40px auto auto -140px;
+        max-width: none;
+        transition: opacity .3s;
+        z-index: 7;
+    }
+
+    .logo-loader.l-2 {
+        animation: spin 1s linear infinite;
+        margin: -150px auto auto -150px;
+        opacity: .3;
+        transition: opacity .3s;
+        z-index: 6;
+    }
+
+    .loaded .logo-loader {
+        animation: none;
+        opacity: 0;
+    }
+
+    @@keyframes flash {
+        0% {
+            opacity: .5
+        }
+
+        50% {
+            opacity: 1
+        }
+
+        100% {
+            opacity: .5
+        }
+    }
+
+    @@keyframes spin {
+        0% {
+            transform: rotate(0deg)
+        }
+
+        100% {
+            transform: rotate(360deg)
+        }
+    }
+
+    .shot {
+        background: url(@(imgUrl)/shot.jpg@(cb)) center center no-repeat;
+        border-radius: 600px;
+        height: 600px;
+        left: 50%;
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        top: 50%;
+        filter: blur(10px);
+        transition: opacity .2s ease .1s, filter .2s ease .2s, background-position .1s ease 2.5s;
+        transform: translate(-50%, -50%);
+        width: 600px;
+        z-index: 5;
+    }
+
+    .loaded .shot {
+        background-position: 0 -620px;
+        filter: blur(0px);
+        opacity: 1;
+    }
+
+    .drip {
+        position: absolute;
+        width: 600px;
+        left: 0;
+        height: 200px;
+        top: -200px;
+        opacity: 1;
+        transition: top 1.7s linear .8s, height 1.7s linear .8s, opacity 2s ease 2.5s;
+    }
+
+    .loaded .drip {
+        opacity: 0;
+        top: 0;
+        height: 900px;
+    }
+
+    .logo {
+        left: 50%;
+        margin-left: -260px;
+        opacity: 0;
+        position: absolute;
+        top: 10px;
+        transform: scale(.75);
+        transition: all .3s ease 8s;
+        z-index: 3;
+    }
+
+    .loaded .logo {
+        opacity: 1;
+        top: -17px;
+        transform: scale(1);
+    }
+
+    .shutter {
+        position: absolute;
+        z-index: 2;
+        width: 600px;
+        height: 600px;
+        border-radius: 999px;
+        opacity: 0;
+        overflow: hidden;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        --shutter-time: .7s;
+        --shutter-delay: 4.5s;
+        transition: opacity 0.2s ease-in 2.5s, width var(--shutter-time) ease-in var(--shutter-delay), height var(--shutter-time) ease-in var(--shutter-delay), border-radius .5s ease calc(var(--shutter-delay) + var(--shutter-time));
+    }
+
+    .loaded .shutter {
+        opacity: 1;
+        width: 1920px;
+        height: 1920px;
+        border-radius: 0;
+    }
+
+    .bg,
+    .bg-red {
+        display: block;
+        height: auto;
+        left: 50%;
+        max-width: none;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -38%);
+        width: 1920px;
+        z-index: 1;
+    }
+
+    .bg {
+        transition: transform 1s ease 5s;
+        z-index: 2;
+    }
+
+    .bg-red {
+        filter: contrast(150%) brightness(200%) hue-rotate(150deg);
+        opacity: 1;
+        transition: opacity 3s linear 2.7s, transform 1s ease 5s;
+        z-index: 3;
+    }
+
+    .loaded .bg-red {
+        opacity: 0;
+    }
+
+    .loaded .bg,
+    .loaded .bg-red {
+        transform: translate(-50%, -62%)
+    }
+
+    .chars {
+        bottom: 0;
+        display: flex;
+        justify-content: space-between;
+        height: 550px;
+        left: 50%;
+        max-width: 860px;
+        position: absolute;
+        top: 250px;
+        transform: translateX(-50%);
+        width: 100%;
+        z-index: 8;
+    }
+
+    .char {
+        cursor: pointer;
+        display: block;
+        height: 550px;
+        position: relative;
+        transition: filter .3s;
+        width: 200px;
+    }
+
+    .char:not(.selected):hover {
+        filter: brightness(150%) contrast(70%) sepia(50%) hue-rotate(160deg)
+    }
+
+    .invasion {
+        height: 800px;
+        left: 50%;
+        opacity: .01;
+        position: absolute;
+        bottom: 0;
+        transform: translateX(-50%);
+        width: 10px;
+        z-index: 1;
+    }
+
+    .loaded .invasion.i-1 {
+        animation: invade 3s ease 5s forwards;
+    }
+
+    .loaded .invasion.i-2 {
+        animation: invade 2.9s ease 5.2s forwards;
+    }
+
+    .loaded .invasion.i-3 {
+        animation: invade 2.8s ease 5.4s forwards;
+    }
+
+    .char .full {
+        bottom: 0;
+        filter: brightness(50%) contrast(80%) sepia(100%) hue-rotate(180deg) invert(1) saturate(200%);
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        transition: opacity .3s;
+        z-index: 2;
+    }
+
+    .loaded .char .full {
+        animation: flash-in 2s ease 6s forwards;
+    }
+
+    @@keyframes invade {
+        0% {
+            width: 10px;
+            opacity: .01;
+        }
+
+        20% {
+            width: 10px;
+            opacity: .25;
+        }
+
+        40% {
+            width: 20px;
+            opacity: .5;
+        }
+
+        60% {
+            opacity: .6;
+        }
+
+        80% {
+            width: 200px;
+            opacity: .75;
+        }
+
+        84% {
+            width: 200px;
+            opacity: 1;
+        }
+
+        88% {
+            width: 200px;
+            opacity: .2;
+        }
+
+        91% {
+            width: 200px;
+            opacity: 1;
+        }
+
+        94% {
+            width: 200px;
+            opacity: .2;
+        }
+
+        97% {
+            width: 200px;
+            opacity: 1;
+        }
+
+        100% {
+            width: 200px;
+            opacity: 0;
+        }
+    }
+
+    @@keyframes flash-in {
+        0% {
+            opacity: 0;
+            filter: blur(20px);
+            bottom: -100px
+        }
+
+        75% {
+            opacity: .3;
+            filter: blur(0px);
+            bottom: 0
+        }
+
+        84% {
+            opacity: .6;
+            filter: blur(0px) brightness(50%) contrast(80%) sepia(100%) hue-rotate(180deg) invert(1) saturate(200%);
+        }
+
+        88% {
+            opacity: .6;
+            filter: blur(0px);
+        }
+
+        91% {
+            opacity: .8;
+            filter: blur(0px) brightness(50%) contrast(80%) sepia(100%) hue-rotate(180deg) invert(1) saturate(200%);
+        }
+
+        94% {
+            opacity: .8;
+            filter: blur(0px);
+        }
+
+        97% {
+            opacity: 1;
+            filter: blur(0px) brightness(50%) contrast(80%) sepia(100%) hue-rotate(180deg) invert(1) saturate(200%);
+        }
+
+        100% {
+            opacity: 1;
+            filter: blur(0px);
+        }
+    }
+
+    .char .dots {
+        background-repeat: no-repeat;
+        bottom: 0;
+        height: 555px;
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        width: 200px;
+        z-index: 4;
+    }
+
+    .char.c-1 .dots {
+        background-image: url(@(imgUrl)/char1dissolve.png@(cb))
+    }
+
+    .char.c-2 .dots {
+        background-image: url(@(imgUrl)/char2dissolve.png@(cb))
+    }
+
+    .char.c-3 .dots {
+        background-image: url(@(imgUrl)/char3dissolve.png@(cb))
+    }
+
+    .char .d-1 {
+        background-position: 0px 0px;
+    }
+
+    .char .d-2 {
+        background-position: -200px 0px;
+    }
+
+    .char .d-3 {
+        background-position: -400px 0px;
+    }
+
+    .skip-c {
+        bottom: 0;
+        height: 0;
+        left: 50%;
+        max-width: 1280px;
+        overflow: hidden;
+        position: absolute;
+        transform: translateX(-50%);
+        width: 100%;
+        z-index: 9;
+    }
+
+    .loaded .skip-c {
+        overflow: visible
+    }
+
+    .skip-btn {
+        background: transparent;
+        border: none;
+        border-radius: 6px;
+        bottom: 20px;
+        color: #fff;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        font-size: 24px;
+        opacity: .4;
+        overflow: hidden;
+        padding: 6px 12px;
+        position: absolute;
+        right: 20px;
+        transition: all .2s ease 7s;
+        z-index: 9;
+    }
+
+    .skip-btn span {
+        font-size: 14px;
+        margin: 3px 8px 0
+    }
+
+    .loaded .skip-btn {
+        opacity: 0;
+        visibility: hidden
+    }
+
+    .skip-btn:before {
+        background-color: rgba(255, 255, 255, .3);
+        content: " ";
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        transition: width 7s linear;
+        left: 0;
+        width: 0;
+    }
+
+    .loaded .skip-btn:before {
+        width: 100%;
+    }
+
+    .play.skip .logo-loader,
+    .play.skip .shot,
+    .play.skip .shot .drip,
+    .play.skip .shutter,
+    .play.skip .shutter .bg,
+    .play.skip .shutter .bg-red,
+    .play.skip .logo,
+    .play.skip .invasion,
+    .play.skip .char .full {
+        animation: none;
+        transition: none;
+    }
+
+    .play.skip .char .full {
+        filter: none;
+        opacity: 1
+    }
+
+    .play.skip .skip-btn {
+        display: none
+    }
+
+    .play.loaded.fetching .char.selected .invasion {
+        animation: invade 2s ease .2s reverse forwards;
+    }
+
+    .play.loaded.fetching .char.selected .full {
+        animation: flash-out 1.5s ease .2s forwards;
+    }
+
+    .play.fetching .shutter,
+    .play.fetching .shutter .bg {
+        transition: all 1.5s
+    }
+
+    .fetching .char {
+        pointer-events: none
+    }
+
+    .play.fetching .chars {
+        transition: opacity 1.5s ease .5s
+    }
+
+    .play.fetching .char.selected {
+        opacity: 1;
+        animation: waiting .4s infinite
+    }
+
+    .play.fetching .char .full {
+        animation: none;
+        transition: opacity .7s
+    }
+
+    .play.fetching .char:not(.selected) .full {
+        opacity: 0
+    }
+
+    .play.fetching .char:not(.selected) .dots.d-1 {
+        animation: fade-in-out 1.5s linear 0s forwards
+    }
+
+    .play.fetching .char:not(.selected) .dots.d-2 {
+        animation: fade-in-out 1.5s linear .5s forwards
+    }
+
+    .play.fetching .char:not(.selected) .dots.d-3 {
+        animation: fade-in-out 1.5s linear 1s forwards
+    }
+
+    .play.fetching.fetched .chars {
+        opacity: .2
+    }
+
+    .play.fetching.fetched .char.selected {
+        animation: none
+    }
+
+    .play.fetching.fetched .shutter {
+        border-radius: 999px;
+        height: 600px;
+        width: 600px;
+    }
+
+    .play.fetching.fetched .shutter .bg {
+        opacity: .3
+    }
+
+    @@keyframes waiting {
+        0% {
+            opacity: 1
+        }
+
+        50% {
+            opacity: .75
+        }
+
+        100% {
+            opacity: 1
+        }
+    }
+
+    @@keyframes flash-out {
+        0% {
+            opacity: 0;
+        }
+
+        4% {
+            opacity: 1;
+            filter: brightness(50%) contrast(80%) sepia(100%) hue-rotate(180deg) invert(1) saturate(200%);
+        }
+
+        8% {
+            opacity: 0;
+            filter: none;
+        }
+
+        12% {
+            opacity: 1;
+            filter: brightness(50%) contrast(80%) sepia(100%) hue-rotate(180deg) invert(1) saturate(200%);
+        }
+
+        16% {
+            opacity: 0;
+            filter: none;
+        }
+
+        20% {
+            opacity: 1;
+            filter: brightness(50%) contrast(80%) sepia(100%) hue-rotate(180deg) invert(1) saturate(200%);
+        }
+
+        40% {
+            opacity: 1;
+            filter: none;
+        }
+
+        76% {
+            opacity: 1;
+            filter: brightness(50%) contrast(80%) sepia(100%) hue-rotate(180deg) invert(1) saturate(200%);
+        }
+
+        80% {
+            opacity: 1;
+            filter: none;
+        }
+
+        84% {
+            opacity: 1;
+            filter: brightness(50%) contrast(80%) sepia(100%) hue-rotate(180deg) invert(1) saturate(200%);
+        }
+
+        88% {
+            opacity: 1;
+            filter: none;
+        }
+
+        92% {
+            opacity: 1;
+            filter: brightness(50%) contrast(80%) sepia(100%) hue-rotate(180deg) invert(1) saturate(200%);
+        }
+
+        96% {
+            opacity: 1;
+            filter: none;
+        }
+
+        100% {
+            opacity: 1;
+            filter: brightness(50%) contrast(80%) sepia(100%) hue-rotate(180deg) invert(1) saturate(200%);
+        }
+    }
+
+    @@keyframes fade-in-out {
+        0% {
+            opacity: 0
+        }
+
+        50% {
+            opacity: 1;
+            filter: blur(0px)
+        }
+
+        100% {
+            opacity: 0;
+            filter: blur(20px)
+        }
+    }
+
+    .win-screen {
+        bottom: 0;
+        height: 100%;
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        top: 0;
+        transition: .5s ease 1.5s;
+        visibility: hidden;
+        width: 100%;
+        z-index: 0;
+    }
+
+    .win-screen .in {
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        width: 100%;
+    }
+
+    .fetching .win-screen {
+        z-index: 9
+    }
+
+    .fetched .win-screen {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .win-screen .title {
+        color: #93d1e2;
+        font-size: 60px;
+        font-weight: bold;
+        margin-top: 140px;
+    }
+
+    .win-screen.lost .title {
+        color: #999;
+        margin-top: 200px;
+    }
+
+    .win-screen.login .title,
+    .win-screen.expired .title {
+        display: none
+    }
+
+    .win-screen .text {
+        color: #fff;
+        font-size: 48px;
+        line-height: 1.25;
+        margin: 0 auto 20px;
+        max-width: 860px;
+    }
+
+    .win-screen.login .text {
+        margin-bottom: 160px
+    }
+
+    .win-screen.lost .text {
+        margin-bottom: 200px
+    }
+
+    .win-screen.expired .text {
+        margin-bottom: 180px
+    }
+
+    .win-img {
+        left: -600px;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        transition: all .5s ease 1.5s;
+        z-index: 8;
+    }
+
+    .fetched .win-img {
+        left: 0;
+        opacity: 1;
+    }
+
+    .win-img.login,
+    .win-img.expired,
+    .win-img.lost {
+        display: none !important
+    }
+
+    .win-screen .button {
+        background-color: #ffdd00;
+        border-bottom: 4px solid #ebcc00;
+        border-radius: 160px;
+        color: #002248;
+        display: inline-block;
+        font-size: 48px;
+        font-weight: bold;
+        margin: 0 auto 40px;
+        padding: 18px 80px 18px;
+        /*opacity: 0;
+    transition: all .3s ease .7s;
+    transform: translateY(-50px) scale(.5);*/
+    }
+
+    .win-screen .link {
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 9;
+    }
+
+    @@media screen and (max-width:960px) {
+        .chars {
+            max-width: 740px
+        }
+    }
+
+    @@media screen and (min-width:769px) and (max-height:880px) {
+        .play {
+            height: 600px;
+        }
+
+        .play .screen-sm {
+            position: absolute;
+            height: 133.333%;
+            width: 133.333%;
+            transform: scale(.75) translate(-16.666%, -16.666%);
+        }
+    }
+
+    @@media screen and (max-width:768px) {
+        .play {
+            height: 400px;
+        }
+
+        .play .screen-sm {
+            position: absolute;
+            height: 200%;
+            width: 200%;
+            transform: scale(.5) translate(-50%, -50%);
+        }
+    }
+</style>
+<div class="play" id="play">
+    <div class="screen-sm">
+        <img class="logo-loader" src="@(imgUrl)/spincity.png@(cb)">
+        <img class="logo-loader l-2" src="@(imgUrl)/spincity-spin.png@(cb)">
+        <div class="shot">
+            <img class="drip" src="@(imgUrl)/blooddrip.png@(cb)">
+        </div>
+        <div class="shutter">
+            <img class="bg-red" src="@(imgUrl)/bg.jpg@(cb)">
+            <img class="bg" src="@(imgUrl)/bg.jpg@(cb)">
+            <img class="win-img" id="gameImg" src="@(imgUrl)/win_img.png@(cb)">
+        </div>
+        <img class="logo" src="@(imgUrl)/logo.png@(cb)">
+        <div class="chars">
+            <a class="char c-1 option">
+                <img class="invasion i-1" src="@(imgUrl)/invasion.png@(cb)">
+                <img class="full" src="@(imgUrl)/char1full.png@(cb)">
+                <div class="dots d-1"></div>
+                <div class="dots d-2"></div>
+                <div class="dots d-3"></div>
+            </a>
+            <a class="char c-2 option">
+                <img class="invasion i-2" src="@(imgUrl)/invasion.png@(cb)">
+                <img class="full" src="@(imgUrl)/char2full.png@(cb)">
+                <div class="dots d-1"></div>
+                <div class="dots d-2"></div>
+                <div class="dots d-3"></div>
+            </a>
+            <a class="char c-3 option">
+                <img class="invasion i-3" src="@(imgUrl)/invasion.png@(cb)">
+                <img class="full" src="@(imgUrl)/char3full.png@(cb)">
+                <div class="dots d-1"></div>
+                <div class="dots d-2"></div>
+                <div class="dots d-3"></div>
+            </a>
+        </div>
+        <div class="win-screen" id="winContent">
+            <div class="title" id="gameResultTitle"></div>
+            <div class="in">
+                <div class="text" id="gameResultMessage"></div>
+                <div class="button" id="buttonFace"></div>
+            </div>
+            <a href="https://www.betshop.gr/casino" target="_top" class="link" id="gameLink"></a>
+        </div>
+        <div class="skip-c"><button class="skip-btn" id="skip">[ <span>SKIP INTRO </span>]</button></div>
+    </div>
+</div>
+<script>
+    @*// Query the elements only once and use throughout *@
+    const play = document.getElementById('play');
+    const gameResultTitle = document.getElementById('gameResultTitle');
+    const gameResultMessage = document.getElementById('gameResultMessage');
+    const buttonFace = document.getElementById('buttonFace');
+    const winContent = document.getElementById('winContent');
+    const gameLink = document.getElementById('gameLink');
+    const gameImg = document.getElementById('gameImg');
+
+    window.addEventListener('load', () => {
+        setTimeout(function () { play.classList.add('loaded'); }, 300);
+
+    });
+
+    document.getElementById('skip').addEventListener('click', function () {
+        play.classList.add('skip');
+    });
+
+    /* deactivate real function */
+    /*const optionClickHandler = async (option) => {
+        play.classList.add('fetching');
+        option.classList.add('selected');
+
+        try {
+            const response = await fetch('@@drawUrl', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+
+            const answer = await response.json();
+
+            gameResultTitle.innerHTML = answer.title;
+            gameResultMessage.innerHTML = answer.text;
+            buttonFace.innerText = answer.button;
+            winContent.classList.add(answer.state);
+            gameLink.href = answer.link;
+            gameImg.classList.add(answer.state);
+            gameImg.src = answer.game + '?cb=' + Math.floor(Math.random() * 101);
+            setTimeout(function () {
+                play.classList.add('fetched');
+            }, 2800);
+        } catch (e) {
+            console.log(`There was a problem with the fetch operation: ${e.message}`);
+            option.classList.remove('selected');
+            play.classList.remove('fetching');
+        }
+
+    };
+
+    /* demo static function */
+    const optionClickHandler = (option) => {
+        play.classList.add('fetching');
+        option.classList.add('selected');
+
+        setTimeout(function(){
+
+            gameResultTitle.innerHTML = 'Congratulations!';
+            gameResultMessage.innerHTML = 'You won 10 free spins in';
+            buttonFace.innerText = 'BIG BONUS';
+            winContent.classList.add('win');
+            gameLink.href = 'http://www.google.com';
+            gameImg.classList.add('win');
+            gameImg.src = '/img/prizes/spincity/win_img.png' + '?cb=' + Math.floor(Math.random() * 101);
+            setTimeout(function () {
+                play.classList.add('fetched');
+            }, 2800);
+        }, 1500);
+
+    };
+
+    @*// add event listeners *@
+        document.querySelectorAll('.option').forEach((option) => {
+            option.addEventListener('click', function () {
+                optionClickHandler(option);
+            });
+        });
+</script>

@@ -1,0 +1,64 @@
+C:\Portfolio projects\Promotions\bin\Debug\net8.0\appsettings.Development.json
+C:\Portfolio projects\Promotions\bin\Debug\net8.0\appsettings.json
+C:\Portfolio projects\Promotions\bin\Debug\net8.0\package-lock.json
+C:\Portfolio projects\Promotions\bin\Debug\net8.0\package.json
+C:\Portfolio projects\Promotions\bin\Debug\net8.0\Promotions.staticwebassets.runtime.json
+C:\Portfolio projects\Promotions\bin\Debug\net8.0\Promotions.exe
+C:\Portfolio projects\Promotions\bin\Debug\net8.0\Promotions.deps.json
+C:\Portfolio projects\Promotions\bin\Debug\net8.0\Promotions.runtimeconfig.json
+C:\Portfolio projects\Promotions\bin\Debug\net8.0\Promotions.dll
+C:\Portfolio projects\Promotions\bin\Debug\net8.0\Promotions.pdb
+C:\Portfolio projects\Promotions\obj\Debug\net8.0\Promotions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Portfolio projects\Promotions\obj\Debug\net8.0\Promotions.AssemblyInfoInputs.cache
+C:\Portfolio projects\Promotions\obj\Debug\net8.0\Promotions.AssemblyInfo.cs
+C:\Portfolio projects\Promotions\obj\Debug\net8.0\Promotions.csproj.CoreCompileInputs.cache
+C:\Portfolio projects\Promotions\obj\Debug\net8.0\Promotions.MvcApplicationPartsAssemblyInfo.cache
+C:\Portfolio projects\Promotions\obj\Debug\net8.0\Promotions.RazorAssemblyInfo.cache
+C:\Portfolio projects\Promotions\obj\Debug\net8.0\Promotions.RazorAssemblyInfo.cs
+C:\Portfolio projects\Promotions\obj\Debug\net8.0\staticwebassets.build.json
+C:\Portfolio projects\Promotions\obj\Debug\net8.0\staticwebassets.development.json
+C:\Portfolio projects\Promotions\obj\Debug\net8.0\staticwebassets\msbuild.Promotions.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Portfolio projects\Promotions\obj\Debug\net8.0\staticwebassets\msbuild.build.Promotions.props
+C:\Portfolio projects\Promotions\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Promotions.props
+C:\Portfolio projects\Promotions\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Promotions.props
+C:\Portfolio projects\Promotions\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Portfolio projects\Promotions\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Portfolio projects\Promotions\obj\Debug\net8.0\scopedcss\bundle\Promotions.styles.css
+C:\Portfolio projects\Promotions\obj\Debug\net8.0\scopedcss\projectbundle\Promotions.bundle.scp.css
+C:\Portfolio projects\Promotions\obj\Debug\net8.0\Promotions.dll
+C:\Portfolio projects\Promotions\obj\Debug\net8.0\refint\Promotions.dll
+C:\Portfolio projects\Promotions\obj\Debug\net8.0\Promotions.pdb
+C:\Portfolio projects\Promotions\obj\Debug\net8.0\Promotions.genruntimeconfig.cache
+C:\Portfolio projects\Promotions\obj\Debug\net8.0\ref\Promotions.dll
+C:\_Live Coding Session\Portfolio projects\promotions\bin\Debug\net8.0\appsettings.Development.json
+C:\_Live Coding Session\Portfolio projects\promotions\bin\Debug\net8.0\appsettings.json
+C:\_Live Coding Session\Portfolio projects\promotions\bin\Debug\net8.0\package-lock.json
+C:\_Live Coding Session\Portfolio projects\promotions\bin\Debug\net8.0\package.json
+C:\_Live Coding Session\Portfolio projects\promotions\bin\Debug\net8.0\Promotions.staticwebassets.runtime.json
+C:\_Live Coding Session\Portfolio projects\promotions\bin\Debug\net8.0\Promotions.exe
+C:\_Live Coding Session\Portfolio projects\promotions\bin\Debug\net8.0\Promotions.deps.json
+C:\_Live Coding Session\Portfolio projects\promotions\bin\Debug\net8.0\Promotions.runtimeconfig.json
+C:\_Live Coding Session\Portfolio projects\promotions\bin\Debug\net8.0\Promotions.dll
+C:\_Live Coding Session\Portfolio projects\promotions\bin\Debug\net8.0\Promotions.pdb
+C:\_Live Coding Session\Portfolio projects\promotions\obj\Debug\net8.0\Promotions.GeneratedMSBuildEditorConfig.editorconfig
+C:\_Live Coding Session\Portfolio projects\promotions\obj\Debug\net8.0\Promotions.AssemblyInfoInputs.cache
+C:\_Live Coding Session\Portfolio projects\promotions\obj\Debug\net8.0\Promotions.AssemblyInfo.cs
+C:\_Live Coding Session\Portfolio projects\promotions\obj\Debug\net8.0\Promotions.csproj.CoreCompileInputs.cache
+C:\_Live Coding Session\Portfolio projects\promotions\obj\Debug\net8.0\Promotions.MvcApplicationPartsAssemblyInfo.cache
+C:\_Live Coding Session\Portfolio projects\promotions\obj\Debug\net8.0\Promotions.RazorAssemblyInfo.cache
+C:\_Live Coding Session\Portfolio projects\promotions\obj\Debug\net8.0\Promotions.RazorAssemblyInfo.cs
+C:\_Live Coding Session\Portfolio projects\promotions\obj\Debug\net8.0\staticwebassets.build.json
+C:\_Live Coding Session\Portfolio projects\promotions\obj\Debug\net8.0\staticwebassets.development.json
+C:\_Live Coding Session\Portfolio projects\promotions\obj\Debug\net8.0\staticwebassets\msbuild.Promotions.Microsoft.AspNetCore.StaticWebAssets.props
+C:\_Live Coding Session\Portfolio projects\promotions\obj\Debug\net8.0\staticwebassets\msbuild.build.Promotions.props
+C:\_Live Coding Session\Portfolio projects\promotions\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Promotions.props
+C:\_Live Coding Session\Portfolio projects\promotions\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Promotions.props
+C:\_Live Coding Session\Portfolio projects\promotions\obj\Debug\net8.0\staticwebassets.pack.json
+C:\_Live Coding Session\Portfolio projects\promotions\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\_Live Coding Session\Portfolio projects\promotions\obj\Debug\net8.0\scopedcss\bundle\Promotions.styles.css
+C:\_Live Coding Session\Portfolio projects\promotions\obj\Debug\net8.0\scopedcss\projectbundle\Promotions.bundle.scp.css
+C:\_Live Coding Session\Portfolio projects\promotions\obj\Debug\net8.0\Promotions.dll
+C:\_Live Coding Session\Portfolio projects\promotions\obj\Debug\net8.0\refint\Promotions.dll
+C:\_Live Coding Session\Portfolio projects\promotions\obj\Debug\net8.0\Promotions.pdb
+C:\_Live Coding Session\Portfolio projects\promotions\obj\Debug\net8.0\Promotions.genruntimeconfig.cache
+C:\_Live Coding Session\Portfolio projects\promotions\obj\Debug\net8.0\ref\Promotions.dll

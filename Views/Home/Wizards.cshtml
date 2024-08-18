@@ -1,0 +1,1129 @@
+@{
+    const string imgUrl = "/img/prizes/wizards";
+    const string cb = "?cb=1";
+
+    //string drawUrl = Url.RouteUrl("WizardApp_Play_Draw");
+}
+
+<style>
+    .play {
+        background-color: #17154c;
+        height: 800px;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+    }
+
+    .play img {
+        max-width: none
+    }
+
+    .main {
+        background: url(@(imgUrl)/bg.jpg@(cb)) center center no-repeat;
+        background-size: cover;
+        height: 800px;
+        left: 50%;
+        margin-left: -960px;
+        position: absolute;
+        width: 1920px;
+        z-index: 1;
+    }
+
+    .logo {
+        animation: none;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 10px;
+        transition: all .5s;
+        z-index: 9;
+    }
+
+    .loading-me .logo {
+        animation: pulseIt .3s infinite;
+        top: 32.5%;
+    }
+
+    .load-me {
+        background-color: #17154c;
+        bottom: 0;
+        height: 100%;
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transition: all .5s;
+        visibility: hidden;
+        width: 100%;
+        z-index: 7;
+    }
+
+    .loading-me .load-me {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .fetch {
+        pointer-events: none;
+    }
+
+    .fetch.fetched {
+        pointer-events: all;
+    }
+
+    @@keyframes pulseIt {
+        0% {
+            opacity: 1;
+        }
+
+        50% {
+            opacity: .6;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .bg-fire {
+        opacity: .2;
+        animation: reflect .5s ease infinite;
+        background: url(@(imgUrl)/bg_light.jpg@(cb)) center center no-repeat;
+        background-size: cover;
+        height: 800px;
+        left: 0;
+        position: absolute;
+        right: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    @@keyframes reflect {
+        0% {
+            opacity: 0;
+        }
+
+        10% {
+            opacity: .3;
+        }
+
+        20% {
+            opacity: 0;
+        }
+
+        36% {
+            opacity: .2;
+        }
+
+        52% {
+            opacity: 0;
+        }
+
+        75% {
+            opacity: .16;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+
+    .lamp {
+        animation: swing 4s ease-in-out infinite;
+        left: 220px;
+        position: absolute;
+        top: 158px;
+        z-index: 2;
+    }
+
+    .lamp .img {
+        animation: light 1s ease infinite;
+    }
+
+    @@keyframes swing {
+        0% {
+            transform: rotate(4deg) translateX(-4px);
+        }
+
+        50% {
+            transform: rotate(-4deg) translateX(4px);
+        }
+
+        100% {
+            transform: rotate(4deg) translateX(-4px);
+        }
+    }
+
+    @@keyframes light {
+        0% {
+            opacity: 1;
+        }
+
+        20% {
+            opacity: .7;
+        }
+
+        50% {
+            opacity: .9;
+        }
+
+        70% {
+            opacity: .75;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .option {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        top: 180px;
+        transition: all .5s;
+        left: 50%;
+        z-index: 3;
+    }
+
+    .pop {
+        opacity: .3;
+        position: relative;
+        transition: all .5s;
+        z-index: 1;
+    }
+
+    .symbol {
+        left: 0;
+        position: absolute;
+        top: 0;
+        transition: all .5s;
+        z-index: 2;
+    }
+
+    .option-1 {
+        margin-left: -500px;
+    }
+
+    .option-2 {
+        margin-left: -140px;
+    }
+
+    .option-3 {
+        margin-left: 210px;
+    }
+
+    .option:hover .pop {
+        opacity: 1
+    }
+
+    .option.active .pop {
+        animation: pulseIt .3s infinite;
+        opacity: 1;
+    }
+
+    .option.active .symbol {
+        filter: contrast(50%) grayscale(50%) brightness(2)
+    }
+
+    .option.active {
+        transform: scale(.9);
+    }
+
+    .fetch .option:not(.active) {
+        opacity: .25
+    }
+
+    .fetch.fetched .option {
+        animation: none;
+        opacity: 0 !important;
+    }
+
+    .fetch.fetched .option.active .symbol {
+        filter: contrast(50%) grayscale(50%) brightness(2) blur(40px);
+        transform: scale(.5, 5);
+    }
+
+    .text {
+        bottom: 0;
+        color: #eee;
+        font-size: 14px;
+        left: 0;
+        padding: 13px;
+        position: absolute;
+        text-align: center;
+        transition: opacity .5s;
+        width: 100%;
+        z-index: 3;
+    }
+
+    .text .high {
+        font-size: 44px;
+        margin-bottom: 3px;
+        opacity: .7;
+    }
+
+    .text a {
+        color: #fff;
+        text-decoration: underline;
+    }
+
+    .fetch .text {
+        opacity: 0
+    }
+
+    .winning {
+        background-color: rgb(23 21 76 / .75);
+        align-items: center;
+        bottom: auto;
+        display: flex;
+        height: 1px;
+        justify-content: center;
+        left: 0;
+        opacity: .01;
+        overflow: hidden;
+        position: absolute;
+        right: 0;
+        transition: opacity .5s ease .4s;
+        width: 100%;
+        z-index: 8;
+    }
+
+    .fetch.fetched .winning {
+        bottom: 0;
+        height: 100%;
+        opacity: 1;
+    }
+
+    .winning .table {
+        background: url(@(imgUrl)/win.png@(cb)) center center no-repeat;
+        background-size: contain;
+        height: 600px;
+        padding: 100px 50px 0;
+        text-align: center;
+        transform: scale(.75);
+        transition: all .5s ease .4s;
+        width: 600px;
+    }
+
+    .fetch.fetched .winning .table {
+        transform: scale(1)
+    }
+
+    .fetch.fetched .lamp,
+    .fetch.fetched .lamp .img {
+        animation: none
+    }
+
+    .fetch.fetched .fire .particle {
+        animation: none !important
+    }
+
+    .fetch.fetched .bg-fire,
+    .fetch.fetched .above-pot,
+    .fetch.fetched .text {
+        display: none
+    }
+
+    .win-text {
+        font-size: 34px;
+        font-weight: bold;
+        line-height: 1.2;
+        margin-bottom: 20px;
+        margin-top: 15px;
+    }
+
+    .winning .icon-flask {
+        padding-top: 30px
+    }
+
+    .winning .icon {
+        display: none
+    }
+
+    .winning .icon img {
+        display: inline-block;
+        max-height: 236px
+    }
+
+    .winning .win .icon-win,
+    .winning .lost .icon-lost,
+    .winning .login .icon-login,
+    .winning .expired .icon-expired {
+        display: block
+    }
+
+    .winning .win .win-text {
+        color: #0055a5
+    }
+
+    .winning .login .win-text,
+    .winning .expired .win-text {
+        color: #777
+    }
+
+    .winning .lost .win-text {
+        color: #a90000
+    }
+
+    .winning .win .icon-win {
+        display: block;
+    }
+
+    .winning .win .icon-win img {
+        border-radius: 18px
+    }
+
+    .winning .table.win {
+        padding-top: 70px
+    }
+
+    .winning .table.lost {
+        padding-top: 120px
+    }
+
+    .winning .table.expired {
+        padding-top: 120px
+    }
+
+    .win-button {
+        background-color: #ffdd00;
+        border-bottom: 2px solid #f2d200;
+        color: #0055a5;
+        display: inline-block;
+        border-radius: 120px;
+        font-size: 34px;
+        font-weight: bold;
+        padding: 20px 40px;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .winning .link {
+        bottom: 0;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        z-index: 99;
+    }
+
+    .fire {
+        font-size: 24px;
+        filter: blur(0.02em);
+        -webkit-filter: blur(0.02em);
+        left: 50%;
+        opacity: .6;
+        position: absolute;
+        top: 430px;
+        width: 240px;
+        height: 288px;
+        z-index: 2;
+    }
+
+    .fire.left {
+        margin-left: 540px;
+        transform: rotate(-12deg) scale(.75);
+    }
+
+    .fire.right {
+        margin-left: -20px;
+        transform: rotate(30deg);
+    }
+
+    .fire.left .particle {
+        animation-duration: 1s
+    }
+
+    .fire.right .particle {
+        animation-duration: 1.2s
+    }
+
+    .particle {
+        animation-name: rise;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        background-image: radial-gradient(#ff5000 20%, rgba(255, 80, 0, 0) 70%);
+        border-radius: 50%;
+        mix-blend-mode: screen;
+        opacity: 0;
+        position: absolute;
+        bottom: 0;
+        width: 5em;
+        height: 5em;
+    }
+
+    .particle:nth-of-type(1) {
+        animation-delay: 0.770355249s;
+        left: calc((100% - 5em) * 0);
+    }
+
+    .particle:nth-of-type(2) {
+        animation-delay: 0.7560132911s;
+        left: calc((100% - 5em) * 0.02);
+    }
+
+    .particle:nth-of-type(3) {
+        animation-delay: 0.7405024386s;
+        left: calc((100% - 5em) * 0.04);
+    }
+
+    .particle:nth-of-type(4) {
+        animation-delay: 0.0898441366s;
+        left: calc((100% - 5em) * 0.06);
+    }
+
+    .particle:nth-of-type(5) {
+        animation-delay: 0.7322336374s;
+        left: calc((100% - 5em) * 0.08);
+    }
+
+    .particle:nth-of-type(6) {
+        animation-delay: 0.5621595712s;
+        left: calc((100% - 5em) * 0.1);
+    }
+
+    .particle:nth-of-type(7) {
+        animation-delay: 0.2786419755s;
+        left: calc((100% - 5em) * 0.12);
+    }
+
+    .particle:nth-of-type(8) {
+        animation-delay: 0.4017597345s;
+        left: calc((100% - 5em) * 0.14);
+    }
+
+    .particle:nth-of-type(9) {
+        animation-delay: 0.3860344757s;
+        left: calc((100% - 5em) * 0.16);
+    }
+
+    .particle:nth-of-type(10) {
+        animation-delay: 0.2504199585s;
+        left: calc((100% - 5em) * 0.18);
+    }
+
+    .particle:nth-of-type(11) {
+        animation-delay: 0.2674611281s;
+        left: calc((100% - 5em) * 0.2);
+    }
+
+    .particle:nth-of-type(12) {
+        animation-delay: 0.9429003623s;
+        left: calc((100% - 5em) * 0.22);
+    }
+
+    .particle:nth-of-type(13) {
+        animation-delay: 0.1406364381s;
+        left: calc((100% - 5em) * 0.24);
+    }
+
+    .particle:nth-of-type(14) {
+        animation-delay: 0.1736294253s;
+        left: calc((100% - 5em) * 0.26);
+    }
+
+    .particle:nth-of-type(15) {
+        animation-delay: 0.0408140899s;
+        left: calc((100% - 5em) * 0.28);
+    }
+
+    .particle:nth-of-type(16) {
+        animation-delay: 0.8047808522s;
+        left: calc((100% - 5em) * 0.3);
+    }
+
+    .particle:nth-of-type(17) {
+        animation-delay: 0.6390387043s;
+        left: calc((100% - 5em) * 0.32);
+    }
+
+    .particle:nth-of-type(18) {
+        animation-delay: 0.6560855531s;
+        left: calc((100% - 5em) * 0.34);
+    }
+
+    .particle:nth-of-type(19) {
+        animation-delay: 0.9134137652s;
+        left: calc((100% - 5em) * 0.36);
+    }
+
+    .particle:nth-of-type(20) {
+        animation-delay: 0.6007987761s;
+        left: calc((100% - 5em) * 0.38);
+    }
+
+    .particle:nth-of-type(21) {
+        animation-delay: 0.3777347528s;
+        left: calc((100% - 5em) * 0.4);
+    }
+
+    .particle:nth-of-type(22) {
+        animation-delay: 0.9859228482s;
+        left: calc((100% - 5em) * 0.42);
+    }
+
+    .particle:nth-of-type(23) {
+        animation-delay: 0.5429095545s;
+        left: calc((100% - 5em) * 0.44);
+    }
+
+    .particle:nth-of-type(24) {
+        animation-delay: 0.8347974154s;
+        left: calc((100% - 5em) * 0.46);
+    }
+
+    .particle:nth-of-type(25) {
+        animation-delay: 0.4360156536s;
+        left: calc((100% - 5em) * 0.48);
+    }
+
+    .particle:nth-of-type(26) {
+        animation-delay: 0.1020313252s;
+        left: calc((100% - 5em) * 0.5);
+    }
+
+    .particle:nth-of-type(27) {
+        animation-delay: 0.9065880209s;
+        left: calc((100% - 5em) * 0.52);
+    }
+
+    .particle:nth-of-type(28) {
+        animation-delay: 0.1930350902s;
+        left: calc((100% - 5em) * 0.54);
+    }
+
+    .particle:nth-of-type(29) {
+        animation-delay: 0.3216927706s;
+        left: calc((100% - 5em) * 0.56);
+    }
+
+    .particle:nth-of-type(30) {
+        animation-delay: 0.7782092265s;
+        left: calc((100% - 5em) * 0.58);
+    }
+
+    .particle:nth-of-type(31) {
+        animation-delay: 0.7751763477s;
+        left: calc((100% - 5em) * 0.6);
+    }
+
+    .particle:nth-of-type(32) {
+        animation-delay: 0.2563212604s;
+        left: calc((100% - 5em) * 0.62);
+    }
+
+    .particle:nth-of-type(33) {
+        animation-delay: 0.7114370395s;
+        left: calc((100% - 5em) * 0.64);
+    }
+
+    .particle:nth-of-type(34) {
+        animation-delay: 0.8093979362s;
+        left: calc((100% - 5em) * 0.66);
+    }
+
+    .particle:nth-of-type(35) {
+        animation-delay: 0.7784891378s;
+        left: calc((100% - 5em) * 0.68);
+    }
+
+    .particle:nth-of-type(36) {
+        animation-delay: 0.3608300167s;
+        left: calc((100% - 5em) * 0.7);
+    }
+
+    .particle:nth-of-type(37) {
+        animation-delay: 0.7382956562s;
+        left: calc((100% - 5em) * 0.72);
+    }
+
+    .particle:nth-of-type(38) {
+        animation-delay: 0.1642698451s;
+        left: calc((100% - 5em) * 0.74);
+    }
+
+    .particle:nth-of-type(39) {
+        animation-delay: 0.7838793553s;
+        left: calc((100% - 5em) * 0.76);
+    }
+
+    .particle:nth-of-type(40) {
+        animation-delay: 0.5805833927s;
+        left: calc((100% - 5em) * 0.78);
+    }
+
+    .particle:nth-of-type(41) {
+        animation-delay: 0.0610107993s;
+        left: calc((100% - 5em) * 0.8);
+    }
+
+    .particle:nth-of-type(42) {
+        animation-delay: 0.1694114695s;
+        left: calc((100% - 5em) * 0.82);
+    }
+
+    .particle:nth-of-type(43) {
+        animation-delay: 0.7110964769s;
+        left: calc((100% - 5em) * 0.84);
+    }
+
+    .particle:nth-of-type(44) {
+        animation-delay: 0.734120848s;
+        left: calc((100% - 5em) * 0.86);
+    }
+
+    .particle:nth-of-type(45) {
+        animation-delay: 0.434211675s;
+        left: calc((100% - 5em) * 0.88);
+    }
+
+    .particle:nth-of-type(46) {
+        animation-delay: 0.0033686055s;
+        left: calc((100% - 5em) * 0.9);
+    }
+
+    .particle:nth-of-type(47) {
+        animation-delay: 0.5718927229s;
+        left: calc((100% - 5em) * 0.92);
+    }
+
+    .particle:nth-of-type(48) {
+        animation-delay: 0.1904512845s;
+        left: calc((100% - 5em) * 0.94);
+    }
+
+    .particle:nth-of-type(49) {
+        animation-delay: 0.3027981813s;
+        left: calc((100% - 5em) * 0.96);
+    }
+
+    .particle:nth-of-type(50) {
+        animation-delay: 0.0713640659s;
+        left: calc((100% - 5em) * 0.98);
+    }
+
+    @@keyframes rise {
+        from {
+            opacity: 0;
+            transform: translateY(0) scale(1);
+        }
+
+        25% {
+            opacity: 1;
+        }
+
+        to {
+            opacity: 0;
+            transform: translateY(-10em) scale(0);
+        }
+    }
+
+    .above-pot {
+        height: 200px;
+        left: 50%;
+        margin-left: 550px;
+        position: absolute;
+        top: 200px;
+        width: 200px;
+        z-index: 2;
+    }
+
+    .smoke-wrap {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 0;
+    }
+
+    .smoke,
+    .smoke2,
+    .smoke3 {
+        filter: blur(5px);
+        transform-origin: 50% 50%;
+    }
+
+    .smoke {
+        animation: smoke1 1.5s linear infinite;
+        animation-delay: 0.5s;
+    }
+
+    .smoke2 {
+        animation: smoke2 1.5s linear infinite;
+        animation-delay: 1.5s;
+    }
+
+    .smoke3 {
+        width: 200px;
+        animation: smoke3 2s linear infinite;
+        animation-delay: 2.5s;
+    }
+
+    @@keyframes smoke1 {
+        0% {
+            filter: blur(0px);
+            transform: translateY(0px) scale(-1, 1);
+            opacity: 0;
+        }
+
+        25% {
+            filter: blur(3px);
+            transform: translateY(-10px) scale(-1, 1.05);
+            opacity: 0.5;
+        }
+
+        50% {
+            filter: blur(5px);
+            transform: translateY(-20px) scale(-1, 1.1);
+            opacity: 1;
+        }
+
+        75% {
+            filter: blur(5px);
+            transform: translateY(-30px) scale(-1, 1.15);
+            opacity: 0.5;
+        }
+
+        100% {
+            filter: blur(7px);
+            transform: translateY(-40px) scale(-1, 1.2);
+            opacity: 0;
+        }
+    }
+
+    @@keyframes smoke2 {
+        0% {
+            filter: blur(0px);
+            transform: translateY(0px) scale(1);
+            opacity: 0;
+        }
+
+        25% {
+            filter: blur(3px);
+            transform: translateY(-10px) scale(1.05);
+            opacity: 0.5;
+        }
+
+        50% {
+            filter: blur(5px);
+            transform: translateY(-20px) scale(1.1);
+            opacity: 1;
+        }
+
+        75% {
+            filter: blur(5px);
+            transform: translateY(-30px) scale(1.15);
+            opacity: 0.5;
+        }
+
+        100% {
+            filter: blur(7px);
+            transform: translateY(-40px) scale(1.2);
+            opacity: 0;
+        }
+    }
+
+    @@keyframes smoke3 {
+        0% {
+            filter: blur(0px);
+            transform: translateY(0px) scale(1);
+            opacity: 0;
+        }
+
+        25% {
+            filter: blur(2px);
+            transform: translateY(-20px) scale(1.05);
+            opacity: 0.5;
+        }
+
+        50% {
+            filter: blur(4px);
+            transform: translateY(-40px) scale(1.1);
+            opacity: 1;
+        }
+
+        75% {
+            filter: blur(4px);
+            transform: translateY(-60px) scale(1.15);
+            opacity: 0.5;
+        }
+
+        100% {
+            filter: blur(6px);
+            transform: translateY(-80px) scale(1.2);
+            opacity: 0;
+        }
+    }
+
+    @@media (max-width:1024px) {
+        .play {
+            height: 600px
+        }
+
+        .logo {
+            transform: scale(.75) translateX(-67%);
+            top: -10px;
+        }
+
+        .main {
+            transform: scale(.75) translateY(-133px)
+        }
+    }
+
+    @@media (max-width:768px) {
+        .play {
+            height: 400px
+        }
+
+        .main {
+            background: url(@(imgUrl)/bg_sm.jpg@(cb)) center center no-repeat;
+            background-size: 1560px 800px;
+        }
+
+        .bg-fire {
+            background: url(@(imgUrl)/bg_sm_light.jpg@(cb)) center center no-repeat;
+            background-size: 1560px 800px;
+        }
+
+        .logo {
+            transform: scale(.5) translateX(-100%);
+            top: -30px;
+        }
+
+        .main {
+            transform: scale(.5) translateY(-400px)
+        }
+
+        .lamp {
+            left: 620px;
+            top: 50px;
+        }
+
+        .lamp .img {
+            transform: scale(.8)
+        }
+
+        .fire.left {
+            margin-left: 160px;
+            top: 630px;
+        }
+
+        .above-pot {
+            margin-left: 230px;
+            top: 400px;
+        }
+
+        .option {
+            transform: scale(.8);
+            top: 140px;
+        }
+
+        .option.active {
+            transform: scale(.7)
+        }
+
+        .option-1 {
+            margin-left: -374px
+        }
+
+        .option-2 {
+            margin-left: -139px;
+            top: 160px;
+        }
+
+        .option-3 {
+            margin-left: 95px
+        }
+    }
+</style>
+
+
+<div id="play" class="play loading-me">
+    <div class="load-me"></div>
+    <img class="logo" src="@(imgUrl)/logo.png@(cb)" alt="logo" />
+    <div class="main">
+        <div class="bg-fire"></div>
+        <button id="option1" class="option option-1">
+            <img class="pop" src="@(imgUrl)/bubble.png@(cb)" alt="" />
+            <img class="symbol" src="@(imgUrl)/lw.png@(cb)" alt="" />
+        </button>
+        <button id="option2" class="option option-2">
+            <img class="pop" src="@(imgUrl)/bubble.png@(cb)" alt="" />
+            <img class="symbol" src="@(imgUrl)/cw.png@(cb)" alt="" />
+        </button>
+        <button id="option3" class="option option-3">
+            <img class="pop" src="@(imgUrl)/bubble.png@(cb)" alt="" />
+            <img class="symbol" src="@(imgUrl)/rw.png@(cb)" alt="" />
+        </button>
+        <div class="lamp">
+            <img class="img" src="@(imgUrl)/lamp.png@(cb)" alt="" />
+        </div>
+        <div class="fire left">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+        <div class="above-pot">
+            <div class="smoke-wrap">
+                <img class="smoke" src="@(imgUrl)/smoke.png@(cb)" alt="" />
+            </div>
+            <div class="smoke-wrap">
+                <img class="smoke2" src="@(imgUrl)/smoke.png@(cb)" alt="" />
+            </div>
+            <div class="smoke-wrap">
+                <img class="smoke3" src="@(imgUrl)/smoke.png@(cb)" alt="" />
+            </div>
+        </div>
+        <div class="text">
+            <div class="high">Επιλέγεις μάγο</div>
+            <div>Ισχύουν <a href="#promo">όροι και προϋποθέσεις</a>.</div>
+        </div>
+        <div class="winning">
+            <div class="table" id="winContent">
+                @*<div class="icon icon-lost"><img src="@(imgUrl)/icon_pot.png@(cb)" /></div>*@
+                <div class="icon icon-win">
+                    <img id="game" src="@(imgUrl)/icon_win.png@(cb)" alt="" />
+                </div>
+                <div class="win-text" id="gameResultMessage"></div>
+                <div class="icon-button">
+                    <div class="win-button" id="buttonFace">ΔΕΣ ΤΟ ΕΔΩ</div>
+                    <a class="link" id="link" href="" target="_top"></a>
+                </div>
+                @*<div class="icon icon-win"><img src="@(imgUrl)/icon_book.png@(cb)" /></div>*@
+                <div class="icon icon-expired">
+                    <img src="@(imgUrl)/icon_mushroom.png@(cb)" alt="" />
+                </div>
+                <div class="icon icon-lost icon-flask">
+                    <img src="@(imgUrl)/icon_flask.png@(cb)" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Query the elements only once and use throughout
+    const play = document.getElementById('play');
+    const gameResultMessage = document.getElementById('gameResultMessage');
+    const buttonFace = document.getElementById('buttonFace');
+    const winContent = document.getElementById('winContent');
+    const link = document.getElementById('link');
+    const game = document.getElementById('game');
+
+    window.addEventListener('load', () => {
+        play.classList.remove('loading-me');
+    });
+
+    /* real function commented */
+    /*const optionClickHandler = async (option) => {
+        option.classList.add('active');
+        play.classList.add('fetch');
+        try {
+            const response = await fetch('@@drawUrl', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+
+            const answer = await response.json();
+
+            gameResultMessage.innerHTML = answer.text;
+            buttonFace.innerText = answer.button;
+            winContent.classList.add(answer.state);
+            link.href = answer.link;
+            game.src = answer.game + '?cb=' + Math.floor(Math.random() * 101);
+            play.classList.add('fetched');
+        } catch (e) {
+            console.log(`There was a problem with the fetch operation: ${e.message}`);
+            option.classList.remove('active');
+            play.classList.remove('fetch');
+        }
+    };*/
+
+    /* demo function */
+    const optionClickHandler = (option) => {
+        option.classList.add('active');
+        play.classList.add('fetch');
+        
+        setTimeout(function(){
+
+            const answer = {
+                text: 'You won 10 free spins in',
+                button: 'QUANTUM ROULETTE',
+                state: 'win',
+                link: 'http://www.google.com',
+                game: '/img/prizes/wizards/game_quantumroulette.jpg'
+            };
+
+            gameResultMessage.innerHTML = answer.text;
+            buttonFace.innerText = answer.button;
+            winContent.classList.add(answer.state);
+            link.href = answer.link;
+            game.src = answer.game + '?cb=' + Math.floor(Math.random() * 101);
+            play.classList.add('fetched');
+        }, 1500);
+    };
+
+    // add event listeners
+    document.querySelectorAll('.option').forEach((option) => {
+        option.addEventListener('click', function () {
+            optionClickHandler(option);
+        });
+    });
+</script>

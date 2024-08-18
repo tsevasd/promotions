@@ -1,0 +1,808 @@
+@{
+    const string imgUrl = "/img/prizes/santatreats";
+    const string cb = "?cb=1";
+    const string bgColor = "#0a0e2b";
+    const string secondaryColor = "#5ab9f9";
+    //string drawUrl = Url.RouteUrl("SantaTreatsApp_Play_Draw");
+}
+<style type="text/css">
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .play.container {
+        background-color: @bgColor;
+        height: 800px;
+        max-width: none;
+        text-align: center;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+    }
+
+
+    .play .betshop {
+        animation: flash 1s linear infinite;
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        transition: all .5s;
+        z-index: 9;
+    }
+
+    .play.loaded .betshop {
+        animation: none;
+        top: 16px;
+        transform: translate(-50%, 0);
+    }
+
+    .play .bg-intro-c {
+        animation: fade-in .3s linear forwards;
+        opacity: .5;
+        transition: opacity .5s;
+    }
+
+    .play.loaded .bg-intro-c {
+        animation: none;
+        opacity: 1;
+    }
+
+    .play .bg-intro {
+        left: 50%;
+        max-width: none;
+        opacity: .5;
+        position: absolute;
+        top: 50%;
+        transform: translate(calc(-50% + 4px), -50%) scale(1);
+        transition: all .5s ease .5s;
+        z-index: 1;
+    }
+
+    .play.loaded .bg-intro {
+        opacity: 1;
+        top: -145px;
+        transform: translate(calc(-50% + 4px), 0) scale(.59);
+    }
+
+    .play .bg-lg,
+    .play .bg-sm {
+        left: 50%;
+        max-width: none;
+        opacity: 0;
+        position: absolute;
+        transform: translate(-50%, -50%) scale(1);
+        transition: opacity 2s ease 1s;
+        top: 50%;
+        z-index: 2;
+    }
+
+    .play .bg-sm {
+        display: none
+    }
+
+    .play.loaded .bg-lg,
+    .play.loaded .bg-sm {
+        opacity: 1;
+    }
+
+    .title-santas,
+    .title-treats {
+        left: 50%;
+        transform: translateX(-50%);
+        transition: all .4s ease .8s;
+        position: absolute;
+        z-index: 9;
+    }
+
+    .title-santas {
+        opacity: 0;
+        top: 0px;
+    }
+
+    .loaded .title-santas {
+        opacity: 1;
+        top: 60px;
+    }
+
+    .title-treats {
+        opacity: 0;
+        top: 300px;
+    }
+
+    .loaded .title-treats {
+        opacity: 1;
+        top: 240px;
+    }
+
+    @@keyframes flash {
+        0% {
+            opacity: .5
+        }
+
+        50% {
+            opacity: 1
+        }
+
+        100% {
+            opacity: .5
+        }
+    }
+
+    @@keyframes fade-in {
+        0% {
+            opacity: 0
+        }
+
+        100% {
+            opacity: .5
+        }
+    }
+
+
+
+    @@keyframes spin {
+        0% {
+            transform: rotate(0deg)
+        }
+
+        100% {
+            transform: rotate(360deg)
+        }
+    }
+
+    @@keyframes swing-claus {
+
+        0%,
+        66%,
+        100% {
+            transform: rotate(0deg)
+        }
+
+        22% {
+            transform: rotate(-8deg)
+        }
+
+        44% {
+            transform: rotate(4deg)
+        }
+    }
+
+    @@keyframes swing-deer-1 {
+
+        0%,
+        66%,
+        100% {
+            transform: rotate(0deg)
+        }
+
+        33% {
+            transform: rotate(8deg)
+        }
+    }
+
+    @@keyframes swing-deer-2 {
+
+        0%,
+        66%,
+        100% {
+            transform: rotate(6deg)
+        }
+
+        33% {
+            transform: rotate(14deg)
+        }
+    }
+
+    @@keyframes swing-deer-3 {
+
+        0%,
+        66%,
+        100% {
+            transform: rotate(10deg)
+        }
+
+        33% {
+            transform: rotate(18deg)
+        }
+    }
+
+    .santa {
+        filter: brightness(50%);
+        -webkit-filter: brightness(50%);
+        width: 846px;
+        height: 310px;
+        left: -200px;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(.75);
+        transition: left 0.4s ease 0s, top .5s ease .5s, transform .5s ease .5s, -webkit-filter .5s ease .5s;
+        z-index: 8;
+    }
+
+    .loaded .santa {
+        filter: brightness(100%);
+        -webkit-filter: brightness(100%);
+        left: 50%;
+        top: 30px;
+        transform: translate(-50%, 0) scale(.45);
+    }
+
+    .santa .bridle {
+        position: absolute;
+        z-index: 1;
+        left: 126px;
+        top: 162px;
+    }
+
+    .santa .claus {
+        position: absolute;
+        z-index: 2;
+        left: 51px;
+        top: 137px;
+        animation: swing-claus 4s ease 0s infinite;
+    }
+
+    .santa .reindeer-1 {
+        position: absolute;
+        z-index: 3;
+        left: 232px;
+        top: 72px;
+        animation: swing-deer-1 2s ease .5s infinite;
+    }
+
+    .santa .reindeer-2 {
+        position: absolute;
+        z-index: 4;
+        left: 414px;
+        top: 76px;
+        transform: rotate(6deg);
+        animation: swing-deer-2 2s ease .5s infinite;
+    }
+
+    .santa .reindeer-3 {
+        position: absolute;
+        z-index: 5;
+        left: 597px;
+        top: 84px;
+        transform: rotate(10deg);
+        animation: swing-deer-3 2s ease .5s infinite;
+    }
+
+    .rects {
+        display: grid;
+        height: 436px;
+        margin: 340px auto 0 50%;
+        width: 1280px;
+        position: relative;
+        transform: translateX(-50%);
+        transition: opacity .3s ease .5s;
+        z-index: 7;
+    }
+
+    .load-me .rects {
+        opacity: 0;
+    }
+
+    .rect {
+        display: block;
+        cursor: pointer;
+        height: 436px;
+        overflow: hidden;
+        padding-top: 20px;
+        position: absolute;
+        top: 0;
+        transition: opacity .5s, transform .5s, left .5s ease .5s;
+        width: 416px;
+    }
+
+    .rect-1 {
+        left: 0px
+    }
+
+    .rect-2 {
+        left: 436px
+    }
+
+    .rect-3 {
+        left: 872px
+    }
+
+    .rect .bg-color {
+        background-color: rgba(10, 14, 43, .6);
+        border: 4px solid transparent;
+        border-radius: 24px;
+        height: 416px;
+        left: 0;
+        opacity: 0;
+        transform: scale(.5);
+        top: 20px;
+        position: absolute;
+        transition: background .3s ease 0s, opacity .3s ease 1.5s, transform .3s ease 1.5s, border-color .3s;
+        width: 416px;
+        z-index: 1;
+    }
+
+    .loaded .rect .bg-color {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    .no-touch .rect:hover .bg-color {
+        border-color: rgba(255, 255, 255, .6)
+    }
+
+    .rect .pointer {
+        border: 4px solid rgba(255, 255, 255, .6);
+        border-radius: 24px;
+        height: 416px;
+        left: -4px;
+        opacity: 0;
+        top: -4px;
+        transition: opacity .3s;
+        position: absolute;
+        width: 416px;
+    }
+
+    .rect .pointer img {
+        bottom: 15px;
+        position: absolute;
+        right: 25px;
+        transition: opacity .3s ease 0s;
+    }
+
+    @@keyframes pointer {
+
+        0%,
+        30%,
+        100% {
+            opacity: 0
+        }
+
+        15% {
+            opacity: 1
+        }
+    }
+
+    .loaded .rect-1 .pointer {
+        animation: pointer 3s infinite 2.5s
+    }
+
+    .loaded .rect-2 .pointer {
+        animation: pointer 3.25s infinite 3.1s
+    }
+
+    .loaded .rect-3 .pointer {
+        animation: pointer 3.5s infinite 3.7s
+    }
+
+    .loaded.fetching .rect .pointer {
+        animation: none
+    }
+
+    .fetching .rect {
+        pointer-events: none;
+    }
+
+    .fetching .rect:not(.selected) {
+        opacity: 0;
+        transform: scale(.4);
+    }
+
+    .rect.selected {
+        transform: scale(.9);
+        left: 436px;
+    }
+
+    .rect.selected .bg-color {
+        background-color: @secondaryColor;
+    }
+
+    .fetching .rect.selected .img {
+        animation: waiting .5s ease-in infinite;
+    }
+
+    .fetching.fetched .rect.selected .img {
+        animation: none;
+        transform: translateX(0px);
+    }
+
+    @@keyframes enter {
+        0% {
+            transform: translateX(416px) rotate(0deg) scale(.7);
+        }
+
+        50% {
+            transform: translateX(208px) rotate(-180deg) scale(.85);
+        }
+
+        100% {
+            transform: translateX(0px) rotate(-360deg) scale(1);
+        }
+    }
+
+    @@keyframes hover {
+        0% {
+            transform: translate(0, 0) scale(1, 1);
+        }
+
+        5% {
+            transform: translate(0, 0) scale(1.06, 1);
+        }
+
+        50% {
+            transform: translate(0, -20px) scale(1, 1);
+        }
+
+        54% {
+            transform: translate(10px, -20px) scale(1, 1);
+        }
+
+        58% {
+            transform: translate(-10px, -20px) scale(1, 1);
+        }
+
+        62% {
+            transform: translate(6px, -20px) scale(1, 1);
+        }
+
+        66% {
+            transform: translate(-6px, -20px) scale(1, 1);
+        }
+
+        70% {
+            transform: translate(3px, -20px) scale(1, 1);
+        }
+
+        74% {
+            transform: translate(-3px, -20px) scale(1, 1);
+        }
+
+        95% {
+            transform: translate(0, 0) scale(1.06, 1);
+        }
+
+        100% {
+            transform: translate(0, 0) scale(1, 1);
+        }
+    }
+
+    @@keyframes waiting {
+
+        0%,
+        100% {
+            transform: translateY(0px) scale(1.02, 1)
+        }
+
+        20%,
+        80% {
+            transform: translateY(0) scale(1, 1)
+        }
+
+        60% {
+            transform: translateY(-16px) scale(.95, 1)
+        }
+
+    }
+
+    .rect .img {
+        transform: translateX(416px);
+        position: relative;
+        z-index: 2;
+    }
+
+    .loaded .rect .img {
+        animation: enter .5s ease forwards 1.8s;
+    }
+
+    .rect .img-c {
+        position: relative;
+        z-index: 2;
+    }
+
+    .no-touch .rect:hover .img-c {
+        animation: hover .7s ease forwards 0s;
+    }
+
+
+
+
+    .win-screen {
+        background-color: @bgColor;
+        bottom: 0;
+        height: 100%;
+        left: 0;
+        opacity: 0;
+        padding: 0 10px;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        top: 0;
+        transition: all .5s;
+        visibility: hidden;
+        width: 100%;
+        z-index: 9
+    }
+
+    .win-screen .in {
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        width: 100%;
+    }
+
+    .fetched .win-screen {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .win-screen .title {
+        color: @secondaryColor;
+        font-size: 60px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        margin-top: 60px;
+        transition: all .5s ease .15s;
+        transform: translateY(40px) scale(.75);
+    }
+
+    .win-img {
+        display: inline;
+        margin-bottom: 20px;
+        max-height: 320px;
+        opacity: 0;
+        transition: all .5s ease .3s;
+        transform: translateY(40px) scale(.75);
+    }
+
+    .win-screen .text {
+        color: #fff;
+        font-size: 44px;
+        line-height: 1.25;
+        margin: 0 auto 20px;
+        max-width: 800px;
+        opacity: 0;
+        transform: translateY(40px) scale(.75);
+        transition: all .5s ease .45s;
+    }
+
+    .win-screen .button {
+        background-color: #ffdd00;
+        border-bottom: 4px solid #ebcc00;
+        border-radius: 160px;
+        color: #002248;
+        display: inline-block;
+        font-size: 48px;
+        font-weight: bold;
+        line-height: 1;
+        margin: 0 auto 40px;
+        padding: 16px 80px 20px;
+        opacity: 0;
+        transition: all .5s ease .6s;
+        transform: translateY(40px) scale(.75);
+    }
+
+    .fetched .title,
+    .fetched .win-img,
+    .fetched .text,
+    .fetched .win-screen .button {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+
+    .win-screen .link {
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 9;
+    }
+
+    .win-screen.login .win-img,
+    .win-screen.expired .win-img,
+    .win-screen.lost .win-img {
+        display: none
+    }
+
+    .win-screen.login .text {
+        margin: 190px auto 60px
+    }
+
+    .win-screen.lost .title {
+        color: #777;
+        margin-top: 130px;
+    }
+
+    .win-screen.lost .text {
+        margin-bottom: 60px
+    }
+
+    .win-screen.expired .text {
+        margin: 200px auto 60px
+    }
+
+    @@media screen and (min-width:768px) and (max-width:999px) {
+        .rects {
+            width: 1089px
+        }
+
+        .rect {
+            transform: scale(.76875)
+        }
+
+        .rect.selected,
+        .rect-2 {
+            left: 336px
+        }
+
+        .rect-3 {
+            left: 672px
+        }
+    }
+
+    @@media screen and (min-width:769px) and (max-height:880px) {
+        .play.container {
+            height: 600px;
+        }
+
+        .play.container .screen-sm {
+            position: absolute;
+            height: 133.333%;
+            width: 133.333%;
+            transform: scale(.75) translate(-16.666%, -16.666%);
+        }
+    }
+
+    @@media screen and (max-width:768px) {
+        .play.container {
+            height: 400px;
+        }
+
+        .play.container .screen-sm {
+            position: absolute;
+            height: 200%;
+            width: 200%;
+            transform: scale(.5) translate(-50%, -50%);
+        }
+
+        .play .bg-lg {
+            display: none
+        }
+
+        .play .bg-sm {
+            display: inline
+        }
+
+        .rects {
+            transform: scale(.54) translateX(-93%)
+        }
+    }
+</style>
+<div class="container play" id="play">
+    <div class="screen-sm">
+        <img class="betshop" src="@(imgUrl)/betshop.webp@(cb)">
+        <div class="bg-intro-c"><img class="bg-intro" src="@(imgUrl)/bg_intro.webp@(cb)"></div>
+        <img class="bg-lg" src="@(imgUrl)/bg_lg.webp@(cb)">
+        <img class="bg-sm" src="@(imgUrl)/bg_sm.webp@(cb)">
+        <img class="title-santas" src="@(imgUrl)/title_santas.webp@(cb)">
+        <img class="title-treats" src="@(imgUrl)/title_treats.webp@(cb)">
+        <div class="santa">
+            <img class="bridle" src="@(imgUrl)/santa_bridle.webp@(cb)" />
+            <img class="claus" src="@(imgUrl)/santa_claus.webp@(cb)" />
+            <img class="reindeer-1" src="@(imgUrl)/santa_reindeer.webp@(cb)" />
+            <img class="reindeer-2" src="@(imgUrl)/santa_reindeer.webp@(cb)" />
+            <img class="reindeer-3" src="@(imgUrl)/santa_reindeer.webp@(cb)" />
+        </div>
+        <div class="rects">
+            <a class="rect rect-1 option">
+                <div class="img-c"><img class="img" src="@(imgUrl)/option_1.webp@(cb)" /></div>
+                <div class="bg-color">
+                    <div class="pointer"><img src="@(imgUrl)/pointer.webp@(cb)" /></div>
+                </div>
+            </a>
+            <a class="rect rect-2 option">
+                <div class="img-c"><img class="img" src="@(imgUrl)/option_2.webp@(cb)" /></div>
+                <div class="bg-color">
+                    <div class="pointer"><img src="@(imgUrl)/pointer.webp@(cb)" /></div>
+                </div>
+            </a>
+            <a class="rect rect-3 option">
+                <div class="img-c"><img class="img" src="@(imgUrl)/option_3.webp@(cb)" /></div>
+                <div class="bg-color">
+                    <div class="pointer"><img src="@(imgUrl)/pointer.webp@(cb)" /></div>
+                </div>
+            </a>
+        </div>
+        <div class="win-screen" id="winContent">
+            <div class="title" id="gameResultTitle">Συγχαρητήρια!</div>
+            <img class="win-img" id="gameImg" src="@(imgUrl)/win_betterwilds.webp@(cb)">
+            <div class="text" id="gameResultMessage">Μόλις κέρδισες 3 Free Spins στο</div>
+            <div class="button" id="buttonFace">Better Wilds</div>
+            <a class="link" id="gameLink" href="https://www.betshop.gr/casino" target="_top"></a>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    const play = document.getElementById('play');
+    const gameResultTitle = document.getElementById('gameResultTitle');
+    const gameResultMessage = document.getElementById('gameResultMessage');
+    const buttonFace = document.getElementById('buttonFace');
+    const winContent = document.getElementById('winContent');
+    const gameLink = document.getElementById('gameLink');
+    const gameImg = document.getElementById('gameImg');
+
+    play.classList.add('ontouchstart' in document.documentElement ? 'touch' : 'no-touch')
+
+    window.addEventListener('load', () => {
+        setTimeout(function () { play.classList.add('loaded'); }, 300);
+    });
+
+    /* De-activate real function */
+    /*const optionClickHandler = async (option) => {
+        play.classList.add('fetching');
+        option.classList.add('selected');
+
+        try {
+            const response = await fetch('@@drawUrl', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+
+            let answer = await response.json();
+            console.log('answer', answer);
+
+            gameResultTitle.innerHTML = answer.title;
+            gameResultMessage.innerHTML = answer.text;
+            buttonFace.innerText = answer.button;
+            winContent.classList.add(answer.state);
+            gameLink.href = answer.link;
+            gameImg.classList.add(answer.state);
+            gameImg.src = answer.game + '?cb=' + Math.floor(Math.random() * 101);
+            setTimeout(function () { play.classList.add('fetched'); }, 1200);
+        } catch (e) {
+            console.log(`There was a problem with the fetch operation: ${e.message}`);
+            option.classList.remove('selected');
+            play.classList.remove('fetching');
+        }
+
+    };*/
+
+    /* Static function */
+    const optionClickHandler = (option) => {
+        play.classList.add('fetching');
+        option.classList.add('selected');
+
+        setTimeout(function(){
+
+            gameResultTitle.innerHTML = 'Congratulations!';
+            gameResultMessage.innerHTML = 'You won 10 free spins in';
+            buttonFace.innerText = 'BETTER WILDS';
+            winContent.classList.add('win');
+            gameLink.href = 'http://www.google.com';
+            gameImg.classList.add('win');
+            gameImg.src = '/img/prizes/santatreats/win_betterwilds.webp' + '?cb=' + Math.floor(Math.random() * 101);
+            setTimeout(function () { play.classList.add('fetched'); }, 1200);
+        
+        }, 1500);
+
+    };
+
+    document.querySelectorAll('.option').forEach(function (option) {
+        option.addEventListener('click', function () {
+            optionClickHandler(option);
+        });
+    });
+
+</script>

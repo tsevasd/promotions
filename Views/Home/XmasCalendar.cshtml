@@ -1,0 +1,1292 @@
+@{
+    const string imgUrl = "/img/calendar/xmas2023";
+    const string cb = "?cb=18";
+    const string bgColor = "#000c14";
+    const string secondaryColor = "#008cff";
+    const string scrollColorRGB = "0, 103, 176";
+
+    int dayStart = 202318;
+    int dayEnd = 202410;
+    var day = Convert.ToInt32(DateTime.Now.AddHours(2).ToString("dd"));
+    var year = Convert.ToInt32(DateTime.Now.AddHours(2).ToString("yyyy"));
+    var actualDay = Convert.ToInt32(DateTime.Now.AddHours(2).ToString("dd"));
+    var actualMonth = Convert.ToInt32(DateTime.Now.AddHours(2).ToString("MM"));
+    int findDay = Int32.Parse(Convert.ToInt32(DateTime.Now.AddHours(2).ToString("yyyy")).ToString() +
+    string.Format($"{Convert.ToInt32(DateTime.Now.AddHours(2).ToString("dd")):D2}"));
+
+    @* demo: *@
+    dayStart = 202318;
+    dayEnd = 202410;
+    day = 202320;
+    year = 2023;
+    actualDay = 20;
+    actualMonth = 12;
+    findDay = 202320;
+
+    string link = "";
+    string text = "";
+
+    switch (actualDay)
+    {
+
+        case 18:
+            // 5 Free Spins @ Naughty Nicks Book - Play n GO
+            text = "Κέρδισες<br>5 Free Spins στο"; // (Logo)
+            link = "https://www.betshop.gr/casino/display/7332/naughty-nicks-book";
+            break;
+        case 19:
+            // 5 Free Spins @ Christmas Plaza DoubleMax
+            text = "Κέρδισες<br>5 Free Spins στο"; // (Logo)
+            link = "https://www.betshop.gr/casino/display/7321/christmas-plaza-doublemax";
+            break;
+        case 20:
+            // Pick & Roll
+            text = "Free bet στο<br><span class=\"small\">Μονακό-Παναθηναϊκός!</span>";
+            link = "https://www.betshop.gr/promotions/display/1150/";
+            break;
+        case 21:
+            // Magic Card
+            text = "Κάρτες Μπόνους μοιράζουν μετρητά!"; // (Logo Betshop Prive)
+            link = "https://www.betshop.gr/promotions/display/1151/";
+            break;
+        case 22:
+            // Mini Battles
+            text = "500€ στο<br>ημερήσιο τουρνουά “Playtech Jolly”!"; // (Logo Playtech)
+            link = "https://www.betshop.gr/promotions/display/1152/";
+            break;
+        case 23:
+            // Total Football
+            text = "Free bet στο<br><span class=\"small\">ντέρμπι του Λίβερπουλ!</span>";
+            link = "https://www.betshop.gr/promotions/display/1153/";
+            break;
+        case 24:
+            // Lucky Number
+            text = "<span class=\"akz\">24</span><br>Tυχερός αριθμός<br>στα τραπέζια της"; // Logo Evolution!
+            link = "https://www.betshop.gr/promotions/display/1154/";
+            break;
+        case 25:
+            // 5 Free Spins @ 90k Yeti Gigablox
+            text = "Κέρδισες<br>5 Free Spins στο"; // (Logo)
+            link = "https://www.betshop.gr/casino/display/6071/90k-yeti-gigablox";
+            break;
+        case 26:
+            // 3 Golden Chips @ Playtech Live
+            text = "Κέρδισες<br>3 Golden Chips<br>στα τραπέζια της"; // Logo Playtech!
+            link = "https://www.betshop.gr/live-casino/display/6224";
+            break;
+        case 27:
+            // Magic Card
+            text = "Κάρτες Μπόνους μοιράζουν μετρητά!"; // (Logo Betshop Prive)
+            link = "https://www.betshop.gr/promotions/display/1155/";
+            break;
+        case 28:
+            // Total Football
+            text = "Free bet στο<span class=\"small\">Μπράιτον-Τότεναμ!</span>";
+            link = "https://www.betshop.gr/promotions/display/1156/";
+            break;
+        case 29:
+            // Challenges: Ho Ho Ho!
+            text = "Παίξε <span class=\"small\">και</span> κέρδισε 20 Free Spins στο"; @* (Logo) Moon Princess Christmas Kingdom
+(Play n GO)*@
+            link = "https://www.betshop.gr/promotions/display/1157/";
+            break;
+        case 30:
+            // Mini Battles
+            text = "500€<br><span class=\"small\">στο ημερήσιο τουρνουά</span><br>“2024: Countdown”!"; // (Logo Playtech)
+            link = "https://www.betshop.gr/promotions/display/1158/";
+            break;
+        case 31:
+            // Lucky Number
+            text = "<span class=\"akz\">31</span><br>Tυχερός αριθμός<br>στα τραπέζια της"; // Logo Evolution!
+            link = "https://www.betshop.gr/promotions/display/1159/";
+            break;
+        case 1:
+            // 3 Golden Chips
+            text = "Κέρδισες<br>3 Golden Chips<br>στα τραπέζια της"; // Logo Playtech!
+            link = "https://www.betshop.gr/live-casino/display/6224";
+            break;
+        case 2:
+            // Pick & Roll
+            text = "Free bet στο<br><span class=\"small\">Ολυμπιακός-Μιλάνο!</span>";
+            link = "https://www.betshop.gr/promotions/display/1160/";
+            break;
+        case 3:
+            // 2€ Free Bet
+            text = "Free bet 2€<br>για όλους!";
+            link = "https://www.betshop.gr/sports";
+            break;
+        case 4:
+            // 3 Golden Chips
+            text = "Κέρδισες<br>3 Golden Chips<br>στα τραπέζια της"; // Logo Playtech!
+            link = "https://www.betshop.gr/live-casino/display/6224";
+            break;
+        case 5:
+            // Challenges: January Specials
+            text = "Παίξε <span class=\"small\">και</span> κέρδισε<br>20 Free Spins στο"; // (Logo) Invading Vegas Las Christmas
+            link = "https://www.betshop.gr/promotions/display/1161";
+            //link = "https://www.betshop.gr/casino/display/8042/invading-vegas-las-christmas"; -- changed cause Effie asked
+            break;
+        case 6:
+            //  Cashback
+            text = "15% Cashback<br>στα Game Shows"; // Logo από το Red Door Roulette (Evolution).
+            link = "https://www.betshop.gr/live-casino/category/39/game-shows#menu";
+            break;
+        case 7:
+            // Super Seven
+            text = "&nbsp; <span class=\"akz\">777</span> <span class=\"small\">και</span> μπόνους<br>στα Betshop Prive"; @* (Logo
+Betshop Prive) *@
+            link = "https://www.betshop.gr/promotions/display/1162/";
+            break;
+        case 8:
+            // Mini Battles
+            text = "500€ στο<br><span class=\"small\">ημερήσιο τουρνουά</span><br>“Yggdrasil Magic”!"; // (Logo Yggdrasil)
+            link = "https://www.betshop.gr/promotions/display/1163/";
+            break;
+        case 9:
+            // Cashback
+            text = "10% Cashback<br>στα slots<br><span class=\"small\">“Provider of the Month”</span>"; // Logo EGT
+            link = "https://www.betshop.gr/casino/category/74/provider-of-the-month#menu";
+            break;
+        case 10:
+            // Challenges: Catch me if you can
+            text = "Παίξε <span class=\"small\">και</span> κέρδισε 20 Free Spins στο"; // (Logo) Boat Bonanza Colossal Catch
+            link = "https://www.betshop.gr/promotions/display/1165";
+            break;
+        default:
+            text = "";
+            link = "https://www.betshop.gr/casino";
+            break;
+    }
+}
+@if (actualDay >= 18 && actualDay <= 31 && actualMonth == 12 || actualDay >= 1 && actualDay <= 10 && actualMonth == 1)
+{
+    <text>
+        <style type="text/css">
+            .play img {
+                max-width: none;
+            }
+
+            .play.container {
+                background-color: @bgColor;
+                height: 700px;
+                max-width: none;
+                text-align: center;
+                overflow: hidden;
+                position: relative;
+                width: 100%;
+            }
+
+            .scrollable-outside {
+                height: 660px;
+                margin: 20px auto 0;
+                overflow: hidden;
+                overflow-y: scroll;
+                position: relative;
+                width: calc(100% - 40px);
+                z-index: 4;
+            }
+
+            /* Scrollbars Firefox */
+            .scrollable-outside {
+                scrollbar-width: thin;
+                scrollbar-color: rgba(@scrollColorRGB, .4) rgba(@scrollColorRGB, .3);
+            }
+
+            /* Scrollbars Chrome/Edge/Safari */
+            .scrollable-outside::-webkit-scrollbar {
+                width: 20px;
+                height: 20px;
+            }
+
+            .scrollable-outside::-webkit-scrollbar-track {
+                border-radius: 99px;
+                background: rgba(@scrollColorRGB, .2);
+            }
+
+            .scrollable-outside::-webkit-scrollbar-thumb {
+                border-radius: 99px;
+                border: 2px solid transparent;
+                background: rgba(@scrollColorRGB, .5);
+            }
+
+            .scrollable-inside {}
+
+            .active .scrollable-outside {
+                scrollbar-color: #021335 #021335;
+            }
+
+            .active .scrollable-outside::-webkit-scrollbar-track {
+                background: #021335
+            }
+
+            .active .scrollable-outside::-webkit-scrollbar-thumb {
+                background: #021335
+            }
+
+            .logo {
+                left: 50%;
+                position: absolute;
+                top: 300px;
+                transform: translateX(-51%);
+                transition: top 1s;
+                z-index: 6;
+            }
+
+            .loaded .logo {
+                top: 15px;
+            }
+
+            .bg-color {
+                background-color: @bgColor;
+                bottom: 0;
+                height: 100%;
+                left: 0;
+                opacity: 1;
+                position: absolute;
+                right: 0;
+                top: 0;
+                transition: all 1s;
+                visibility: visible;
+                width: 100%;
+                z-index: 5;
+            }
+
+            .loaded .bg-color {
+                opacity: 0;
+                visibility: hidden;
+            }
+
+            .loader-bs {
+                animation: flash .5s infinite;
+                width: 180px;
+                height: 180px;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                transition: all 1s;
+                z-index: 6;
+                visibility: visible;
+            }
+
+            .loaded .loader-bs {
+                animation: none;
+                opacity: 0;
+                visibility: hidden;
+            }
+
+            @@keyframes flash {
+
+                0%,
+                100% {
+                    opacity: .3
+                }
+
+                50% {
+                    opacity: .5
+                }
+            }
+
+            .play .bg,
+            .play .bg-el1,
+            .play .bg-el2 {
+                background-repeat: repeat-y;
+                background-position: center 0px;
+                /*background-size: 100% 100%;*/
+                left: 0;
+                position: absolute;
+                width: 100%;
+            }
+
+            .play .bg {
+                /*animation: gravityBg 30s linear infinite;*/
+                background-image: url(@imgUrl/bg.webp@(cb));
+                height: 800px;
+                top: 0px;
+                z-index: 1;
+            }
+
+            .play .bg-el1 {
+                animation: gravityEl1 24s linear infinite;
+                background-image: url(@imgUrl/bg_elements1.webp@(cb));
+                height: 1400px;
+                top: -700px;
+                z-index: 1;
+            }
+
+            .play .bg-el2 {
+                animation: gravityEl2 12s linear infinite;
+                background-image: url(@imgUrl/bg_elements2.webp@(cb));
+                height: 1400px;
+                top: -700px;
+                z-index: 1;
+            }
+
+            @@keyframes gravityBg {
+
+                0% {
+                    top: -20px
+                }
+
+                100% {
+                    top: 0px
+                }
+            }
+
+            @@keyframes gravityEl1 {
+
+                0% {
+                    top: -700px
+                }
+
+                100% {
+                    top: 0px
+                }
+            }
+
+            @@keyframes gravityEl2 {
+
+                0% {
+                    top: -700px
+                }
+
+                100% {
+                    top: 0px
+                }
+            }
+
+            .play .ball {
+                margin: 0 auto 30px;
+                position: relative;
+                z-index: 1;
+            }
+
+            .play .ball .face {
+                background: url(@imgUrl/ball.webp@(cb)) center center no-repeat;
+                background-size: contain;
+                position: absolute;
+                z-index: 6;
+            }
+
+            .play .ball.past,
+            .play .ball.past .face,
+            .play .ball.future,
+            .play .ball.future .face {
+                height: 96px;
+                width: 96px;
+            }
+
+            .play .ball.past {
+                margin-top: 120px;
+                margin-bottom: 40px;
+            }
+
+            .play .ball.present {
+                cursor: pointer;
+                display: block;
+                margin-bottom: 30px;
+                margin-top: 230px;
+                z-index: 7;
+            }
+
+            .play .ball.future {
+                margin-bottom: 70px;
+            }
+
+            .play .ball.present,
+            .play .ball.present .face {
+                height: 232px;
+                transition: transform .8s ease-out;
+                width: 232px;
+            }
+
+            .play .ball.past+.ball.present {
+                margin-top: 0;
+            }
+
+            @@keyframes rotateL {
+
+                0%,
+                100% {
+                    transform: rotate(0deg)
+                }
+
+                50% {
+                    transform: rotate(-20deg)
+                }
+            }
+
+            @@keyframes rotateR {
+
+                0%,
+                100% {
+                    transform: rotate(0deg)
+                }
+
+                50% {
+                    transform: rotate(20deg)
+                }
+            }
+
+            @@keyframes rotateRs {
+
+                0%,
+                100% {
+                    transform: rotate(0deg)
+                }
+
+                50% {
+                    transform: rotate(8deg)
+                }
+            }
+
+            .ball .expired,
+            .ball .locked {
+                position: absolute;
+                left: -7px;
+                top: -7px;
+                z-index: 1;
+            }
+
+            .ball .rotate-l {
+                animation: rotateL 4s infinite;
+            }
+
+            .ball .rotate-r {
+                animation: rotateR 4s infinite;
+            }
+
+            .ball .exp-date {
+                color: @secondaryColor;
+                font-size: 16px;
+                position: absolute;
+                text-shadow: 0px -2px 2px #011e32;
+                top: 35px;
+                width: 240px;
+                left: -60px;
+            }
+
+            .ball .exp-date .l {
+                float: left
+            }
+
+            .ball .exp-date .r {
+                float: right;
+            }
+
+            .ball.future .date {
+                color: #fff;
+                font-size: 16px;
+                left: 0;
+                line-height: 1.1;
+                opacity: .7;
+                padding-top: 2px;
+                position: absolute;
+                text-align: center;
+                top: 100%;
+                width: 100%;
+            }
+
+            .ball.present .date {
+                background-color: rgba(225, 224, 227, .8);
+                border: 1px solid;
+                border-color: #fff #fff #e1e0e3;
+                border-radius: 16px;
+                box-shadow: 0 2px 1px rgba(51, 51, 51, .3);
+                bottom: 30px;
+                color: @secondaryColor;
+                font-size: 15px;
+                font-weight: bold;
+                left: 50%;
+                padding: 5px 16px;
+                position: absolute;
+                transform: translateX(-50%);
+                transition: all .4s ease .3s;
+                white-space: nowrap;
+                z-index: 7;
+            }
+
+            .ball.present .pointer {
+                animation: pointer 4s infinite;
+                bottom: -28px;
+                position: absolute;
+                right: -22px;
+            }
+
+            @@keyframes pointer {
+
+                0%,
+                60%,
+                100% {
+                    filter: blur(6px);
+                    opacity: 0;
+                    transform: translateY(8px);
+                }
+
+                70%,
+                90% {
+                    filter: blur(0px);
+                    opacity: 1;
+                    transform: translateY(0px);
+                }
+
+                80% {
+                    filter: blur(0px);
+                    opacity: 0;
+                    transform: translateY(0px);
+                }
+            }
+
+            .ball.present .ball-bg {
+                animation: rotateRs 6s infinite;
+                background: url(@imgUrl/ball_win_bg.webp@(cb)) top left no-repeat;
+                background-size: 300px 300px;
+                height: 300px;
+                left: -34px;
+                overflow: hidden;
+                position: absolute;
+                top: -34px;
+                transition: all .7s;
+                width: 300px;
+                z-index: 2;
+            }
+
+            .ball-bg-c {
+                transition: all .7s;
+            }
+
+            .present canvas {
+                background: transparent;
+                border-radius: 100%;
+                left: 2px;
+                position: absolute;
+                top: 2px;
+                transition: all .5s;
+                z-index: 1;
+            }
+
+            .no-touch .ball.present:hover {
+                animation: shakeX .4s;
+            }
+
+            .no-touch.active .ball.present:hover {
+                animation: none;
+            }
+
+            @@keyframes shakeX {
+
+                0%,
+                100% {
+                    transform: translateX(0px)
+                }
+
+                14% {
+                    transform: translateX(2px)
+                }
+
+                28% {
+                    transform: translateX(-2px)
+                }
+
+                42% {
+                    transform: translateX(6px)
+                }
+
+                56% {
+                    transform: translateX(-6px)
+                }
+
+                70% {
+                    transform: translateX(3px)
+                }
+
+                86% {
+                    transform: translateX(-3px)
+                }
+            }
+
+            .gift {
+                position: absolute
+            }
+
+            .gift.g-1 {
+                animation: gift-1 1.25s ease infinite 0s;
+                height: 88px;
+                left: 60px;
+                top: 60px;
+                width: 77px;
+                z-index: 5;
+            }
+
+            .gift.g-2 {
+                animation: gift-2 1.4s ease infinite .33s;
+                height: 56px;
+                left: 141px;
+                top: 80px;
+                transform: rotate(25deg);
+                width: 49px;
+                z-index: 4;
+            }
+
+            .gift.g-3 {
+                animation: gift-3 1.55s ease infinite .66s;
+                height: 41px;
+                left: 136px;
+                top: 44px;
+                transform: rotate(-45deg);
+                width: 33px;
+                z-index: 3;
+            }
+
+            .win-bg {
+                background-color: #030928;
+                bottom: 0;
+                height: 100%;
+                left: 0;
+                opacity: 0;
+                position: absolute;
+                right: 0;
+                top: 0;
+                transition: opacity 1.2s;
+                width: 100%;
+                z-index: 2;
+            }
+
+            .win-border {
+                border: 21px solid transparent;
+                bottom: 0;
+                left: 0;
+                height: 100%;
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 100%;
+                transition: border 1.2s;
+                z-index: 3;
+            }
+
+            .active .win-border {
+                border-color: rgba(3, 9, 40, .8)
+            }
+
+            .active .win-bg {
+                opacity: .8
+            }
+
+            .active .scrollable-outside {
+                pointer-events: none
+            }
+
+            @@keyframes gift-1 {
+
+
+                0%,
+                100% {
+                    transform: translate(0px, 0px) rotate(0deg)
+                }
+
+                50% {
+                    transform: translate(-30px, 0px) rotate(32deg)
+                }
+            }
+
+            @@keyframes gift-2 {
+
+                0%,
+                100% {
+                    transform: translate(0px, 0px) rotate(0deg)
+                }
+
+                50% {
+                    transform: translate(-20px, 0px) rotate(25deg)
+                }
+            }
+
+            @@keyframes gift-3 {
+
+                0%,
+                100% {
+                    transform: translate(0px, 0px) rotate(-32deg)
+                }
+
+                50% {
+                    transform: translate(-30px, 0px) rotate(12deg)
+                }
+            }
+
+            .gifts {
+                bottom: 0;
+                left: 0;
+                position: absolute;
+                right: 0;
+                transition: all .6s;
+                top: 0;
+                z-index: 5;
+            }
+
+            .active .gifts {
+                transform: scale(0);
+            }
+
+            .active .present canvas,
+            .active .ball.present .date {
+                opacity: 0;
+                visibility: hidden;
+            }
+
+            .active .ball-bg-c {
+                transform: scale(1.3)
+            }
+
+            .active .ball.present .ball-bg {
+                animation: none;
+                height: 150px;
+                top: -57px;
+            }
+
+            .active .ball.present .face {
+                transform: scale(1.3)
+            }
+
+            .win-screen,
+            .win-screen .link {
+                bottom: 0;
+                left: 0;
+                position: absolute;
+                right: 0;
+                top: 0;
+                z-index: 7;
+            }
+
+            .win-screen {
+                visibility: hidden
+            }
+
+            .active .win-screen {
+                visibility: visible
+            }
+
+            .win-screen .winning {
+                height: 300px;
+                left: 50%;
+                margin-left: -159px;
+                opacity: 0;
+                position: absolute;
+                top: 242px;
+                transition: opacity 1s ease 1s;
+                width: 300px;
+            }
+
+            .win-screen.win-18 .winning {
+                top: 217px
+            }
+
+            .active .win-screen .winning {
+                opacity: 1
+            }
+
+            .win-screen .txt {
+                color: #fff;
+                font-size: 32px;
+                font-weight: 600;
+                line-height: 1.2;
+                padding: 70px 10px 10px;
+                text-align: center;
+            }
+
+            .win-screen .txt .small {
+                display: inline-block;
+                font-size: 24px;
+                margin-bottom: 4px;
+                white-space: nowrap;
+            }
+
+            .win-screen .txt .akz {
+                font-family: "promo-font";
+                font-size: 133%;
+            }
+
+            .win-screen .win-img {
+                margin: 0 auto;
+                max-width: 100%;
+                width: auto;
+            }
+
+            .win-screen.win-20 .win-img,
+            .win-screen.win-23 .win-img,
+            .win-screen.win-28 .win-img,
+            .win-screen.win-2 .win-img {
+                height: 160px;
+                margin-top: -15px;
+            }
+
+            .win-screen.win-2 .txt .small {
+                display: block;
+                font-size: 27px;
+            }
+
+            .win-screen.win-21 .txt,
+            .win-screen.win-27 .txt {
+                font-size: 26px;
+                padding: 80px 10px 20px;
+            }
+
+            .win-screen.win-21 .win-img,
+            .win-screen.win-27 .win-img,
+            .win-screen.win-7 .win-img {
+                transform: translateX(10px)
+            }
+
+            .win-screen.win-22 .txt,
+            .win-screen.win-26 .txt {
+                font-size: 28px;
+                padding: 50px 10px 20px;
+            }
+
+
+            .win-screen.win-24 .txt,
+            .win-screen.win-31 .txt {
+                font-size: 30px;
+                padding: 40px 10px 10px;
+            }
+
+            .win-screen.win-24 .win-img {
+                height: 88px;
+                transform: translateX(5px);
+            }
+
+            .win-screen.win-25 .txt {
+                padding: 60px 10px 0px
+            }
+
+            .win-screen.win-25 .win-img {
+                height: 105px
+            }
+
+            .win-screen.win-29 .txt {
+                padding: 90px 10px 0px
+            }
+
+            .win-screen.win-30 .txt,
+            .win-screen.win-1 .txt,
+            .win-screen.win-4 .txt {
+                font-size: 30px;
+                padding: 50px 10px 10px;
+            }
+
+            .win-screen.win-3 .txt {
+                padding: 60px 10px 0px;
+            }
+
+            .win-screen.win-3 .win-img {
+                transform: scale(.7) translateY(-56px)
+            }
+
+            .win-screen.win-5 .txt {
+                font-size: 30px;
+                padding: 80px 10px 5px;
+            }
+
+            .win-screen.win-5 .win-img {
+                height: 126px
+            }
+
+            .win-screen.win-6 .txt {
+                font-size: 28px;
+                padding: 60px 10px 10px;
+            }
+
+            .win-screen.win-8 .txt {
+                padding: 50px 10px 20px
+            }
+
+            .win-screen.win-8 .win-img {
+                height: 57px
+            }
+
+            .win-screen.win-9 .txt {
+                padding-bottom: 5px
+            }
+
+            .win-screen.win-9 .txt .small {
+                display: block;
+                margin-top: 4px;
+            }
+
+            .win-screen.win-9 .win-img {
+                height: 78px
+            }
+
+            .win-screen.win-10 .txt {
+                font-size: 30px;
+                padding: 85px 10px 0px;
+            }
+
+            .win-screen.win-10 .win-img {
+                transform: scale(.88)
+            }
+
+            .confetti {
+                left: 50%;
+                opacity: 0;
+                position: absolute;
+                top: 50%;
+                transform: translate(-50%, -75%) scale(.2);
+            }
+
+            .confetti-white {
+                z-index: 3;
+            }
+
+            .confetti-golden {
+                z-index: 4;
+            }
+
+            .confetti-blue {
+                z-index: 5;
+            }
+
+            .confetti-ribbon {
+                z-index: 6;
+            }
+
+            @@keyframes confetti {
+                0% {
+                    opacity: 0;
+                    transform: translate(-50%, -58%) scale(.2)
+                }
+
+                22% {
+                    opacity: .8;
+                    transform: translate(-50%, -58%) scale(1)
+                }
+
+                27% {
+                    opacity: 1;
+                    transform: translate(-50%, -56%) scale(1)
+                }
+
+                50% {
+                    opacity: 1;
+                    transform: translate(-50%, -53%) scale(1)
+                }
+
+                100% {
+                    opacity: 1;
+                    transform: translate(-50%, -50%) scale(1)
+                }
+            }
+
+            @@keyframes confetti-ribbon {
+                0% {
+                    opacity: 0;
+                    transform: translate(-50%, -50%) scale(.2, 1)
+                }
+
+                50% {
+                    opacity: 1;
+                    transform: translate(-50%, -50%) scale(.8, 1)
+                }
+
+                100% {
+                    opacity: 1;
+                    transform: translate(-50%, -50%) scale(1, 1)
+                }
+            }
+
+            .active .confetti-white {
+                animation: confetti 6s ease-out .5s forwards
+            }
+
+            .active .confetti-golden {
+                animation: confetti 6s ease-out 1s forwards
+            }
+
+            .active .confetti-blue {
+                animation: confetti 6s ease-out 1.5s forwards
+            }
+
+            .active .confetti-ribbon {
+                animation: confetti-ribbon 1.5s ease-out 2.5s forwards
+            }
+
+            @@media screen and (max-width:1280px) and (max-height:800px) {
+                .play.container {
+                    height: 600px;
+                }
+
+                .play .screen-sm {
+                    position: absolute;
+                    height: 116.666%;
+                    width: 116.666%;
+                    transform: scale(.857) translate(-8.57%, -8.57%);
+                }
+            }
+
+            @@media screen and (max-width:680px) {
+                .play.container {
+                    height: 480px;
+                }
+
+                .play .screen-sm {
+                    position: absolute;
+                    height: 146%;
+                    width: 146%;
+                    transform: scale(.6857) translate(-23%, -23%);
+                }
+            }
+
+            @@media screen and (max-width:360px) {
+                .play.container {
+                    height: 400px;
+                }
+
+                .play .screen-sm {
+                    position: absolute;
+                    height: 175%;
+                    width: 175%;
+                    transform: scale(.5715) translate(-37.45%, -37.45%);
+                }
+            }
+        </style>
+
+
+        <div class="container play" id="play">
+            <div class="screen-sm">
+                <img class="logo" src="@imgUrl/logo.webp@(cb)" />
+                <img class="loader-bs" src="@imgUrl/ball.webp@(cb)" />
+                <div class="bg-color"></div>
+                <div class="bg" id="bsBg"></div>
+                <div class="bg-el1" id="bsBgEl1"></div>
+                <div class="bg-el2" id="bsBgEl2"></div>
+                <div class="win-border"></div>
+                <div class="scrollable-outside" id="bsScroll">
+                    <div class="scrollable-inside" id=bsScrolling>
+                        @{
+                            string dir = "r";
+                            var dayHere = actualDay < 18 ? actualDay + 31 : actualDay;
+                        }
+                        @for (var i = 18; i <= 41; i++)
+                        {
+
+                            var printDay = i > 31 ? i - 31 : i;
+                            string month = i <= 31 ? "ΔΕΚΕΜΒΡΙΟΥ" : "ΙΑΝΟΥΑΡΙΟΥ";
+                            string mm = i <= 31 ? "12" : "01";
+                            @if (i == dayHere - 1)
+                            {
+                                <div class="ball past">
+                                    <div class="face"></div>
+                                    <img class="expired" src="@imgUrl/ball_expired.webp@(cb)" />
+                                    <div class="exp-date">
+                                        <span class="l">@printDay/@mm</span>
+                                        <span class="r">EXPIRED</span>
+                                    </div>
+                                </div>
+                            }
+                            @if (i == dayHere)
+                            {
+                                <a class="ball present" id="option">
+                                    <div class="face"></div>
+                                    <div class="ball-bg-c">
+                                        <div class="ball-bg"></div>
+                                    </div>
+                                    <canvas id="snowglobe" height="228" width="228"></canvas>
+                                    <div class="date">
+                                        @printDay/@mm &nbsp; click here
+                                        <img class="pointer" src="@imgUrl/pointer.webp@(cb)" />
+                                    </div>
+                                    <div class="gifts">
+                                        <img class="gift g-1" src="@imgUrl/gift.webp@(cb)" />
+                                        <img class="gift g-2" src="@imgUrl/gift.webp@(cb)" />
+                                        <img class="gift g-3" src="@imgUrl/gift.webp@(cb)" />
+                                    </div>
+                                </a>
+                                <div class="win-bg"></div>
+                                <img class="confetti confetti-white" src="@(imgUrl)/confetti_white.webp@(cb)" />
+                                <img class="confetti confetti-golden" src="@(imgUrl)/confetti_golden.webp@(cb)" />
+                                <img class="confetti confetti-blue" src="@(imgUrl)/confetti_blue.webp@(cb)" />
+                                <img class="confetti confetti-ribbon" src="@(imgUrl)/confetti_ribbon.webp@(cb)" />
+                            }
+                            @if (i > dayHere)
+                            {
+                                <div class="ball future">
+                                    <div class="face"></div>
+                                    <img class="locked rotate-@(dir)" src="@imgUrl/ball_future.webp@(cb)" />
+                                    <div class="date">@printDay<br>@month</div>
+                                </div>
+                            }
+                            dir = dir == "r" ? "l" : "r";
+                        }
+                    </div>
+                </div>
+                <div class="win-screen win-@(actualDay)">
+                    <div class="winning">
+                        <div class="txt">@Html.Raw(text)</div>
+                        <img class="win-img" src="@(imgUrl)/win/@(actualDay).webp@(cb)" />
+                    </div>
+                    <a class="link" href="@link" target="_top"></a>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            const play = document.getElementById('play');
+            const option = document.getElementById('option');
+            const bg = document.getElementById('bsBg');
+            const bgEl1 = document.getElementById('bsBgEl1');
+            const bgEl2 = document.getElementById('bsBgEl2');
+            const scrollable = document.getElementById('bsScroll');
+            const scrolling = document.getElementById('bsScrolling');
+
+            play.classList.add('ontouchstart' in document.documentElement ? 'touch' : 'no-touch')
+
+            window.addEventListener('load', () => {
+                setTimeout(function () { play.classList.add('loaded'); }, 300);
+            });
+
+            if (option !== null) {
+                option.addEventListener('click', function () {
+                    play.classList.add('active');
+                    scrollable.scrollTop = 0;
+                });
+            }
+
+            scrollable.addEventListener('scroll', (e) => {
+                var findPer = scrollable.scrollTop / (scrolling.offsetHeight - scrollable.offsetHeight),
+                    bgPer = Math.round(findPer * 100),
+                    el1Per = Math.round(findPer * 300),
+                    el2Per = Math.round(findPer * 500);
+                bg.style.backgroundPosition = 'center -' + bgPer + 'px';
+                bgEl1.style.backgroundPosition = 'center -' + el1Per + 'px';
+                bgEl2.style.backgroundPosition = 'center -' + el2Per + 'px';
+            });
+
+            const canvas = document.getElementById("snowglobe");
+            const ctx = canvas.getContext("2d");
+            const flakes = [];
+            let shake = false;
+            let ballX = canvas.width / 2;
+            let ballY = canvas.height / 2;
+            const ballRadius = 200;
+            const floorWidth = 200;
+            const floorHeight = 60;
+            const floorY = ballY + ballRadius * 0.7;
+            let shakeDirection = 1;
+
+            class Flake {
+                constructor() {
+                    this.reset();
+                    this.gravityStrength = 0.0001;
+                }
+
+                reset() {
+                    let angle, radius;
+                    do {
+                        angle = Math.random() * Math.PI * 2;
+                        radius = Math.random() * floorWidth;
+                        this.x = ballX + Math.cos(angle) * radius;
+                        this.y = ballY + Math.sin(angle) * radius;
+                    } while (Math.sqrt((this.x - ballX) ** 2 + (this.y - ballY) ** 2) > ballRadius || this.y > floorY);
+
+                    this.radius = Math.random() * 2 + 1;
+                    this.speedY = Math.random() * 1 + 0.5;
+                    this.speedX = Math.random() * 0.4 - 0.2;
+                }
+
+                update() {
+                    if (shake) {
+                        this.speedX = Math.random() * 12 - 6;
+                        this.speedY = Math.random() * 12 - 6;
+                        this.gravityStrength = 0.00009;
+                    }
+
+                    this.y += this.speedY;
+                    this.x += this.speedX;
+
+                    const distanceToCenter = Math.sqrt((this.x - ballX) ** 2 + (this.y - ballY) ** 2);
+
+                    if (distanceToCenter + this.radius > ballRadius) {
+                        const angle = Math.atan2(this.y - ballY, this.x - ballX);
+                        this.x = ballX + Math.cos(angle) * (ballRadius - this.radius);
+                        this.y = ballY + Math.sin(angle) * (ballRadius - this.radius);
+                        this.speedX *= -0.5;
+                        this.speedY *= -0.5;
+                    }
+
+                    if (this.y > floorY && !shake) {
+                        this.y = floorY;
+                        this.speedX = 0;
+                        this.speedY = 0;
+                        this.gravityStrength = 0.04;
+                    }
+
+                    if (!shake) {
+                        this.speedY += this.gravityStrength;
+                    }
+                }
+
+                draw() {
+                    ctx.beginPath();
+                    ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+                    ctx.fillStyle = "white";
+                    ctx.fill();
+                }
+            }
+
+            function init() {
+                for (let i = 0; i < 400; i++) {
+                    const flake = new Flake();
+                    flakes.push(flake);
+                }
+            }
+
+            function drawBalls() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                let ballYStart = canvas.height / 2;
+                if (shake) {
+                    ballX += shakeDirection * 15;
+                    ballY = ballYStart + Math.sin(ballX) * 3;
+                    if (ballX > canvas.width / 2 + 30 || ballX < canvas.width / 2 - 30) {
+                        shakeDirection *= -1;
+                    }
+                } else {
+                    ballX = canvas.width / 2;
+                    ballY = ballYStart;
+                }
+
+                ctx.save();
+                ctx.beginPath();
+                ctx.arc(ballX, ballY, ballRadius, 0, Math.PI * 2);
+                ctx.clip();
+
+                flakes.forEach((flake) => {
+                    flake.update();
+                    flake.draw();
+                });
+
+                ctx.restore();
+
+                requestAnimationFrame(drawBalls);
+                ctx.beginPath();
+                const gradient = ctx.createRadialGradient(ballX - 80, ballY - 80, 10, ballX - 50, ballY - 80, 70);
+            }
+
+            init();
+            drawBalls();
+
+            function shakeIt() {
+                if (!shake) {
+                    shake = true;
+                }
+                setTimeout(function () {
+                    if (shake) {
+                        shake = false;
+                    }
+                }, 100);
+            };
+
+            shakeIt();
+            setInterval(shakeIt, 3000);
+
+        </script>
+    </text>
+}

@@ -1,0 +1,1569 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Promotions.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Promotions.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\css\\tailwind.css",
+      "PackagePath": "staticwebassets\\css\\tailwind.css"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\summerball\\bg_bubbles_lg.png",
+      "PackagePath": "staticwebassets\\img\\calendar\\summerball\\bg_bubbles_lg.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\summerball\\bg_bubbles_sm.png",
+      "PackagePath": "staticwebassets\\img\\calendar\\summerball\\bg_bubbles_sm.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\summerball\\bg_fish_sm.png",
+      "PackagePath": "staticwebassets\\img\\calendar\\summerball\\bg_fish_sm.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\summerball\\bg_lg.jpg",
+      "PackagePath": "staticwebassets\\img\\calendar\\summerball\\bg_lg.jpg"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\summerball\\bg_sm.jpg",
+      "PackagePath": "staticwebassets\\img\\calendar\\summerball\\bg_sm.jpg"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\summerball\\bg_sm0.jpg",
+      "PackagePath": "staticwebassets\\img\\calendar\\summerball\\bg_sm0.jpg"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\summerball\\bg_sm1.jpg",
+      "PackagePath": "staticwebassets\\img\\calendar\\summerball\\bg_sm1.jpg"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\summerball\\bubble.png",
+      "PackagePath": "staticwebassets\\img\\calendar\\summerball\\bubble.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\summerball\\bubbles-win-sm.png",
+      "PackagePath": "staticwebassets\\img\\calendar\\summerball\\bubbles-win-sm.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\summerball\\bubbles-win.png",
+      "PackagePath": "staticwebassets\\img\\calendar\\summerball\\bubbles-win.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\summerball\\dates\\17.svg",
+      "PackagePath": "staticwebassets\\img\\calendar\\summerball\\dates\\17.svg"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\summerball\\dates\\18.svg",
+      "PackagePath": "staticwebassets\\img\\calendar\\summerball\\dates\\18.svg"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\summerball\\dates\\19.svg",
+      "PackagePath": "staticwebassets\\img\\calendar\\summerball\\dates\\19.svg"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\summerball\\dates\\20.svg",
+      "PackagePath": "staticwebassets\\img\\calendar\\summerball\\dates\\20.svg"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\summerball\\dates\\21.svg",
+      "PackagePath": "staticwebassets\\img\\calendar\\summerball\\dates\\21.svg"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\summerball\\dates\\22.svg",
+      "PackagePath": "staticwebassets\\img\\calendar\\summerball\\dates\\22.svg"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\summerball\\dates\\23.svg",
+      "PackagePath": "staticwebassets\\img\\calendar\\summerball\\dates\\23.svg"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\summerball\\dates\\24.svg",
+      "PackagePath": "staticwebassets\\img\\calendar\\summerball\\dates\\24.svg"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\summerball\\dates\\25.svg",
+      "PackagePath": "staticwebassets\\img\\calendar\\summerball\\dates\\25.svg"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\summerball\\dates\\26.svg",
+      "PackagePath": "staticwebassets\\img\\calendar\\summerball\\dates\\26.svg"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\summerball\\dates\\27.svg",
+      "PackagePath": "staticwebassets\\img\\calendar\\summerball\\dates\\27.svg"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\summerball\\dates\\28.svg",
+      "PackagePath": "staticwebassets\\img\\calendar\\summerball\\dates\\28.svg"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\summerball\\dates\\29.svg",
+      "PackagePath": "staticwebassets\\img\\calendar\\summerball\\dates\\29.svg"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\summerball\\dates\\30.svg",
+      "PackagePath": "staticwebassets\\img\\calendar\\summerball\\dates\\30.svg"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\summerball\\dates\\31.svg",
+      "PackagePath": "staticwebassets\\img\\calendar\\summerball\\dates\\31.svg"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\summerball\\logo.png",
+      "PackagePath": "staticwebassets\\img\\calendar\\summerball\\logo.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\summerball\\objects\\17.png",
+      "PackagePath": "staticwebassets\\img\\calendar\\summerball\\objects\\17.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\summerball\\objects\\18.png",
+      "PackagePath": "staticwebassets\\img\\calendar\\summerball\\objects\\18.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\summerball\\objects\\19.png",
+      "PackagePath": "staticwebassets\\img\\calendar\\summerball\\objects\\19.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\summerball\\objects\\20.png",
+      "PackagePath": "staticwebassets\\img\\calendar\\summerball\\objects\\20.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\summerball\\objects\\21.png",
+      "PackagePath": "staticwebassets\\img\\calendar\\summerball\\objects\\21.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\summerball\\objects\\22.png",
+      "PackagePath": "staticwebassets\\img\\calendar\\summerball\\objects\\22.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\summerball\\objects\\23.png",
+      "PackagePath": "staticwebassets\\img\\calendar\\summerball\\objects\\23.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\summerball\\objects\\24.png",
+      "PackagePath": "staticwebassets\\img\\calendar\\summerball\\objects\\24.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\summerball\\objects\\25.png",
+      "PackagePath": "staticwebassets\\img\\calendar\\summerball\\objects\\25.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\summerball\\objects\\26.png",
+      "PackagePath": "staticwebassets\\img\\calendar\\summerball\\objects\\26.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\summerball\\objects\\27.png",
+      "PackagePath": "staticwebassets\\img\\calendar\\summerball\\objects\\27.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\summerball\\objects\\28.png",
+      "PackagePath": "staticwebassets\\img\\calendar\\summerball\\objects\\28.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\summerball\\objects\\29.png",
+      "PackagePath": "staticwebassets\\img\\calendar\\summerball\\objects\\29.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\summerball\\objects\\30.png",
+      "PackagePath": "staticwebassets\\img\\calendar\\summerball\\objects\\30.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\summerball\\objects\\31.png",
+      "PackagePath": "staticwebassets\\img\\calendar\\summerball\\objects\\31.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\summerball\\win\\17.png",
+      "PackagePath": "staticwebassets\\img\\calendar\\summerball\\win\\17.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\summerball\\win\\18.png",
+      "PackagePath": "staticwebassets\\img\\calendar\\summerball\\win\\18.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\summerball\\win\\19.png",
+      "PackagePath": "staticwebassets\\img\\calendar\\summerball\\win\\19.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\summerball\\win\\20.svg",
+      "PackagePath": "staticwebassets\\img\\calendar\\summerball\\win\\20.svg"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\summerball\\win\\21.png",
+      "PackagePath": "staticwebassets\\img\\calendar\\summerball\\win\\21.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\summerball\\win\\22.png",
+      "PackagePath": "staticwebassets\\img\\calendar\\summerball\\win\\22.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\summerball\\win\\23.png",
+      "PackagePath": "staticwebassets\\img\\calendar\\summerball\\win\\23.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\summerball\\win\\25.png",
+      "PackagePath": "staticwebassets\\img\\calendar\\summerball\\win\\25.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\summerball\\win\\26.png",
+      "PackagePath": "staticwebassets\\img\\calendar\\summerball\\win\\26.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\summerball\\win\\27.png",
+      "PackagePath": "staticwebassets\\img\\calendar\\summerball\\win\\27.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\summerball\\win\\28.png",
+      "PackagePath": "staticwebassets\\img\\calendar\\summerball\\win\\28.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\summerball\\win\\30.svg",
+      "PackagePath": "staticwebassets\\img\\calendar\\summerball\\win\\30.svg"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\summerball\\win\\31.png",
+      "PackagePath": "staticwebassets\\img\\calendar\\summerball\\win\\31.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\xmas2023\\arrow_down.webp",
+      "PackagePath": "staticwebassets\\img\\calendar\\xmas2023\\arrow_down.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\xmas2023\\ball.webp",
+      "PackagePath": "staticwebassets\\img\\calendar\\xmas2023\\ball.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\xmas2023\\ball_expired.webp",
+      "PackagePath": "staticwebassets\\img\\calendar\\xmas2023\\ball_expired.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\xmas2023\\ball_future.webp",
+      "PackagePath": "staticwebassets\\img\\calendar\\xmas2023\\ball_future.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\xmas2023\\ball_win_bg.webp",
+      "PackagePath": "staticwebassets\\img\\calendar\\xmas2023\\ball_win_bg.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\xmas2023\\bg.webp",
+      "PackagePath": "staticwebassets\\img\\calendar\\xmas2023\\bg.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\xmas2023\\bg_elements1.webp",
+      "PackagePath": "staticwebassets\\img\\calendar\\xmas2023\\bg_elements1.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\xmas2023\\bg_elements2.webp",
+      "PackagePath": "staticwebassets\\img\\calendar\\xmas2023\\bg_elements2.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\xmas2023\\bin\\bg elements.psd",
+      "PackagePath": "staticwebassets\\img\\calendar\\xmas2023\\bin\\bg elements.psd"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\xmas2023\\bin\\bg_elements1-0.webp",
+      "PackagePath": "staticwebassets\\img\\calendar\\xmas2023\\bin\\bg_elements1-0.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\xmas2023\\bin\\bg_elements1-1.webp",
+      "PackagePath": "staticwebassets\\img\\calendar\\xmas2023\\bin\\bg_elements1-1.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\xmas2023\\bin\\bg_elements1.png",
+      "PackagePath": "staticwebassets\\img\\calendar\\xmas2023\\bin\\bg_elements1.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\xmas2023\\bin\\bg_elements2-0.webp",
+      "PackagePath": "staticwebassets\\img\\calendar\\xmas2023\\bin\\bg_elements2-0.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\xmas2023\\bin\\bg_elements2-1.webp",
+      "PackagePath": "staticwebassets\\img\\calendar\\xmas2023\\bin\\bg_elements2-1.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\xmas2023\\bin\\bg_elements2.png",
+      "PackagePath": "staticwebassets\\img\\calendar\\xmas2023\\bin\\bg_elements2.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\xmas2023\\bin\\confetti.psd",
+      "PackagePath": "staticwebassets\\img\\calendar\\xmas2023\\bin\\confetti.psd"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\xmas2023\\bin\\confetti_blue.png",
+      "PackagePath": "staticwebassets\\img\\calendar\\xmas2023\\bin\\confetti_blue.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\xmas2023\\bin\\confetti_golden.png",
+      "PackagePath": "staticwebassets\\img\\calendar\\xmas2023\\bin\\confetti_golden.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\xmas2023\\bin\\confetti_ribbon.png",
+      "PackagePath": "staticwebassets\\img\\calendar\\xmas2023\\bin\\confetti_ribbon.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\xmas2023\\bin\\confetti_white.png",
+      "PackagePath": "staticwebassets\\img\\calendar\\xmas2023\\bin\\confetti_white.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\xmas2023\\confetti_blue.webp",
+      "PackagePath": "staticwebassets\\img\\calendar\\xmas2023\\confetti_blue.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\xmas2023\\confetti_golden.webp",
+      "PackagePath": "staticwebassets\\img\\calendar\\xmas2023\\confetti_golden.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\xmas2023\\confetti_ribbon.webp",
+      "PackagePath": "staticwebassets\\img\\calendar\\xmas2023\\confetti_ribbon.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\xmas2023\\confetti_white.webp",
+      "PackagePath": "staticwebassets\\img\\calendar\\xmas2023\\confetti_white.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\xmas2023\\gift.webp",
+      "PackagePath": "staticwebassets\\img\\calendar\\xmas2023\\gift.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\xmas2023\\logo-0.webp",
+      "PackagePath": "staticwebassets\\img\\calendar\\xmas2023\\logo-0.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\xmas2023\\logo.webp",
+      "PackagePath": "staticwebassets\\img\\calendar\\xmas2023\\logo.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\xmas2023\\pointer.webp",
+      "PackagePath": "staticwebassets\\img\\calendar\\xmas2023\\pointer.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\xmas2023\\win\\1.webp",
+      "PackagePath": "staticwebassets\\img\\calendar\\xmas2023\\win\\1.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\xmas2023\\win\\10.webp",
+      "PackagePath": "staticwebassets\\img\\calendar\\xmas2023\\win\\10.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\xmas2023\\win\\18.webp",
+      "PackagePath": "staticwebassets\\img\\calendar\\xmas2023\\win\\18.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\xmas2023\\win\\19.webp",
+      "PackagePath": "staticwebassets\\img\\calendar\\xmas2023\\win\\19.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\xmas2023\\win\\2.webp",
+      "PackagePath": "staticwebassets\\img\\calendar\\xmas2023\\win\\2.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\xmas2023\\win\\20.webp",
+      "PackagePath": "staticwebassets\\img\\calendar\\xmas2023\\win\\20.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\xmas2023\\win\\21.webp",
+      "PackagePath": "staticwebassets\\img\\calendar\\xmas2023\\win\\21.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\xmas2023\\win\\22.webp",
+      "PackagePath": "staticwebassets\\img\\calendar\\xmas2023\\win\\22.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\xmas2023\\win\\23.webp",
+      "PackagePath": "staticwebassets\\img\\calendar\\xmas2023\\win\\23.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\xmas2023\\win\\24.webp",
+      "PackagePath": "staticwebassets\\img\\calendar\\xmas2023\\win\\24.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\xmas2023\\win\\25.webp",
+      "PackagePath": "staticwebassets\\img\\calendar\\xmas2023\\win\\25.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\xmas2023\\win\\26.webp",
+      "PackagePath": "staticwebassets\\img\\calendar\\xmas2023\\win\\26.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\xmas2023\\win\\27.webp",
+      "PackagePath": "staticwebassets\\img\\calendar\\xmas2023\\win\\27.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\xmas2023\\win\\28.webp",
+      "PackagePath": "staticwebassets\\img\\calendar\\xmas2023\\win\\28.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\xmas2023\\win\\29.webp",
+      "PackagePath": "staticwebassets\\img\\calendar\\xmas2023\\win\\29.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\xmas2023\\win\\3.webp",
+      "PackagePath": "staticwebassets\\img\\calendar\\xmas2023\\win\\3.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\xmas2023\\win\\30.webp",
+      "PackagePath": "staticwebassets\\img\\calendar\\xmas2023\\win\\30.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\xmas2023\\win\\31.webp",
+      "PackagePath": "staticwebassets\\img\\calendar\\xmas2023\\win\\31.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\xmas2023\\win\\4.webp",
+      "PackagePath": "staticwebassets\\img\\calendar\\xmas2023\\win\\4.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\xmas2023\\win\\5.webp",
+      "PackagePath": "staticwebassets\\img\\calendar\\xmas2023\\win\\5.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\xmas2023\\win\\6.webp",
+      "PackagePath": "staticwebassets\\img\\calendar\\xmas2023\\win\\6.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\xmas2023\\win\\7.webp",
+      "PackagePath": "staticwebassets\\img\\calendar\\xmas2023\\win\\7.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\xmas2023\\win\\8.webp",
+      "PackagePath": "staticwebassets\\img\\calendar\\xmas2023\\win\\8.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\calendar\\xmas2023\\win\\9.webp",
+      "PackagePath": "staticwebassets\\img\\calendar\\xmas2023\\win\\9.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\eurorush.jpg",
+      "PackagePath": "staticwebassets\\img\\eurorush.jpg"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\favicon.png",
+      "PackagePath": "staticwebassets\\img\\favicon.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\measteryisland.jpg",
+      "PackagePath": "staticwebassets\\img\\measteryisland.jpg"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\eurorush\\betshop.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\eurorush\\betshop.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\eurorush\\bg_lg.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\eurorush\\bg_lg.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\eurorush\\bg_xl.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\eurorush\\bg_xl.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\eurorush\\char_ball.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\eurorush\\char_ball.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\eurorush\\char_ball_closes.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\eurorush\\char_ball_closes.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\eurorush\\char_ball_explodes.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\eurorush\\char_ball_explodes.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\eurorush\\char_ball_opens.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\eurorush\\char_ball_opens.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\eurorush\\char_c1.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\eurorush\\char_c1.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\eurorush\\char_c1_ball.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\eurorush\\char_c1_ball.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\eurorush\\char_c2.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\eurorush\\char_c2.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\eurorush\\char_c2_ball.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\eurorush\\char_c2_ball.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\eurorush\\char_c3.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\eurorush\\char_c3.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\eurorush\\char_c3_ball.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\eurorush\\char_c3_ball.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\eurorush\\char_l1.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\eurorush\\char_l1.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\eurorush\\char_l1_ball.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\eurorush\\char_l1_ball.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\eurorush\\char_l2.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\eurorush\\char_l2.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\eurorush\\char_l2_ball.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\eurorush\\char_l2_ball.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\eurorush\\char_l3.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\eurorush\\char_l3.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\eurorush\\char_l3_ball.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\eurorush\\char_l3_ball.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\eurorush\\char_r1.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\eurorush\\char_r1.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\eurorush\\char_r1_ball.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\eurorush\\char_r1_ball.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\eurorush\\char_r2.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\eurorush\\char_r2.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\eurorush\\char_r2_ball.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\eurorush\\char_r2_ball.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\eurorush\\char_r3.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\eurorush\\char_r3.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\eurorush\\char_r3_ball.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\eurorush\\char_r3_ball.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\eurorush\\logo.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\eurorush\\logo.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\eurorush\\logo_bg.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\eurorush\\logo_bg.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\eurorush\\logo_bw.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\eurorush\\logo_bw.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\eurorush\\shadowc.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\eurorush\\shadowc.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\eurorush\\shadowl.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\eurorush\\shadowl.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\eurorush\\shadowr.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\eurorush\\shadowr.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\eurorush\\win\\INS_bigfootballbonus.jpg",
+      "PackagePath": "staticwebassets\\img\\prizes\\eurorush\\win\\INS_bigfootballbonus.jpg"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\eurorush\\win\\INS_football-cash-pots.jpg",
+      "PackagePath": "staticwebassets\\img\\prizes\\eurorush\\win\\INS_football-cash-pots.jpg"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\eurorush\\win\\PGO_riseofolympus100.jpg",
+      "PackagePath": "staticwebassets\\img\\prizes\\eurorush\\win\\PGO_riseofolympus100.jpg"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\eurorush\\win\\b6bdb7_81d33c9203db46f9ba2a8d54b713d52c~mv2.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\eurorush\\win\\b6bdb7_81d33c9203db46f9ba2a8d54b713d52c~mv2.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\eurorush\\win\\footballcashcollectlogo11min1min.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\eurorush\\win\\footballcashcollectlogo11min1min.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\eurorush\\win\\portrait_logo_00000-min.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\eurorush\\win\\portrait_logo_00000-min.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\eurorush\\win\\rise-of-olympus-100-logo.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\eurorush\\win\\rise-of-olympus-100-logo.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\eurorush\\win\\win_bigbonus.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\eurorush\\win\\win_bigbonus.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\eurorush\\win\\win_bigfootballbonus.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\eurorush\\win\\win_bigfootballbonus.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\eurorush\\win\\win_bigwheelbonus.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\eurorush\\win\\win_bigwheelbonus.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\eurorush\\win\\win_bluewizard.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\eurorush\\win\\win_bluewizard.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\eurorush\\win\\win_footballcashcollect.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\eurorush\\win\\win_footballcashcollect.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\eurorush\\win\\win_freebet.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\eurorush\\win\\win_freebet.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\eurorush\\win\\win_honeyrush100.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\eurorush\\win\\win_honeyrush100.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\eurorush\\win\\win_mightyhotwilds.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\eurorush\\win\\win_mightyhotwilds.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\eurorush\\win\\win_playtech.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\eurorush\\win\\win_playtech.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\eurorush\\win\\win_riseofolympus.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\eurorush\\win\\win_riseofolympus.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\eurorush\\win\\win_riseofolympus2.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\eurorush\\win\\win_riseofolympus2.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\eurorush\\win\\win_roulette.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\eurorush\\win\\win_roulette.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\eurorush\\win\\win_wildwinner.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\eurorush\\win\\win_wildwinner.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\measteryisland\\Gold-Fishy-FS-Logo2.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\measteryisland\\Gold-Fishy-FS-Logo2.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\measteryisland\\betshop.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\measteryisland\\betshop.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\measteryisland\\bg.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\measteryisland\\bg.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\measteryisland\\bg_front.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\measteryisland\\bg_front.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\measteryisland\\bg_intro.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\measteryisland\\bg_intro.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\measteryisland\\logo1.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\measteryisland\\logo1.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\measteryisland\\logo2.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\measteryisland\\logo2.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\measteryisland\\statue1.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\measteryisland\\statue1.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\measteryisland\\statue2.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\measteryisland\\statue2.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\measteryisland\\statue3.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\measteryisland\\statue3.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\measteryisland\\win_feastingfox.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\measteryisland\\win_feastingfox.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\measteryisland\\win_feastingfox.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\measteryisland\\win_feastingfox.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\measteryisland\\win_freebet.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\measteryisland\\win_freebet.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\measteryisland\\win_goldfishy.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\measteryisland\\win_goldfishy.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\measteryisland\\win_roccogallo.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\measteryisland\\win_roccogallo.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\measteryisland\\win_roulette.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\measteryisland\\win_roulette.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\santatreats\\betshop.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\santatreats\\betshop.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\santatreats\\bg_intro.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\santatreats\\bg_intro.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\santatreats\\bg_lg.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\santatreats\\bg_lg.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\santatreats\\bg_sm.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\santatreats\\bg_sm.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\santatreats\\bg_sm0.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\santatreats\\bg_sm0.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\santatreats\\jpg+png\\betshop.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\santatreats\\jpg+png\\betshop.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\santatreats\\jpg+png\\bg_intro.jpg",
+      "PackagePath": "staticwebassets\\img\\prizes\\santatreats\\jpg+png\\bg_intro.jpg"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\santatreats\\jpg+png\\bg_lg.jpg",
+      "PackagePath": "staticwebassets\\img\\prizes\\santatreats\\jpg+png\\bg_lg.jpg"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\santatreats\\jpg+png\\bg_sm.jpg",
+      "PackagePath": "staticwebassets\\img\\prizes\\santatreats\\jpg+png\\bg_sm.jpg"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\santatreats\\jpg+png\\option_1.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\santatreats\\jpg+png\\option_1.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\santatreats\\jpg+png\\option_2.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\santatreats\\jpg+png\\option_2.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\santatreats\\jpg+png\\option_3.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\santatreats\\jpg+png\\option_3.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\santatreats\\jpg+png\\santa_claus.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\santatreats\\jpg+png\\santa_claus.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\santatreats\\jpg+png\\santa_kamci.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\santatreats\\jpg+png\\santa_kamci.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\santatreats\\jpg+png\\santa_reindeer.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\santatreats\\jpg+png\\santa_reindeer.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\santatreats\\jpg+png\\title_santas.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\santatreats\\jpg+png\\title_santas.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\santatreats\\jpg+png\\title_treats.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\santatreats\\jpg+png\\title_treats.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\santatreats\\option_1.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\santatreats\\option_1.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\santatreats\\option_2.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\santatreats\\option_2.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\santatreats\\option_3.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\santatreats\\option_3.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\santatreats\\pointer.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\santatreats\\pointer.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\santatreats\\santa_bridle.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\santatreats\\santa_bridle.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\santatreats\\santa_claus.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\santatreats\\santa_claus.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\santatreats\\santa_reindeer.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\santatreats\\santa_reindeer.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\santatreats\\title_santas.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\santatreats\\title_santas.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\santatreats\\title_treats.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\santatreats\\title_treats.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\santatreats\\win_betterwilds.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\santatreats\\win_betterwilds.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\santatreats\\win_freebet.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\santatreats\\win_freebet.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\santatreats\\win_moonprincess.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\santatreats\\win_moonprincess.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\santatreats\\win_moonprincessL.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\santatreats\\win_moonprincessL.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\santatreats\\win_nautynicksbook.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\santatreats\\win_nautynicksbook.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\santatreats\\win_playtech.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\santatreats\\win_playtech.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\spincity\\bg.jpg",
+      "PackagePath": "staticwebassets\\img\\prizes\\spincity\\bg.jpg"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\spincity\\blooddrip.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\spincity\\blooddrip.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\spincity\\char1dissolve.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\spincity\\char1dissolve.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\spincity\\char1full.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\spincity\\char1full.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\spincity\\char2dissolve.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\spincity\\char2dissolve.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\spincity\\char2full.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\spincity\\char2full.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\spincity\\char3dissolve.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\spincity\\char3dissolve.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\spincity\\char3full.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\spincity\\char3full.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\spincity\\invasion.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\spincity\\invasion.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\spincity\\logo.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\spincity\\logo.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\spincity\\shot.jpg",
+      "PackagePath": "staticwebassets\\img\\prizes\\spincity\\shot.jpg"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\spincity\\spincity-spin.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\spincity\\spincity-spin.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\spincity\\spincity.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\spincity\\spincity.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\spincity\\win_3clownmonty.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\spincity\\win_3clownmonty.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\spincity\\win_freebet.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\spincity\\win_freebet.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\spincity\\win_img.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\spincity\\win_img.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\spincity\\win_roulette.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\spincity\\win_roulette.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\spincity\\win_ruffheist.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\spincity\\win_ruffheist.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\spincity\\win_thundershots.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\spincity\\win_thundershots.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\spinshots\\betshop.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\spinshots\\betshop.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\spinshots\\bg.jpg",
+      "PackagePath": "staticwebassets\\img\\prizes\\spinshots\\bg.jpg"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\spinshots\\bird.svg",
+      "PackagePath": "staticwebassets\\img\\prizes\\spinshots\\bird.svg"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\spinshots\\glass_c.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\spinshots\\glass_c.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\spinshots\\glass_c0.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\spinshots\\glass_c0.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\spinshots\\glass_l.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\spinshots\\glass_l.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\spinshots\\glass_l0.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\spinshots\\glass_l0.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\spinshots\\glass_r.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\spinshots\\glass_r.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\spinshots\\glass_r0.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\spinshots\\glass_r0.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\spinshots\\img_login.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\spinshots\\img_login.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\spinshots\\logo.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\spinshots\\logo.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\spinshots\\logo2.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\spinshots\\logo2.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\spinshots\\win_bigbonus.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\spinshots\\win_bigbonus.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\spinshots\\win_bigwheelbonus.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\spinshots\\win_bigwheelbonus.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\spinshots\\win_bluewizard.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\spinshots\\win_bluewizard.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\spinshots\\win_freebet.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\spinshots\\win_freebet.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\spinshots\\win_freebet0.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\spinshots\\win_freebet0.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\spinshots\\win_honeyrush100.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\spinshots\\win_honeyrush100.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\spinshots\\win_mightyhotwilds.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\spinshots\\win_mightyhotwilds.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\spinshots\\win_playtech.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\spinshots\\win_playtech.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\spinshots\\win_riseofolympus.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\spinshots\\win_riseofolympus.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\spinshots\\win_roulette.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\spinshots\\win_roulette.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\spinshots\\win_wildwinner.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\spinshots\\win_wildwinner.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\spinshots\\winimg_temp0.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\spinshots\\winimg_temp0.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\spinshots\\winimg_temp1.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\spinshots\\winimg_temp1.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\spinshotshalloweeen\\Default_Create_a_vibrant_illustration_of_a_single_oversized_sh_0_e314d8d0-71ce-4ea4-91df-6be5c5ac6791_0.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\spinshotshalloweeen\\Default_Create_a_vibrant_illustration_of_a_single_oversized_sh_0_e314d8d0-71ce-4ea4-91df-6be5c5ac6791_0.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\spinshotshalloweeen\\Default_Create_a_vibrant_illustration_of_a_single_oversized_sh_2_d87874e0-96a5-4fc0-b270-cd4f52b73fac_0.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\spinshotshalloweeen\\Default_Create_a_vibrant_illustration_of_a_single_oversized_sh_2_d87874e0-96a5-4fc0-b270-cd4f52b73fac_0.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\spinshotshalloweeen\\Default_Create_a_vibrant_illustration_of_a_single_oversized_sh_4_d3255912-d1c8-4475-a027-22b30d4cd77d_0.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\spinshotshalloweeen\\Default_Create_a_vibrant_illustration_of_a_single_oversized_sh_4_d3255912-d1c8-4475-a027-22b30d4cd77d_0.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\spinshotshalloweeen\\DreamShaper_v7_Create_a_vibrant_illustration_of_a_night_sky_Ha_1 (1).jpg",
+      "PackagePath": "staticwebassets\\img\\prizes\\spinshotshalloweeen\\DreamShaper_v7_Create_a_vibrant_illustration_of_a_night_sky_Ha_1 (1).jpg"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\spinshotshalloweeen\\bat.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\spinshotshalloweeen\\bat.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\spinshotshalloweeen\\betshop.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\spinshotshalloweeen\\betshop.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\spinshotshalloweeen\\bg.jpg",
+      "PackagePath": "staticwebassets\\img\\prizes\\spinshotshalloweeen\\bg.jpg"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\spinshotshalloweeen\\glass_c.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\spinshotshalloweeen\\glass_c.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\spinshotshalloweeen\\glass_l.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\spinshotshalloweeen\\glass_l.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\spinshotshalloweeen\\glass_r.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\spinshotshalloweeen\\glass_r.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\spinshotshalloweeen\\haloween-spins example.jpg",
+      "PackagePath": "staticwebassets\\img\\prizes\\spinshotshalloweeen\\haloween-spins example.jpg"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\spinshotshalloweeen\\logo2.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\spinshotshalloweeen\\logo2.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\starquest\\betshop.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\starquest\\betshop.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\starquest\\helmet1.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\starquest\\helmet1.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\starquest\\helmet1dissolve.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\starquest\\helmet1dissolve.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\starquest\\helmet2.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\starquest\\helmet2.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\starquest\\helmet2dissolve.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\starquest\\helmet2dissolve.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\starquest\\helmet3.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\starquest\\helmet3.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\starquest\\helmet3dissolve.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\starquest\\helmet3dissolve.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\starquest\\loader.gif",
+      "PackagePath": "staticwebassets\\img\\prizes\\starquest\\loader.gif"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\starquest\\mountains.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\starquest\\mountains.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\starquest\\planet.jpg",
+      "PackagePath": "staticwebassets\\img\\prizes\\starquest\\planet.jpg"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\starquest\\planet.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\starquest\\planet.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\starquest\\space.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\starquest\\space.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\starquest\\star_magenta.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\starquest\\star_magenta.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\starquest\\star_orange.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\starquest\\star_orange.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\starquest\\star_white.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\starquest\\star_white.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\starquest\\starquest.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\starquest\\starquest.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\starquest\\startravel.mp4",
+      "PackagePath": "staticwebassets\\img\\prizes\\starquest\\startravel.mp4"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\starquest\\videostill.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\starquest\\videostill.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\starquest\\win_freebet.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\starquest\\win_freebet.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\starquest\\win_freebet.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\starquest\\win_freebet.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\starquest\\win_gargatoonz.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\starquest\\win_gargatoonz.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\starquest\\win_piggyblitz.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\starquest\\win_piggyblitz.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\starquest\\win_roulette.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\starquest\\win_roulette.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\starquest\\win_thundershots.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\starquest\\win_thundershots.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\starquest\\win_thundershots.webp",
+      "PackagePath": "staticwebassets\\img\\prizes\\starquest\\win_thundershots.webp"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\wizards\\bg.jpg",
+      "PackagePath": "staticwebassets\\img\\prizes\\wizards\\bg.jpg"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\wizards\\bg_light.jpg",
+      "PackagePath": "staticwebassets\\img\\prizes\\wizards\\bg_light.jpg"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\wizards\\bg_light0.jpg",
+      "PackagePath": "staticwebassets\\img\\prizes\\wizards\\bg_light0.jpg"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\wizards\\bubble.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\wizards\\bubble.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\wizards\\cw.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\wizards\\cw.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\wizards\\game_bluewizard.jpg",
+      "PackagePath": "staticwebassets\\img\\prizes\\wizards\\game_bluewizard.jpg"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\wizards\\game_fireblazeroulette.jpg",
+      "PackagePath": "staticwebassets\\img\\prizes\\wizards\\game_fireblazeroulette.jpg"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\wizards\\game_goldenchips.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\wizards\\game_goldenchips.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\wizards\\game_greekquantumroulette.jpg",
+      "PackagePath": "staticwebassets\\img\\prizes\\wizards\\game_greekquantumroulette.jpg"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\wizards\\game_greenwizard.jpg",
+      "PackagePath": "staticwebassets\\img\\prizes\\wizards\\game_greenwizard.jpg"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\wizards\\game_quantumroulette.jpg",
+      "PackagePath": "staticwebassets\\img\\prizes\\wizards\\game_quantumroulette.jpg"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\wizards\\game_redwizard.jpg",
+      "PackagePath": "staticwebassets\\img\\prizes\\wizards\\game_redwizard.jpg"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\wizards\\icon_book.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\wizards\\icon_book.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\wizards\\icon_flask.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\wizards\\icon_flask.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\wizards\\icon_mushroom.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\wizards\\icon_mushroom.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\wizards\\icon_pot.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\wizards\\icon_pot.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\wizards\\icon_win.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\wizards\\icon_win.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\wizards\\lamp.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\wizards\\lamp.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\wizards\\logo.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\wizards\\logo.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\wizards\\logo0.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\wizards\\logo0.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\wizards\\logo1.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\wizards\\logo1.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\wizards\\logo2.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\wizards\\logo2.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\wizards\\lw.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\wizards\\lw.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\wizards\\rw.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\wizards\\rw.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\wizards\\shinel.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\wizards\\shinel.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\wizards\\shiner.jpg",
+      "PackagePath": "staticwebassets\\img\\prizes\\wizards\\shiner.jpg"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\wizards\\smoke.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\wizards\\smoke.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\wizards\\win.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\wizards\\win.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\prizes\\wizards\\win1.png",
+      "PackagePath": "staticwebassets\\img\\prizes\\wizards\\win1.png"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\santatreats.jpg",
+      "PackagePath": "staticwebassets\\img\\santatreats.jpg"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\spincity.jpg",
+      "PackagePath": "staticwebassets\\img\\spincity.jpg"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\spinshots.jpg",
+      "PackagePath": "staticwebassets\\img\\spinshots.jpg"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\spinshotshallo.jpg",
+      "PackagePath": "staticwebassets\\img\\spinshotshallo.jpg"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\starquest.jpg",
+      "PackagePath": "staticwebassets\\img\\starquest.jpg"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\summerball.jpg",
+      "PackagePath": "staticwebassets\\img\\summerball.jpg"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\wizards.jpg",
+      "PackagePath": "staticwebassets\\img\\wizards.jpg"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\img\\xmas2023.jpg",
+      "PackagePath": "staticwebassets\\img\\xmas2023.jpg"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\_Live Coding Session\\Portfolio projects\\promotions\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Promotions.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Promotions.props",
+      "PackagePath": "build\\Promotions.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Promotions.props",
+      "PackagePath": "buildMultiTargeting\\Promotions.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Promotions.props",
+      "PackagePath": "buildTransitive\\Promotions.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
