@@ -8,4 +8,4 @@ dotnet watch run
 
 ## Also
 
-In calendar promotions you can change the date (day number) to check to another daily promotion
+In calendar promotions you can change the date (day number) to check on another daily promotion
